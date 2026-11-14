@@ -1,0 +1,165 @@
+/* Motion for HISANO. Kept in its own file so globals.css stays about tokens.
+   Everything here is switched off for prefers-reduced-motion at the bottom. */
+
+/* ---------- Mobile menu ---------- */
+html.menu-open {
+  overflow: hidden;
+}
+
+.menu-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  background: color-mix(in srgb, var(--color-page) 97%, transparent);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  transition:
+    opacity 0.35s ease,
+    transform 0.5s var(--ease-out-expo),
+    visibility 0s linear 0.35s;
+}
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .menu-overlay {
+    background: color-mix(in srgb, var(--color-page) 84%, transparent);
+    -webkit-backdrop-filter: blur(24px) saturate(170%);
+    backdrop-filter: blur(24px) saturate(170%);
+  }
+}
+.menu-overlay[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s, 0s, 0s;
+}
+
+/* Links glide up one after another when the menu opens. */
+.menu-item {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.menu-overlay[data-open="true"] .menu-item {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.6s var(--ease-out-expo),
+    transform 0.7s var(--ease-out-expo);
+  transition-delay: calc(var(--i) * 70ms + 120ms);
+}
+
+/* Hamburger icon: three lines that turn into a cross. */
+.burger {
+  position: relative;
+  display: block;
+  width: 1.25rem;
+  height: 0.875rem;
+}
+.burger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  border-radius: 1px;
+  background: currentColor;
+  transition:
+    transform 0.45s var(--ease-out-expo),
+    top 0.45s var(--ease-out-expo),
+    opacity 0.2s ease;
+}
+.burger-1 {
+  top: 0;
+}
+.burger-2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger-3 {
+  top: 100%;
+  transform: translateY(-100%);
+}
+.burger-btn[aria-expanded="true"] .burger-1 {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.burger-btn[aria-expanded="true"] .burger-2 {
+  opacity: 0;
+}
+.burger-btn[aria-expanded="true"] .burger-3 {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* ---------- Hero: each line rises in on load ---------- */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.9s var(--ease-out-expo) both;
+}
+.rise-1 {
+  animation-delay: 0.1s;
+}
+.rise-2 {
+  animation-delay: 0.22s;
+}
+.rise-3 {
+  animation-delay: 0.34s;
+}
+.rise-4 {
+  animation-delay: 0.46s;
+}
+
+/* ---------- Scroll reveal (see Reveal.tsx) ---------- */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.reveal-in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.8s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    transform 0.9s var(--ease-out-expo) var(--reveal-delay, 0ms);
+}
+
+/* ---------- Hover: cards and buttons lift a little ---------- */
+.lift {
+  transition:
+    transform 0.5s var(--ease-out-expo),
+    box-shadow 0.5s var(--ease-out-expo);
+}
+.btn-pill {
+  transition:
+    background 0.3s,
+    transform 0.4s var(--ease-out-expo);
+}
+@media (hover: hover) {
+  .lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3);
+  }
+  .btn-pill:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-init,
+  .menu-item {
+    opacity: 1;
+    transform: none;
+  }
+  .rise {
+    animation: none;
+  }
+  .lift:hover,
+  .btn-pill:hover {
+    transform: none;
+  }
+}

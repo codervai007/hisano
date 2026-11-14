@@ -12,3 +12,9 @@ export const eyebrow = {
   production: "PRODUCTION",
   sales: "SALES",
 };
+
+export const menuLabels = {
+  open: "メニューを開く",
+  close: "メニューを閉じる",
+  nav: "メニュー",
+};
