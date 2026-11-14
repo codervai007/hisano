@@ -12,7 +12,8 @@ type Props = {
 type Status = "idle" | "sending" | "done" | "error" | "nokey";
 
 const field =
-  "min-h-12 w-full rounded-xl border border-line bg-card px-4 text-[15px] text-ink outline-none focus:border-brand focus:ring-2 focus:ring-brand/30";
+  "min-h-12 w-full rounded-md border border-ink/20 bg-card px-4 text-[0.9375rem] tracking-[0.04em] text-ink outline-none focus:border-brand focus:ring-2 focus:ring-brand/30";
+const label = "flex flex-col gap-2 text-sm tracking-[0.06em] text-ink-mute";
 
 export function ContactForm({ subject, submitLabel, withMessage = false }: Props) {
   const [status, setStatus] = useState<Status>("idle");
@@ -43,41 +44,41 @@ export function ContactForm({ subject, submitLabel, withMessage = false }: Props
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-5">
-      <label className="flex flex-col gap-2 text-sm font-medium" htmlFor="name">
+    <form onSubmit={onSubmit} className="flex flex-col gap-6">
+      <label className={label} htmlFor="name">
         {formLabels.name}
         <input id="name" name="name" type="text" required autoComplete="name" className={field} />
       </label>
-      <label className="flex flex-col gap-2 text-sm font-medium" htmlFor="email">
+      <label className={label} htmlFor="email">
         {formLabels.email}
         <input id="email" name="email" type="email" required autoComplete="email" className={field} />
       </label>
-      <label className="flex flex-col gap-2 text-sm font-medium" htmlFor="tel">
+      <label className={label} htmlFor="tel">
         {formLabels.tel}
         <input id="tel" name="tel" type="tel" autoComplete="tel" className={field} />
       </label>
-      <label className="flex flex-col gap-2 text-sm font-medium" htmlFor="company">
+      <label className={label} htmlFor="company">
         {formLabels.company}
         <input id="company" name="company" type="text" autoComplete="organization" className={field} />
       </label>
       {withMessage && (
-        <label className="flex flex-col gap-2 text-sm font-medium" htmlFor="message">
+        <label className={label} htmlFor="message">
           {formLabels.message}
           <textarea id="message" name="message" rows={6} required className={`${field} py-3`} />
         </label>
       )}
-      <label className="flex min-h-11 items-center gap-3 text-sm" htmlFor="consent">
-        <input id="consent" name="consent" type="checkbox" required className="size-5 accent-brand" />
+      <label className="flex min-h-11 items-center gap-3 text-sm tracking-[0.04em]" htmlFor="consent">
+        <input id="consent" name="consent" type="checkbox" required className="size-5 accent-[var(--color-fill)]" />
         {formLabels.consent}
       </label>
       <button
         type="submit"
         disabled={status === "sending"}
-        className="min-h-12 self-start rounded-full bg-cta px-8 text-[15px] font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
+        className="btn-pill btn-pill-brand self-start disabled:opacity-60"
       >
         {status === "sending" ? formLabels.sending : submitLabel}
       </button>
-      <p role="status" aria-live="polite" className="min-h-6 text-sm text-ink-soft">
+      <p role="status" aria-live="polite" className="min-h-6 text-sm text-ink-mute">
         {status === "done" && formLabels.done}
         {status === "error" && formLabels.error}
         {status === "nokey" && formLabels.needKey}

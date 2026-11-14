@@ -4,28 +4,34 @@
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
 
 /* ------------------------------------------------------------------
-   HISANO design tokens. Components use only these, never hard-coded
-   colours, so the whole site switches with the theme.
+   HISANO design tokens, built on the same language as the VNT GROUP
+   site: warm paper as the page, sumi ink as the text, a muted gold for
+   fine details. HISANO's own blue is the brand colour.
+   Components use only these tokens, so the site switches with the theme.
 ------------------------------------------------------------------- */
 @theme {
-  --color-mist: #f5f9fe; /* page */
-  --color-mist-2: #e4f0fc;
-  --color-mist-3: #cfe3f7;
-  --color-card: #ffffff; /* cards, inputs, secondary buttons */
-  --color-line: #dbe8f6;
-  --color-edge: #b9d0ea; /* outlines on buttons */
+  --color-page: #faf9f7;
+  --color-page-2: #f1eee9;
+  --color-page-3: #f6f4f0;
+  --color-card: #ffffff;
 
-  --color-ink: #17325a;
-  --color-ink-soft: #3b5578;
+  --color-ink: #1f1d1b;
+  --color-ink-soft: #2b2926;
+  --color-ink-mute: #3d3a36;
 
-  --color-brand: #2456a8; /* links, eyebrows, prices */
-  --color-cta: #2456a8; /* filled buttons (white text) */
+  --color-stone: #6e6a64;
+  --color-stone-dim: #9c978f;
 
-  --color-wave: #b9d6f2;
-  --color-wave-line: #9cc3ea;
+  --color-brand: #1f4f94; /* text, links, eyebrows */
+  --color-fill: #1f4f94; /* filled buttons (white text) */
+  --color-gold: #b08d57;
 
-  --font-sans: var(--font-noto-sans-jp), system-ui, sans-serif;
-  --font-serif: var(--font-noto-serif-jp), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  /* Fonts come from Google Fonts by <link> in layout.tsx (no build-time
+     fetch). Zen Old Mincho sets Japanese headings, Zen Kaku Gothic New the
+     body, Cormorant Garamond the Latin names and figures. */
+  --font-mincho: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-sans: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --spacing-gutter: clamp(1.25rem, 5vw, 5rem);
@@ -36,21 +42,28 @@
     color-scheme: light;
   }
 
-  /* Dark theme: the page turns navy-charcoal and the ink to off-white. */
+  /* Phones: every rem size goes up a little so captions stay readable. */
+  @media (max-width: 47.99rem) {
+    html {
+      font-size: 106.25%;
+    }
+  }
+
+  /* Dark theme: the paper turns to charcoal and the ink to off-white. */
   [data-theme="dark"] {
     color-scheme: dark;
-    --color-mist: #0f1621;
-    --color-mist-2: #172233;
-    --color-mist-3: #1f2f47;
-    --color-card: #162030;
-    --color-line: #26364d;
-    --color-edge: #35506f;
-    --color-ink: #e8eef7;
-    --color-ink-soft: #b8c6da;
+    --color-page: #121212;
+    --color-page-2: #1b1b1b;
+    --color-page-3: #171717;
+    --color-card: #181818;
+    --color-ink: #ededed;
+    --color-ink-soft: #dcdcdc;
+    --color-ink-mute: #c4c4c4;
+    --color-stone: #a3a3a3;
+    --color-stone-dim: #7d7d7d;
     --color-brand: #8fb8f0;
-    --color-cta: #2f6bc7;
-    --color-wave: #20344f;
-    --color-wave-line: #3a5b86;
+    --color-fill: #2f6bc7;
+    --color-gold: #d4b27a;
   }
 
   * {
@@ -63,28 +76,37 @@
   }
 
   body {
-    background-color: var(--color-mist);
+    background-color: var(--color-page);
     color: var(--color-ink);
     font-family: var(--font-sans);
-    line-height: 1.8;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow-x: clip;
+    caret-color: transparent;
     transition: background-color 0.3s, color 0.3s;
   }
+  input,
+  textarea,
+  select,
+  [contenteditable]:not([contenteditable="false"]) {
+    caret-color: auto;
+  }
 
-  /* Japanese headings: proportional kana, balanced lines, phrase-aware breaks. */
+  /* Headings default to Zen Old Mincho, with even lines and phrase-aware
+     Japanese breaks so a heading never strands one word. */
   h1,
   h2,
   h3,
   h4 {
+    font-family: var(--font-mincho);
+    font-weight: 500;
     font-feature-settings: "palt" 1;
     text-wrap: balance;
     word-break: auto-phrase;
   }
 
   ::selection {
-    background: var(--color-cta);
+    background: var(--color-fill);
     color: #ffffff;
   }
 
@@ -110,15 +132,153 @@
 }
 
 @layer components {
+  .shell {
+    width: 100%;
+    max-width: 90rem;
+    margin-inline: auto;
+    padding-inline: var(--spacing-gutter);
+  }
+
+  /* Large Japanese headlines. */
+  .type-display {
+    font-family: var(--font-mincho);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    line-height: 1.45;
+    font-feature-settings: "palt" 1;
+  }
+
+  /* Section and card headings. */
+  .type-heading {
+    font-family: var(--font-mincho);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 1.55;
+    font-feature-settings: "palt" 1;
+  }
+
+  /* Reading copy: open spacing, as on the VNT GROUP pages. */
+  .type-body {
+    line-height: 2.1;
+    letter-spacing: 0.06em;
+    color: var(--color-ink-mute);
+    font-size: 1.0625rem;
+  }
+
+  /* Latin names and figures set in Cormorant, with lining numerals. */
+  .font-latin {
+    font-family: var(--font-display);
+    font-variant-numeric: lining-nums;
+  }
+
+  /* Small Cormorant caps above a heading (ABOUT, PRODUCTS ...). */
+  .type-eyebrow {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--color-brand);
+  }
+
+  /* Gold hairline with a small blue lozenge, under section titles. */
+  .ornament {
+    position: relative;
+    display: block;
+    width: 8.5rem;
+    height: 0.75rem;
+    margin: 1.1rem auto 0;
+  }
+  .ornament::before {
+    content: "";
+    position: absolute;
+    inset: 50% 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-gold) 25%, var(--color-gold) 75%, transparent);
+  }
+  .ornament::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--color-fill);
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-shadow: 0 0 0 4px var(--color-page);
+  }
+  .ornament-left {
+    margin-inline: 0;
+  }
+  .ornament-on-2::after {
+    box-shadow: 0 0 0 4px var(--color-page-2);
+  }
+
+  /* Seigaiha (青海波) waves in faint gold, for hero and call-to-action bands. */
+  .bg-seigaiha {
+    background-color: var(--color-page-2);
+    background-size: 48px 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24' viewBox='0 0 48 24'%3E%3Cg fill='%23f1eee9' stroke='%23b08d57' stroke-opacity='0.28' stroke-width='1'%3E%3Cg id='w'%3E%3Ccircle r='22'/%3E%3Ccircle r='16'/%3E%3Ccircle r='10'/%3E%3Ccircle r='4'/%3E%3C/g%3E%3Cuse href='%23w' x='48'/%3E%3Cuse href='%23w' x='24' y='12'/%3E%3Cuse href='%23w' y='24'/%3E%3Cuse href='%23w' x='48' y='24'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  [data-theme="dark"] .bg-seigaiha {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24' viewBox='0 0 48 24'%3E%3Cg fill='%231b1b1b' stroke='%23d4b27a' stroke-opacity='0.22' stroke-width='1'%3E%3Cg id='w'%3E%3Ccircle r='22'/%3E%3Ccircle r='16'/%3E%3Ccircle r='10'/%3E%3Ccircle r='4'/%3E%3C/g%3E%3Cuse href='%23w' x='48'/%3E%3Cuse href='%23w' x='24' y='12'/%3E%3Cuse href='%23w' y='24'/%3E%3Cuse href='%23w' x='48' y='24'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Soft drop shadow for photos and product images. */
+  .photo-card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+  }
+
+  /* Grey pill for the secondary action; the brand pill is the main one. */
+  .btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    min-width: 6.25rem;
+    border-radius: 999px;
+    background: #ebe7e1;
+    color: var(--color-ink-mute);
+    padding: 0.7rem 1.75rem;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: background 0.3s, filter 0.3s;
+  }
+  .btn-pill:hover {
+    background: #e0dbd3;
+  }
+  .btn-pill-brand {
+    background: var(--color-fill);
+    color: #ffffff;
+    box-shadow: 0 8px 20px -8px color-mix(in srgb, var(--color-fill) 70%, transparent);
+  }
+  .btn-pill-brand:hover {
+    background: color-mix(in srgb, var(--color-fill) 88%, #000);
+  }
+  [data-theme="dark"] .btn-pill {
+    background: #2a2a2a;
+    color: var(--color-ink);
+  }
+  [data-theme="dark"] .btn-pill:hover {
+    background: #363636;
+  }
+  [data-theme="dark"] .btn-pill.btn-pill-brand {
+    background: var(--color-fill);
+    color: #ffffff;
+  }
+
   /* Header once the page scrolls under it: frosted glass, CSS only so it
      works in iPhone Safari. Falls back to a near-solid fill. */
   .glass-bar {
-    background: color-mix(in srgb, var(--color-mist) 92%, transparent);
+    background: color-mix(in srgb, var(--color-page) 94%, transparent);
     border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 8%, transparent);
   }
   @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .glass-bar {
-      background: color-mix(in srgb, var(--color-mist) 66%, transparent);
+      background: color-mix(in srgb, var(--color-page) 62%, transparent);
       -webkit-backdrop-filter: blur(20px) saturate(170%);
       backdrop-filter: blur(20px) saturate(170%);
     }
@@ -143,6 +303,11 @@
   }
   .liquid-press:active {
     transform: scale(0.94);
+  }
+
+  .rule {
+    height: 1px;
+    background: color-mix(in srgb, var(--color-ink) 12%, transparent);
   }
 }
 

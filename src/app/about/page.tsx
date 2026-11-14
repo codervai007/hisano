@@ -1,45 +1,41 @@
 import type { Metadata } from "next";
 import { Benefits } from "@/components/Benefits";
 import { CtaBand } from "@/components/CtaBand";
-import { Waves } from "@/components/Waves";
+import { SectionHeading } from "@/components/SectionHeading";
 import { about } from "@/content/site";
+import { eyebrow } from "@/content/labels";
 
 export const metadata: Metadata = { title: "私たちについて | HISANO" };
 
 export default function AboutPage() {
   return (
     <>
-      <section className="mx-auto w-full max-w-7xl px-6 md:px-12">
-        <div className="relative flex min-h-[360px] items-center overflow-hidden rounded-[28px] bg-gradient-to-br from-mist-2 via-card to-mist-3 px-8 py-14 md:px-14">
-          <Waves />
-          <div className="relative flex max-w-2xl flex-col gap-5">
-            <h1 className="font-serif text-3xl font-bold leading-snug text-balance md:text-5xl">
-              {about.heroTitle}
-            </h1>
-            <p className="text-base leading-loose text-ink-soft">{about.heroText}</p>
+      <section className="shell">
+        <div className="bg-seigaiha flex min-h-[22rem] items-center rounded-lg border border-ink/10 px-8 py-16 md:px-16 md:py-20">
+          <div className="flex max-w-2xl flex-col items-start gap-5">
+            <p className="type-eyebrow">{eyebrow.about}</p>
+            <h1 className="type-display text-3xl md:text-5xl">{about.heroTitle}</h1>
+            <span aria-hidden className="ornament ornament-left ornament-on-2" />
+            <p className="type-body">{about.heroText}</p>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto mt-20 w-full max-w-7xl px-6 md:px-12">
-        <p className="max-w-3xl font-serif text-2xl font-bold leading-snug text-balance">
-          {about.tagline}
-        </p>
+      <section className="shell mt-24">
+        <p className="type-heading max-w-3xl text-2xl md:text-3xl">{about.tagline}</p>
       </section>
 
-      <section className="mx-auto mt-16 flex w-full max-w-7xl flex-col gap-4 px-6 md:px-12">
-        <h2 className="text-sm font-semibold tracking-widest text-brand">
-          {about.production.heading}
-        </h2>
-        <p className="font-serif text-2xl font-bold">{about.production.title}</p>
-        <p className="max-w-3xl leading-loose text-ink-soft">{about.production.text}</p>
-        <p className="max-w-3xl leading-loose text-ink-soft">{about.production.factory}</p>
+      <section className="shell mt-24 flex flex-col items-start gap-8">
+        <SectionHeading eyebrow={eyebrow.production} title={about.production.heading} />
+        <p className="type-heading text-xl md:text-2xl">{about.production.title}</p>
+        <p className="type-body max-w-3xl">{about.production.text}</p>
+        <p className="type-body max-w-3xl">{about.production.factory}</p>
       </section>
 
-      <section className="mx-auto mt-16 flex w-full max-w-7xl flex-col gap-4 px-6 md:px-12">
-        <h2 className="text-sm font-semibold tracking-widest text-brand">{about.sales.heading}</h2>
-        <p className="font-serif text-2xl font-bold">{about.sales.title}</p>
-        <p className="max-w-3xl leading-loose text-ink-soft">{about.sales.text}</p>
+      <section className="shell mt-24 flex flex-col items-start gap-8">
+        <SectionHeading eyebrow={eyebrow.sales} title={about.sales.heading} />
+        <p className="type-heading text-xl md:text-2xl">{about.sales.title}</p>
+        <p className="type-body max-w-3xl">{about.sales.text}</p>
       </section>
 
       <Benefits />

@@ -3,22 +3,22 @@ import { priceLabel, products } from "@/content/site";
 export function ProductGrid({ limit }: { limit?: number }) {
   const items = limit ? products.slice(0, limit) : products;
   return (
-    <ul className="flex flex-wrap gap-5">
+    <ul className="flex flex-wrap gap-6">
       {items.map((p) => (
         <li
           key={p.name}
-          className="flex min-w-0 flex-[1_1_20rem] flex-col gap-2 rounded-[20px] border border-line bg-card p-7"
+          className="flex min-w-0 flex-[1_1_20rem] flex-col gap-3 rounded-lg border border-ink/10 bg-card p-6"
         >
           <div
             role="img"
             aria-label={`${p.name} の商品画像（準備中）`}
-            className="mb-2 flex h-32 items-end rounded-2xl bg-gradient-to-br from-mist-2 to-mist-3 p-3 text-xs text-ink-soft"
+            className="bg-seigaiha mb-1 flex h-36 items-end rounded-md p-3 text-xs tracking-[0.08em] text-stone"
           >
             商品画像（準備中）
           </div>
-          <p className="font-serif text-lg font-bold leading-snug">{p.name}</p>
-          <p className="text-xs text-ink-soft">{priceLabel}</p>
-          <p className="text-lg font-semibold text-brand">{p.price}</p>
+          <p className="type-heading text-lg">{p.name}</p>
+          <p className="text-xs tracking-[0.08em] text-stone">{priceLabel}</p>
+          <p className="font-latin text-2xl font-medium tracking-[0.04em] text-brand">{p.price}</p>
         </li>
       ))}
     </ul>

@@ -50,7 +50,7 @@ export function ThemeToggle() {
     >
       <span
         aria-hidden
-        className={`absolute left-1 top-1 size-6 rounded-full bg-mist shadow-[0_1px_4px_rgba(0,0,0,0.25)] transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        className={`absolute left-1 top-1 size-6 rounded-full bg-page shadow-[0_1px_4px_rgba(0,0,0,0.25)] transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           dark ? "translate-x-[1.75rem]" : ""
         }`}
       />

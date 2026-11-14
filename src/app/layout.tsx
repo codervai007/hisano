@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -8,18 +7,13 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import { site } from "@/content/site";
 import { themeInitScript } from "@/lib/theme";
 
-const sans = Noto_Sans_JP({
-  subsets: ["latin"],
-  variable: "--font-noto-sans-jp",
-  display: "swap",
-});
-
-const serif = Noto_Serif_JP({
-  subsets: ["latin"],
-  weight: ["500", "700"],
-  variable: "--font-noto-serif-jp",
-  display: "swap",
-});
+/**
+ * Fonts come from Google Fonts at runtime, the same way the VNT GROUP site
+ * loads them: a build-time fetch through next/font/google can fail on
+ * Vercel's build machines. The CSS variables are set in globals.css.
+ */
+const GOOGLE_FONTS_CSS =
+  "https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600&display=swap";
 
 export const metadata: Metadata = {
   title: site.title,
@@ -28,9 +22,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ja" className={`${sans.variable} ${serif.variable}`} suppressHydrationWarning>
+    <html lang="ja" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href={GOOGLE_FONTS_CSS} />
       </head>
       <body>
         <SmoothScroll />
