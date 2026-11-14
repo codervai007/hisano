@@ -7,6 +7,7 @@ import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
   cta,
+  detailLabel,
   featured,
   featuredHeading,
   hero,
@@ -75,6 +76,11 @@ export default function HomePage() {
               <span className="type-eyebrow !text-[0.8125rem]">{f.badge}</span>
               <p className="type-heading text-2xl">{f.name}</p>
               <p className="text-[0.9375rem] leading-[2.05] tracking-[0.05em] text-ink-mute">{f.text}</p>
+              {"href" in f && f.href ? (
+                <Link href={f.href} className="btn-pill btn-pill-brand mt-2">
+                  {detailLabel}
+                </Link>
+              ) : null}
             </Reveal>
           ))}
         </ul>

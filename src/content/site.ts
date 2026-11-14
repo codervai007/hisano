@@ -35,6 +35,7 @@ export const featured = [
   {
     badge: "人気商品",
     name: "サメ軟骨パワープラス",
+    href: "/product/shark-cartilage",
     text: "サメの軟骨末だけを使用した、純正サメ軟骨。コンドロイチンを含む食品は鳥の骨などがありますが、なかでもサメは骨全体が軟骨なのできわめて効率良くコンドロイチンを摂取することができます。",
   },
   {
@@ -44,6 +45,55 @@ export const featured = [
     text: "「冬虫夏草プレミアムクラス」は、安心安全の国内製造、冬虫夏草を100%使用しています。冬虫夏草には、コルジセピンやβグルカン、その他ビタミン、ミネラル、18種類のアミノ酸などが豊富に含まれています。",
   },
 ];
+
+export const detailLabel = "詳しく見る";
+
+// サメ軟骨パワープラス: the product page is built from the client's own
+// banner images. Each alt repeats the wording printed on its image.
+export const shark = {
+  name: "サメ軟骨パワープラス",
+  lead: featured[0].text,
+  pack: {
+    src: "/images/shark-pack.jpg",
+    alt: "サメ軟骨パワープラス 300粒のパッケージ。サメ軟骨加工食品、日本製。",
+    width: 636,
+    height: 1200,
+  },
+  images: [
+    {
+      src: "/images/shark-hero.webp",
+      alt: "「歩く」健康を考えた、高濃度コンドロイチン配合サプリ。100%純サメ軟骨、大容量375mg×300粒、GMP認定の日本製。累計販売個数80,000個突破。",
+    },
+    {
+      src: "/images/shark-worry.webp",
+      alt: "階段キツくないですか？しゃがめない、立ち上がるのが大変、同じ姿勢でいると痛い。これらには年齢と共に減少する成分が関係しているかもしれません。",
+    },
+    {
+      src: "/images/shark-joint.webp",
+      alt: "それは関節にある軟骨成分（コンドロイチン）。コンドロイチンは保水力があり、関節にある軟骨を守る働きがある成分として注目されています。体内のコンドロイチンは年齢と共に減少するため、食品などで外から補うことが大切です。",
+    },
+    {
+      src: "/images/shark-chondroitin.webp",
+      alt: "コンドロイチンって？動物の軟骨や結合組織に存在するムコ多糖類の一種で、特にサメや牛の軟骨から抽出される自然由来の成分。軟骨の主成分として関節の健康維持をサポートします。",
+    },
+    {
+      src: "/images/shark-material.webp",
+      alt: "おすすめPOINT：高純度・高品質のサメ軟骨使用。国内および台湾で水揚げされた新鮮なサメの軟骨を100%使用し、品質と安全性を確保しています。",
+    },
+    {
+      src: "/images/shark-nutrients.webp",
+      alt: "おすすめPOINT：栄養成分の豊富さ。サメ軟骨には、関節の健康維持に重要なコンドロイチン硫酸と、組織の弾力性を保つ海洋性Ⅱ型コラーゲンが含まれています。",
+    },
+    {
+      src: "/images/shark-factory.webp",
+      alt: "おすすめPOINT：安心を届ける製造を。厳格な品質管理基準を満たしたGMP認定の日本国内工場で製造し、製品の安全性と品質を保証しています。",
+    },
+    {
+      src: "/images/shark-quality.webp",
+      alt: "品質管理と分析。HISANOの商品は、品質の管理された工場で生産し、分析等の確認も行っております。試験成績書の写し。",
+    },
+  ],
+};
 
 export const productsHeading = "商品一覧";
 
