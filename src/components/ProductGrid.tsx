@@ -1,4 +1,4 @@
-import { priceLabel, products } from "@/content/site";
+import { priceLabel, products, site } from "@/content/site";
 import { Reveal } from "./Reveal";
 
 export function ProductGrid({ limit }: { limit?: number }) {
@@ -14,10 +14,11 @@ export function ProductGrid({ limit }: { limit?: number }) {
         >
           <div
             role="img"
-            aria-label={`${p.name} の商品画像（準備中）`}
-            className="bg-seigaiha mb-1 flex h-36 items-end rounded-md p-3 text-xs tracking-[0.08em] text-stone"
+            aria-label={`${p.name}（商品画像は準備中）`}
+            className="ocean pack-tile mb-1"
           >
-            商品画像（準備中）
+            <span className="pack-tile-frame" />
+            <span className="pack-tile-mark foil">{site.name}</span>
           </div>
           <p className="type-heading text-lg">{p.name}</p>
           <p className="text-xs tracking-[0.08em] text-stone">{priceLabel}</p>

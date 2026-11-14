@@ -11,13 +11,12 @@ export const metadata: Metadata = { title: "私たちについて | HISANO" };
 export default function AboutPage() {
   return (
     <>
-      <section className="shell">
-        <div className="bg-seigaiha flex min-h-[20rem] items-center rounded-lg border border-ink/10 px-6 py-14 md:min-h-[22rem] md:px-16 md:py-20">
-          <div className="mx-auto flex max-w-2xl flex-col items-center gap-5 text-center">
-            <p className="type-eyebrow rise rise-1">{eyebrow.about}</p>
-            <h1 className="type-display rise rise-2 text-[1.625rem] md:text-5xl">{about.heroTitle}</h1>
-            <span aria-hidden className="ornament ornament-on-2 rise rise-3" />
-            <p className="type-body rise rise-4">{about.heroText}</p>
+      <section className="ocean ocean-hero ocean-hero-short -mt-10">
+        <div className="shell">
+          <div className="ocean-stack">
+            <h1 className="ocean-title foil rise rise-1">{about.heroTitle}</h1>
+            <span aria-hidden className="ocean-rule rise rise-2" />
+            <p className="rise rise-3">{about.heroText}</p>
           </div>
         </div>
       </section>

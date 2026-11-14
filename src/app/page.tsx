@@ -12,20 +12,39 @@ import {
   hero,
   intro,
   moreLabel,
+  nav,
   productsHeading,
 } from "@/content/site";
 import { eyebrow } from "@/content/labels";
 
+// The headline is set vertically, one column per phrase.
+const headline = hero.title.split(/(?<=、)/);
+
 export default function HomePage() {
   return (
     <>
-      <section className="shell">
-        <div className="bg-seigaiha flex min-h-[26rem] items-center rounded-lg border border-ink/10 px-6 py-14 md:min-h-[28rem] md:px-16 md:py-28">
-          <div className="mx-auto flex max-w-2xl flex-col items-center gap-5 text-center">
-            <p className="type-eyebrow rise rise-1">{eyebrow.home}</p>
-            <h1 className="type-display rise rise-2 text-3xl md:text-6xl">{hero.title}</h1>
-            <span aria-hidden className="ornament ornament-on-2 rise rise-3" />
-            <p className="type-body rise rise-4">{hero.text}</p>
+      <section className="ocean ocean-hero -mt-10">
+        <div className="shell">
+          <div className="ocean-hero-inner">
+            <h1 className="tategaki rise rise-1">
+              {headline.map((line) => (
+                <span key={line} className="foil">
+                  {line}
+                </span>
+              ))}
+            </h1>
+            <div className="ocean-copy">
+              <span aria-hidden className="ocean-rule rise rise-2" />
+              <p className="rise rise-3">{hero.text}</p>
+              <div className="ocean-actions rise rise-4">
+                <Link href={nav[0].href} className="btn-foil">
+                  {nav[0].label}
+                </Link>
+                <Link href="/download" className="btn-outline-light">
+                  {cta.download}
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -51,7 +70,7 @@ export default function HomePage() {
               as="li"
               key={f.name}
               delay={i * 110}
-              className="lift flex min-w-0 flex-[1_1_26rem] flex-col items-center gap-4 rounded-lg border border-ink/10 bg-card p-8 text-center md:p-10"
+              className="lift flex min-w-0 flex-[1_1_26rem] flex-col items-center gap-4 rounded-lg border border-ink/10 border-t-2 border-t-gold bg-card p-8 text-center md:p-10"
             >
               <span className="type-eyebrow !text-[0.8125rem]">{f.badge}</span>
               <p className="type-heading text-2xl">{f.name}</p>
