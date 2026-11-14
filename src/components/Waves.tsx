@@ -1,4 +1,5 @@
 // Decorative wave shapes drawn in SVG, so no stock image is needed.
+// Colours come from theme tokens, so the waves follow light / dark mode.
 export function Waves() {
   return (
     <svg
@@ -14,20 +15,20 @@ export function Waves() {
       />
       <path
         d="M0 390 C 240 330, 420 450, 680 380 S 1060 310, 1200 370 L1200 460 L0 460 Z"
-        fill="#b9d6f2"
+        fill="var(--color-wave)"
         opacity="0.6"
       />
       <path
         d="M0 120 C 220 40, 420 190, 700 110 S 1050 30, 1200 100"
         fill="none"
-        stroke="#ffffff"
+        stroke="var(--color-card)"
         strokeWidth="2"
         opacity="0.9"
       />
       <path
         d="M0 150 C 220 70, 420 220, 700 140 S 1050 60, 1200 130"
         fill="none"
-        stroke="#9cc3ea"
+        stroke="var(--color-wave-line)"
         strokeWidth="1.5"
         opacity="0.7"
       />

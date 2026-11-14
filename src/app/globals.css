@@ -1,37 +1,172 @@
 @import "tailwindcss";
 
+/* Dark mode is opt-in: the header toggle sets data-theme="dark" on <html>. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ------------------------------------------------------------------
+   HISANO design tokens. Components use only these, never hard-coded
+   colours, so the whole site switches with the theme.
+------------------------------------------------------------------- */
 @theme {
-  --color-ink: #17325a;
-  --color-ink-soft: #3b5578;
-  --color-brand: #2456a8;
-  --color-brand-dark: #17325a;
-  --color-mist: #f5f9fe;
+  --color-mist: #f5f9fe; /* page */
   --color-mist-2: #e4f0fc;
   --color-mist-3: #cfe3f7;
+  --color-card: #ffffff; /* cards, inputs, secondary buttons */
   --color-line: #dbe8f6;
+  --color-edge: #b9d0ea; /* outlines on buttons */
+
+  --color-ink: #17325a;
+  --color-ink-soft: #3b5578;
+
+  --color-brand: #2456a8; /* links, eyebrows, prices */
+  --color-cta: #2456a8; /* filled buttons (white text) */
+
+  --color-wave: #b9d6f2;
+  --color-wave-line: #9cc3ea;
+
   --font-sans: var(--font-noto-sans-jp), system-ui, sans-serif;
-  --font-serif: var(--font-noto-serif-jp), "Hiragino Mincho ProN", serif;
+  --font-serif: var(--font-noto-serif-jp), "Hiragino Mincho ProN", "Yu Mincho", serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --spacing-gutter: clamp(1.25rem, 5vw, 5rem);
 }
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  /* Dark theme: the page turns navy-charcoal and the ink to off-white. */
+  [data-theme="dark"] {
+    color-scheme: dark;
+    --color-mist: #0f1621;
+    --color-mist-2: #172233;
+    --color-mist-3: #1f2f47;
+    --color-card: #162030;
+    --color-line: #26364d;
+    --color-edge: #35506f;
+    --color-ink: #e8eef7;
+    --color-ink-soft: #b8c6da;
+    --color-brand: #8fb8f0;
+    --color-cta: #2f6bc7;
+    --color-wave: #20344f;
+    --color-wave-line: #3a5b86;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: auto;
+    overflow-x: clip;
+  }
+
+  body {
+    background-color: var(--color-mist);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Japanese headings: proportional kana, balanced lines, phrase-aware breaks. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-feature-settings: "palt" 1;
+    text-wrap: balance;
+    word-break: auto-phrase;
+  }
+
+  ::selection {
+    background: var(--color-cta);
+    color: #ffffff;
+  }
+
+  /* Lenis smooth scroll */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+    color: inherit;
+  }
 }
 
-body {
-  background: var(--color-mist);
-  color: var(--color-ink);
-  font-family: var(--font-sans);
-  line-height: 1.8;
+@layer components {
+  /* Header once the page scrolls under it: frosted glass, CSS only so it
+     works in iPhone Safari. Falls back to a near-solid fill. */
+  .glass-bar {
+    background: color-mix(in srgb, var(--color-mist) 92%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 8%, transparent);
+  }
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass-bar {
+      background: color-mix(in srgb, var(--color-mist) 66%, transparent);
+      -webkit-backdrop-filter: blur(20px) saturate(170%);
+      backdrop-filter: blur(20px) saturate(170%);
+    }
+  }
+
+  /* Round floating controls (theme switch, back to top). */
+  .glass-panel {
+    background: color-mix(in srgb, var(--color-card) 80%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-ink) 12%, transparent);
+    box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.3);
+  }
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass-panel {
+      -webkit-backdrop-filter: blur(18px) saturate(170%);
+      backdrop-filter: blur(18px) saturate(170%);
+    }
+  }
+
+  /* iOS-style press: the control gives a little, then springs back. */
+  .liquid-press {
+    transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .liquid-press:active {
+    transform: scale(0.94);
+  }
+}
+
+/* Pages fade up on arrival. */
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main {
+  animation: page-in 0.5s var(--ease-out-expo) both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
   *,
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
 }

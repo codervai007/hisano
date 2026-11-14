@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="mx-auto w-full max-w-7xl px-6 md:px-12">
-        <div className="relative flex min-h-[360px] items-center overflow-hidden rounded-[28px] bg-gradient-to-br from-mist-2 via-[#f8fbff] to-mist-3 px-8 py-14 md:px-14">
+        <div className="relative flex min-h-[360px] items-center overflow-hidden rounded-[28px] bg-gradient-to-br from-mist-2 via-card to-mist-3 px-8 py-14 md:px-14">
           <Waves />
           <div className="relative flex max-w-2xl flex-col gap-5">
             <h1 className="font-serif text-3xl font-bold leading-snug text-balance md:text-5xl">

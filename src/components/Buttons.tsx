@@ -5,7 +5,7 @@ const base =
 
 export function PrimaryLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <Link href={href} className={`${base} bg-brand text-white hover:bg-brand-dark`}>
+    <Link href={href} className={`${base} bg-cta text-white hover:opacity-90`}>
       {children}
     </Link>
   );
@@ -15,7 +15,7 @@ export function SecondaryLink({ href, children }: { href: string; children: Reac
   return (
     <Link
       href={href}
-      className={`${base} border border-[#b9d0ea] bg-white text-brand hover:bg-mist-2`}
+      className={`${base} border border-edge bg-card text-brand hover:bg-mist-2`}
     >
       {children}
     </Link>

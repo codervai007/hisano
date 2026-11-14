@@ -12,20 +12,21 @@ type Props = {
 type Status = "idle" | "sending" | "done" | "error" | "nokey";
 
 const field =
-  "min-h-12 w-full rounded-xl border border-line bg-white px-4 text-[15px] text-ink outline-none focus:border-brand focus:ring-2 focus:ring-brand/30";
+  "min-h-12 w-full rounded-xl border border-line bg-card px-4 text-[15px] text-ink outline-none focus:border-brand focus:ring-2 focus:ring-brand/30";
 
 export function ContactForm({ subject, submitLabel, withMessage = false }: Props) {
   const [status, setStatus] = useState<Status>("idle");
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const form = e.currentTarget;
     const key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
     if (!key) {
       setStatus("nokey");
       return;
     }
     setStatus("sending");
-    const data = new FormData(e.currentTarget);
+    const data = new FormData(form);
     data.append("access_key", key);
     data.append("subject", subject);
     try {
@@ -35,7 +36,7 @@ export function ContactForm({ subject, submitLabel, withMessage = false }: Props
       });
       const json = (await res.json()) as { success?: boolean };
       setStatus(json.success ? "done" : "error");
-      if (json.success) e.currentTarget.reset();
+      if (json.success) form.reset();
     } catch {
       setStatus("error");
     }
@@ -72,7 +73,7 @@ export function ContactForm({ subject, submitLabel, withMessage = false }: Props
       <button
         type="submit"
         disabled={status === "sending"}
-        className="min-h-12 self-start rounded-full bg-brand px-8 text-[15px] font-semibold text-white transition-colors hover:bg-brand-dark disabled:opacity-60"
+        className="min-h-12 self-start rounded-full bg-cta px-8 text-[15px] font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
       >
         {status === "sending" ? formLabels.sending : submitLabel}
       </button>

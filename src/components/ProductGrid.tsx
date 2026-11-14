@@ -7,7 +7,7 @@ export function ProductGrid({ limit }: { limit?: number }) {
       {items.map((p) => (
         <li
           key={p.name}
-          className="flex min-w-0 flex-[1_1_20rem] flex-col gap-2 rounded-[20px] border border-line bg-white p-7"
+          className="flex min-w-0 flex-[1_1_20rem] flex-col gap-2 rounded-[20px] border border-line bg-card p-7"
         >
           <div
             role="img"
