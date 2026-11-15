@@ -87,6 +87,18 @@ export const productDetailsEn: ProductDetail[] = [
         "alt": "HISANO PREMIUM NMN 36000: product image"
       },
       {
+        "k": "p",
+        "v": "• Easy to add to your daily diet. NMN is also used as a raw material for supplements. HISANO NMN 36000 comes in capsules, with a guideline of 2 a day, so you can take it easily to suit your daily routine."
+      },
+      {
+        "k": "h2",
+        "v": "The relationship between NMN and NAD⁺"
+      },
+      {
+        "k": "p",
+        "v": "What is the NAD⁺ in our bodies? NAD⁺ (nicotinamide adenine dinucleotide) is a type of coenzyme found in the cells of living things. It is involved in many biochemical reactions in the body, starting with reactions in the metabolism of carbohydrates and fats. NMN is one of the substances involved in the process by which the body makes NAD⁺. For this reason, the relationship between NMN and NAD⁺ is attracting attention in health science and basic research. In recent years, research has also progressed into NMN intake and how it behaves in the body. However, the health effects of taking NMN still need scientific verification. HISANO NMN 36000 is a dietary supplement containing NMN, an ingredient known as a subject of such research."
+      },
+      {
         "k": "h2",
         "v": "Why we recommend HISANO NMN 36000"
       },
@@ -252,6 +264,14 @@ export const productDetailsEn: ProductDetail[] = [
     },
     "summary": "A premium dietary supplement born from natural ingredients nurtured by the seas of Okinawa and quality-controlled manufacturing in Japan.\n\nCentred on fucoidan from Okinawa mozuku seaweed, with a balanced blend of traditional ingredients.",
     "blocks": [
+      {
+        "k": "p",
+        "v": "A premium dietary supplement born from natural ingredients nurtured by the seas of Okinawa and quality-controlled manufacturing in Japan."
+      },
+      {
+        "k": "p",
+        "v": "Centred on fucoidan from Okinawa mozuku seaweed, with a balanced blend of traditional ingredients."
+      },
       {
         "k": "h2",
         "v": "Okinawa's gifts, for your daily routine"
@@ -1115,7 +1135,15 @@ export const productDetailsEn: ProductDetail[] = [
       },
       {
         "k": "p",
-        "v": "Country of production: Japan\nMaker: HISANO\nManufacturer: AFC-HD AMS Life Science Co., Ltd.\nJAN: 4570005540079\nAdvertiser: VNT Co., Ltd. (0120-202-676)"
+        "v": "Ingredients: Oyster extract powder, maca powder, maca extract, barley lactic-fermented GABA, L-arginine, yeast (contains zinc), lactic acid bacteria (heat-killed), cordyceps powder, fermented black garlic powder, vitamin mix, soft-shelled turtle powder, black pepper extract, reduced maltose syrup, calcium stearate, fine silicon dioxide, cellul[ose]"
+      },
+      {
+        "k": "p",
+        "v": "Contents: 108g (300mg × 360 tablets)"
+      },
+      {
+        "k": "p",
+        "v": "Country of production: Japan\nMaker: HISANO\nIngredients: Refined deep-sea shark liver oil, refined fish oil containing EPA and DHA, edible safflower oil, ginkgo leaf extract powder / gelatin (pork-derived), glycerin, beeswax, glycerin fatty acid esters\nManufacturer: AFC-HD AMS Life Science Co., Ltd.\nJAN: 4570005540079\nAdvertiser: VNT Co., Ltd. (0120-202-676)"
       }
     ]
   },
@@ -1385,7 +1413,7 @@ export const productDetailsEn: ProductDetail[] = [
       },
       {
         "k": "p",
-        "v": "Country of production: Japan\nMaker: HISANO\nManufacturer: Sunsho Pharmaceutical\nJAN: 4570005540093\nAdvertiser: VNT Co., Ltd. (0120-202-676)"
+        "v": "Country of production: Japan\nMaker: HISANO\nIngredients: Refined deep-sea shark liver oil, refined fish oil containing EPA and DHA, edible safflower oil, ginkgo leaf extract powder / gelatin (pork-derived), glycerin, beeswax, glycerin fatty acid esters\nManufacturer: Sunsho Pharmaceutical\nJAN: 4570005540093\nAdvertiser: VNT Co., Ltd. (0120-202-676)"
       }
     ]
   },
@@ -2089,7 +2117,7 @@ export const productDetailsEn: ProductDetail[] = [
       },
       {
         "k": "p",
-        "v": "Country of production: Japan\nMaker: HISANO\nManufacturer: AFC-HD AMS Life Science Co., Ltd.\nJAN: 4570005540086\nAdvertiser: VNT Co., Ltd. (0120-202-676)"
+        "v": "Country of production: Japan\nMaker: HISANO\nIngredients: Refined deep-sea shark liver oil, refined fish oil containing EPA and DHA, edible safflower oil, ginkgo leaf extract powder / gelatin (pork-derived), glycerin, beeswax, glycerin fatty acid esters\nManufacturer: AFC-HD AMS Life Science Co., Ltd.\nJAN: 4570005540086\nAdvertiser: VNT Co., Ltd. (0120-202-676)"
       }
     ]
   },
@@ -2601,6 +2629,50 @@ export const productDetailsEn: ProductDetail[] = [
         "alt": "HISANO Liver Extract Sei NANO Premium: product image"
       },
       {
+        "k": "h2",
+        "v": "Why liver extract is attracting attention"
+      },
+      {
+        "k": "h3",
+        "v": "Support for nutritional balance"
+      },
+      {
+        "k": "p",
+        "v": "Fermented plant extract is made by slowly fermenting and maturing more than 100 carefully selected plants, and supports daily nutrition. The vitamins, minerals and amino acids produced during fermentation complement the diets of busy modern people."
+      },
+      {
+        "k": "h3",
+        "v": "For people who want to balance their internal environment"
+      },
+      {
+        "k": "p",
+        "v": "Fermented plant extract contains nutrients said to help balance the body's internal environment. The power of nature obtained through fermentation supports health from within."
+      },
+      {
+        "k": "h3",
+        "v": "Supporting a healthy life"
+      },
+      {
+        "k": "p",
+        "v": "Fermented plant extract, which contains B vitamins and polyphenols, efficiently provides nutrients that support daily activity. Many people use it as an ingredient that supports a healthy lifestyle."
+      },
+      {
+        "k": "h3",
+        "v": "A choice that considers beauty and health"
+      },
+      {
+        "k": "p",
+        "v": "Fermented plant extract is made by slowly fermenting and maturing more than 100 carefully selected plants, and supports daily nutrition. The vitamins, minerals and amino acids produced during fermentation complement the diets of busy modern people."
+      },
+      {
+        "k": "h3",
+        "v": "Support for nutritional balance"
+      },
+      {
+        "k": "p",
+        "v": "The components of fermented plant extract support beauty and health as a whole. Its rich nutrients from fermentation also suit people who care for their skin and hair."
+      },
+      {
         "k": "img",
         "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_8cf251ce-6c08-420d-9c3a-27633005a8d9_small.webp",
         "w": 800,
@@ -2981,7 +3053,7 @@ export const productDetailsEn: ProductDetail[] = [
       },
       {
         "k": "p",
-        "v": "HISANO NANO Senobi Kakumei is a supplement containing ingredients that support children's health.\nAlpha-GPC\nAn ingredient found in breast milk that is important for the body's growth and vital activities. Alpha-GPC is present in the body's cells and is attracting attention because it is expected to promote growth hormone secretion, improve dementia, improve learning ability, promote health and help with beauty.\nEssential amino acids\nGrowth hormone, which is essential for growing taller, is made up of many linked amino acids, and the leading one is arginine. Arginine is not only a material that makes up growth hormone, but is also known to be closely involved in its secretion.\nBone peptide is a peptide protein discovered in egg yolk that helps growth. A peptide is protein broken down into small pieces; broken down further, it becomes amino acids. It is a groundbreaking bone-growth ingredient that acts on both bone building and bone breakdown, activating the osteoblasts that build bone and suppressing the osteoclasts that break down old bone. Taken together with calcium, a component of bone, it increases bone growth and density to build strong, solid bones.\nBones are often thought to be made of calcium, but about 30% is protein such as collagen and 70% is minerals such as calcium, phosphorus and magnesium.\nProtetite\nProtetite is a collagen-containing mineral complex in which minerals such as calcium, phosphorus and magnesium (like the bark of a tree) are bound to type I collagen, the base of bone (like the trunk of a tree).\nCoral is naturally rich in calcium, and its main component is calcium carbonate, known for being well absorbed by the body. To aid absorption further, it contains CPP (casein phosphopeptide), a protein-derived ingredient, and vitamin D, supporting the health of Japanese people, who are said to be chronically short of calcium."
+        "v": "HISANO NANO Senobi Kakumei is a supplement containing ingredients that support children's health.\nAlpha-GPC\nAn ingredient found in breast milk that is important for the body's growth and vital activities. Alpha-GPC is present in the body's cells and is attracting attention because it is expected to promote growth hormone secretion, improve dementia, improve learning ability, promote health and help with beauty.\nEssential amino acids\nGrowth hormone, which is essential for growing taller, is made up of many linked amino acids, and the leading one is arginine. Arginine is not only a material that makes up growth hormone, but is also known to be closely involved in its secretion.\nBone peptide is a peptide protein discovered in egg yolk that helps growth. A peptide is protein broken down into small pieces; broken down further, it becomes amino acids. It is a groundbreaking bone-growth ingredient that acts on both bone building and bone breakdown, activating the osteoblasts that build bone and suppressing the osteoclasts that break down old bone. Taken together with calcium, a component of bone, it increases bone growth and density to build strong, solid bones.\nBones are often thought to be made of calcium, but about 30% is protein such as collagen and 70% is minerals such as calcium, phosphorus and magnesium.\nIn the mid-Edo period, turmeric was used as a medicine for the liver and digestive system and as a heart tonic.\nProtetite\nProtetite is a collagen-containing mineral complex in which minerals such as calcium, phosphorus and magnesium (like the bark of a tree) are bound to type I collagen, the base of bone (like the trunk of a tree).\nCoral is naturally rich in calcium, and its main component is calcium carbonate, known for being well absorbed by the body. To aid absorption further, it contains CPP (casein phosphopeptide), a protein-derived ingredient, and vitamin D, supporting the health of Japanese people, who are said to be chronically short of calcium."
       },
       {
         "k": "h3",
@@ -2990,6 +3062,10 @@ export const productDetailsEn: ProductDetail[] = [
       {
         "k": "p",
         "v": "Ingredients: Reduced maltose syrup (manufactured in Japan), collagen peptide, brewer's yeast, yeast (contains zinc), plant lactic acid bacteria powder (heat-killed), collagen-containing mineral complex, egg yolk protein hydrolysate, alpha-GPC (glycerophosphocholine) processed powder / cellulose, coral calcium, calcium stearate, fine silicon dioxide, L-arginine, L-leucine, L-valine, L-isoleucine, L-lysine salt\nContents: 108g (300mg × 360 tablets)"
+      },
+      {
+        "k": "h3",
+        "v": "How to take"
       },
       {
         "k": "h3",

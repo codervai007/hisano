@@ -35,23 +35,17 @@ banner and product images contain Japanese text and are the same in both.
 
 ## Product pages
 
-`src/content/productDetails.ts` holds the eight product detail pages, taken from
-the original site. Lines left out because the original had clearly copied them
-from another product (please supply the correct text):
+`src/content/productDetails.ts` holds the 13 product detail pages, with the text
+exactly as on the original site (including passages repeated or apparently
+copied from other products, which the client asked to keep as is). Worth
+checking with the client:
 
-- HISANO ビフィズス菌プレミアム+: a 商品スペック ingredient list for an oyster/maca
-  product, its 内容量 (108g, 360粒), and a 原材料名 line listing shark liver oil.
-- HISANO アンセリンプレミアム+: a 原材料名 line listing shark liver oil.
-- HISANO PREMIUM NMN 36000: one block of text that appeared twice.
-- 牡蠣マカ プレミアム: a 原材料名 line listing shark liver oil. Note its pack size
-  disagrees on the original (180 tablets in the text, 360 in the spec).
-- 肝臓エキス精 NANO プレミアム: a section about plant fermentation extract
-  (from the enzyme product).
-- NANO セノビ革命: a line about turmeric, and a duplicated summary paragraph.
-
-The ナットウキナーゼ page (and to a lesser degree セノビ革命) carries disease
-prevention claims (thrombosis, blood pressure, cholesterol; growth hormone) as
-written on the original site; have them checked before publishing.
+- ビフィズス菌プレミアム+: the 商品スペック lists an oyster/maca ingredient line,
+  108g / 360粒, and a shark liver oil ingredient line.
+- アンセリンプレミアム+ and 牡蠣マカ プレミアム: a shark liver oil ingredient line.
+- 牡蠣マカ プレミアム: 180 tablets in the text, 360 in the spec.
+- 肝臓エキス精 NANO プレミアム: a section describing plant fermentation extract.
+- ナットウキナーゼ and セノビ革命: disease-prevention and growth-hormone claims.
 
 ## Still to do
 
