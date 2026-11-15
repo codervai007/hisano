@@ -10,7 +10,8 @@ import {
   detailLabel,
   featured,
   featuredHeading,
-  hero,
+  heroBanners,
+  heroTitle,
   intro,
   introImages,
   moreLabel,
@@ -19,35 +20,33 @@ import {
 } from "@/content/site";
 import { eyebrow } from "@/content/labels";
 
-// The headline is set vertically, one column per phrase.
-const headline = hero.title.split(/(?<=、)/);
-
 export default function HomePage() {
   return (
     <>
-      <section className="ocean ocean-hero -mt-10">
-        <div className="shell">
-          <div className="ocean-hero-inner">
-            <h1 className="tategaki rise rise-1">
-              {headline.map((line) => (
-                <span key={line} className="foil">
-                  {line}
-                </span>
-              ))}
-            </h1>
-            <div className="ocean-copy">
-              <span aria-hidden className="ocean-rule rise rise-2" />
-              <p className="rise rise-3">{hero.text}</p>
-              <div className="ocean-actions rise rise-4">
-                <Link href={nav[0].href} className="btn-foil">
-                  {nav[0].label}
-                </Link>
-                <Link href="/download" className="btn-outline-light">
-                  {cta.download}
-                </Link>
-              </div>
-            </div>
-          </div>
+      <section className="-mt-10">
+        <h1 className="sr-only">{heroTitle}</h1>
+        <div className="hero-banners">
+          {heroBanners.map((banner, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              key={banner.src}
+              src={banner.src}
+              alt={banner.alt}
+              width={1280}
+              height={512}
+              fetchPriority={i === 0 ? "high" : "low"}
+              aria-hidden={i > 0}
+              className="hero-banner"
+            />
+          ))}
+        </div>
+        <div className="hero-actions shell">
+          <Link href={nav[0].href} className="btn-pill btn-pill-brand">
+            {nav[0].label}
+          </Link>
+          <Link href="/download" className="btn-pill">
+            {cta.download}
+          </Link>
         </div>
       </section>
 

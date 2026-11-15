@@ -30,6 +30,19 @@ export const hero = {
   text: "食事だけで必要な栄養素を摂り続けるのは手間も時間もかかる。そんなお客様の声にお答えした、一人ひとりに寄り添う健康食品を。",
 };
 
+// Hero banners. The copy is part of each image, so each alt repeats it.
+export const heroBanners = [
+  {
+    src: "/images/hero-1.jpg",
+    alt: "自然の恵みで、健やかで美しい毎日を。内側から整える、未来の健康と美しさ。HISANO。自然由来の厳選素材、確かな研究と品質管理、毎日の健康をサポート、内側から輝く美しさへ。",
+  },
+  {
+    src: "/images/hero-2.jpg",
+    alt: "自然の恵みで、健やかで美しい毎日を。内側から整える、未来の健康と美しさ。HISANO。健やかな毎日をサポート、内側から美しさを育む、いつまでも元気に、いきいきと。",
+  },
+];
+export const heroTitle = "自然の恵みで、健やかで美しい毎日を。";
+
 export const intro = {
   title: "安全で便利な健康食品を",
   text: site.description,
