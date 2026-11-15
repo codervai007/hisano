@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { nav, site } from "@/content/site";
+import { nav } from "@/content/site";
 import { menuLabels } from "@/content/labels";
+import { Logo } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
@@ -36,9 +37,9 @@ export function Header() {
           <Link
             href="/"
             onClick={close}
-            className="font-latin flex min-h-11 items-center justify-self-start text-3xl font-medium tracking-[0.18em] site-wordmark"
+            className="site-wordmark flex min-h-11 items-center justify-self-start"
           >
-            {site.name}
+            <Logo className="h-8 w-auto" />
           </Link>
           <nav aria-label="メイン" className="hidden justify-center gap-x-8 md:flex">
             {nav.map((item) => (

@@ -297,8 +297,9 @@
 .site-header a:hover {
   color: #1f4f94;
 }
-.site-header .site-wordmark {
-  color: #1f4f94;
+.site-header .site-wordmark,
+.site-header .site-wordmark:hover {
+  color: #003c9d;
 }
 .site-header .glass-panel {
   background: rgba(255, 255, 255, 0.7);
@@ -318,4 +319,8 @@
 .site-header button:focus-visible {
   outline: 2px solid #1f4f94;
   outline-offset: 3px;
+}
+.ocean-footer a.footer-logo,
+.ocean-footer a.footer-logo:hover {
+  color: #ffffff;
 }

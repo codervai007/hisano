@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { footer, nav, site } from "@/content/site";
+import { Logo } from "./Logo";
 
 export function Footer() {
   return (
     <footer className="ocean ocean-calm ocean-footer mt-28">
       <div className="shell flex flex-col gap-10 py-14">
         <div className="flex flex-wrap items-start justify-between gap-x-12 gap-y-8">
-          <Link href="/" className="font-latin foil text-4xl font-semibold tracking-[0.2em]">
-            {site.name}
+          <Link href="/" className="footer-logo">
+            <Logo className="h-11 w-auto" />
           </Link>
           <nav aria-label="フッター" className="flex flex-wrap gap-x-8 gap-y-1 text-[0.9375rem] tracking-[0.08em]">
             {nav.map((item) => (
