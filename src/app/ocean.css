@@ -276,3 +276,41 @@
   outline: 2px solid #ffffff;
   outline-offset: 3px;
 }
+
+/* ---------- Header: the same deep blue as the hero, in both themes ---------- */
+.site-header {
+  background: #0d2d63;
+  border-bottom: 1px solid rgba(230, 203, 143, 0.4);
+  color: #ffffff;
+}
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .site-header {
+    background: rgba(13, 45, 99, 0.86);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    backdrop-filter: blur(20px) saturate(160%);
+  }
+}
+[data-theme="dark"] .site-header {
+  background: rgba(8, 28, 62, 0.9);
+}
+.site-header a {
+  color: rgba(255, 255, 255, 0.92);
+  transition: color 0.25s;
+}
+.site-header a:hover {
+  color: #e6cb8f;
+}
+.site-header .site-wordmark {
+  color: #e6cb8f;
+}
+.site-header .glass-panel {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: none;
+  color: #ffffff;
+}
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}

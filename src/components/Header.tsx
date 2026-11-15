@@ -31,12 +31,12 @@ export function Header() {
 
   return (
     <>
-      <header className="glass-bar sticky top-0 z-50 mb-10">
+      <header className="site-header sticky top-0 z-50 mb-10">
         <div className="shell flex items-center justify-between gap-x-8 py-2">
           <Link
             href="/"
             onClick={close}
-            className="font-latin flex min-h-11 items-center text-3xl font-medium tracking-[0.18em] text-brand"
+            className="font-latin flex min-h-11 items-center text-3xl font-medium tracking-[0.18em] site-wordmark"
           >
             {site.name}
           </Link>
