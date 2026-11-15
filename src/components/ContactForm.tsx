@@ -1,9 +1,21 @@
 "use client";
 
 import { useState } from "react";
-import { formLabels } from "@/content/site";
+type FormLabels = {
+  name: string;
+  email: string;
+  tel: string;
+  company: string;
+  message: string;
+  consent: string;
+  sending: string;
+  done: string;
+  error: string;
+  needKey: string;
+};
 
 type Props = {
+  formLabels: FormLabels;
   subject: string;
   submitLabel: string;
   withMessage?: boolean;
@@ -15,7 +27,7 @@ const field =
   "min-h-12 w-full rounded-md border border-ink/20 bg-card px-4 text-[0.9375rem] tracking-[0.04em] text-ink outline-none focus:border-brand focus:ring-2 focus:ring-brand/30";
 const label = "flex flex-col gap-2 text-sm tracking-[0.06em] text-ink-mute";
 
-export function ContactForm({ subject, submitLabel, withMessage = false }: Props) {
+export function ContactForm({ formLabels, subject, submitLabel, withMessage = false }: Props) {
   const [status, setStatus] = useState<Status>("idle");
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {

@@ -23,6 +23,16 @@ npm run build
 - Forms post from the browser to Web3Forms. Copy `.env.example` to `.env.local`
   and set `NEXT_PUBLIC_WEB3FORMS_KEY`. There are no API routes.
 
+## Languages
+
+The header's JA / EN switch saves the choice in the `hisano-lang` cookie and
+the server renders every page in that language. Japanese copy is in
+`src/content/site.ts` and `labels.ts`; English overrides are in
+`src/content/en.ts` (anything missing there falls back to Japanese).
+English product pages are in `src/content/productDetails.en.ts`; their health,
+ingredient and caution wording is a translation and should be checked. The
+banner and product images contain Japanese text and are the same in both.
+
 ## Product pages
 
 `src/content/productDetails.ts` holds the eight product detail pages, taken from

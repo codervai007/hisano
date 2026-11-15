@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { detailLabel, priceLabel, products } from "@/content/site";
+import { getContent } from "@/content";
 import { Reveal } from "./Reveal";
 
-export function ProductGrid({ limit }: { limit?: number }) {
+export async function ProductGrid({ limit }: { limit?: number }) {
+  const { detailLabel, priceLabel, products } = await getContent();
   const items = limit ? products.slice(0, limit) : products;
   return (
     <ul className="flex flex-wrap gap-6">

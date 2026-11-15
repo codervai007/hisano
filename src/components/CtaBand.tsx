@@ -1,10 +1,10 @@
-import { cta } from "@/content/site";
-import { eyebrow } from "@/content/labels";
+import { getContent } from "@/content";
 import { PrimaryLink, SecondaryLink } from "./Buttons";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
-export function CtaBand() {
+export async function CtaBand() {
+  const { cta, eyebrow } = await getContent();
   return (
     <Reveal>
       <section className="shell mt-28">

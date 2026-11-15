@@ -1,7 +1,8 @@
-import { benefits } from "@/content/site";
+import { getContent } from "@/content";
 import { Reveal } from "./Reveal";
 
-export function Benefits() {
+export async function Benefits() {
+  const { benefits } = await getContent();
   return (
     <section className="shell mt-28">
       <ul className="flex flex-wrap gap-x-10 gap-y-12">

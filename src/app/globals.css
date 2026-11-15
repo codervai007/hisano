@@ -335,3 +335,17 @@ main {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* English pages: Japanese-style wide tracking reads loosely in Latin text,
+   so it is tightened. */
+html[lang="en"] .type-body {
+  letter-spacing: 0.01em;
+  line-height: 1.85;
+}
+html[lang="en"] .type-heading,
+html[lang="en"] .type-display {
+  letter-spacing: 0.01em;
+}
+html[lang="en"] body {
+  letter-spacing: 0.005em;
+}

@@ -5,22 +5,23 @@ import { CtaBand } from "@/components/CtaBand";
 import { ProductGrid } from "@/components/ProductGrid";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
-import {
-  cta,
-  detailLabel,
-  featured,
-  featuredHeading,
-  heroBanners,
-  heroTitle,
-  intro,
-  introImages,
-  moreLabel,
-  nav,
-  productsHeading,
-} from "@/content/site";
-import { eyebrow } from "@/content/labels";
+import { getContent } from "@/content";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const {
+    cta,
+    detailLabel,
+    eyebrow,
+    featured,
+    featuredHeading,
+    heroBanners,
+    heroTitle,
+    intro,
+    introImages,
+    moreLabel,
+    nav,
+    productsHeading,
+  } = await getContent();
   return (
     <>
       <section className="-mt-10">

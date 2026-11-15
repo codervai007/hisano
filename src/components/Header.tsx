@@ -2,12 +2,19 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { nav } from "@/content/site";
-import { menuLabels } from "@/content/labels";
+import type { Lang } from "@/lib/lang-shared";
+import { LangToggle } from "./LangToggle";
 import { Logo } from "./Logo";
-import { ThemeToggle } from "./ThemeToggle";
+import { ThemeToggle, type ThemeLabels } from "./ThemeToggle";
 
-export function Header() {
+type Props = {
+  lang: Lang;
+  nav: { label: string; href: string }[];
+  labels: { open: string; close: string; nav: string; main: string; lang: string };
+  themeLabels: ThemeLabels;
+};
+
+export function Header({ lang, nav, labels, themeLabels }: Props) {
   const [open, setOpen] = useState(false);
   const close = useCallback(() => setOpen(false), []);
 
@@ -41,7 +48,7 @@ export function Header() {
           >
             <Logo className="h-8 w-auto" />
           </Link>
-          <nav aria-label="メイン" className="hidden justify-center gap-x-8 md:flex">
+          <nav aria-label={labels.main} className="hidden justify-center gap-x-8 md:flex">
             {nav.map((item) => (
               <Link
                 key={item.href}
@@ -52,13 +59,14 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <div className="flex items-center justify-end gap-x-7">
-            <ThemeToggle />
+          <div className="flex items-center justify-end gap-x-2.5 md:gap-x-4">
+            <LangToggle lang={lang} label={labels.lang} />
+            <ThemeToggle labels={themeLabels} />
             <button
               type="button"
               aria-expanded={open}
               aria-controls="site-menu"
-              aria-label={open ? menuLabels.close : menuLabels.open}
+              aria-label={open ? labels.close : labels.open}
               onClick={() => setOpen((o) => !o)}
               className="burger-btn glass-panel liquid-press flex size-11 shrink-0 items-center justify-center rounded-full text-ink md:hidden"
             >
@@ -80,7 +88,7 @@ export function Header() {
         data-open={open ? "true" : "false"}
         inert={!open}
       >
-        <nav aria-label={menuLabels.nav} className="shell">
+        <nav aria-label={labels.nav} className="shell">
           <ul className="flex flex-col">
             {nav.map((item, i) => (
               <li

@@ -6,7 +6,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SmoothScroll } from "@/components/SmoothScroll";
-import { site } from "@/content/site";
+import { getContent } from "@/content";
 import { themeInitScript } from "@/lib/theme";
 
 /**
@@ -17,14 +17,15 @@ import { themeInitScript } from "@/lib/theme";
 const GOOGLE_FONTS_CSS =
   "https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600&display=swap";
 
-export const metadata: Metadata = {
-  title: site.title,
-  description: site.description,
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { site } = await getContent();
+  return { title: site.title, description: site.description };
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const c = await getContent();
   return (
-    <html lang="ja" suppressHydrationWarning>
+    <html lang={c.lang} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,10 +34,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <SmoothScroll />
-        <Header />
+        <Header
+          lang={c.lang}
+          nav={c.nav}
+          labels={{ ...c.menuLabels, main: c.ui.mainNav, lang: c.ui.langSwitch }}
+          themeLabels={{
+            toLight: c.ui.themeToLight,
+            toDark: c.ui.themeToDark,
+            light: c.ui.themeLight,
+            dark: c.ui.themeDark,
+          }}
+        />
         <main>{children}</main>
         <Footer />
-        <ScrollToTop label="ページの先頭へ" />
+        <ScrollToTop label={c.ui.toTop} />
       </body>
     </html>
   );

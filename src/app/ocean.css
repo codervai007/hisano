@@ -337,3 +337,12 @@
   outline: 2px solid #1f4f94;
   outline-offset: 3px;
 }
+
+/* Language switch: the chosen language is a filled HISANO-blue chip. */
+.lang-on {
+  background: #003c9d;
+  color: #ffffff;
+}
+.site-header .glass-panel .text-ink-mute {
+  color: #5a554e;
+}

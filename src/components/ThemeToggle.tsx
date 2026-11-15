@@ -15,8 +15,10 @@ function apply(theme: Theme) {
   }
 }
 
+export type ThemeLabels = { toLight: string; toDark: string; light: string; dark: string };
+
 /** Compact light / dark switch: a sliding pill with a sun and a moon. */
-export function ThemeToggle() {
+export function ThemeToggle({ labels }: { labels: ThemeLabels }) {
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
@@ -43,8 +45,8 @@ export function ThemeToggle() {
       type="button"
       role="switch"
       aria-checked={dark}
-      aria-label={dark ? "ライトモードに切り替え" : "ダークモードに切り替え"}
-      title={dark ? "ライトモード" : "ダークモード"}
+      aria-label={dark ? labels.toLight : labels.toDark}
+      title={dark ? labels.light : labels.dark}
       onClick={toggle}
       className="glass-panel liquid-press relative inline-flex h-8 w-[3.75rem] shrink-0 items-center rounded-full p-1"
     >

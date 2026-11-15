@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading } from "@/components/SectionHeading";
-import { contactPage } from "@/content/site";
-import { eyebrow } from "@/content/labels";
+import { getContent } from "@/content";
 
-export const metadata: Metadata = { title: `${contactPage.title} | HISANO` };
+export async function generateMetadata(): Promise<Metadata> {
+  const { contactPage } = await getContent();
+  return { title: `${contactPage.title} | HISANO` };
+}
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const { eyebrow, formLabels, formSubjects, contactPage } = await getContent();
   return (
-    <section className="shell flex max-w-3xl flex-col items-start gap-8">
-      <SectionHeading as="h1" eyebrow={eyebrow.contact} title={contactPage.title} />
-      <p className="type-body">{contactPage.lead}</p>
+    <section className="shell flex max-w-3xl flex-col gap-8">
+      <SectionHeading as="h1" eyebrow={eyebrow.contact} title={contactPage.title} center />
+      <p className="type-body text-center">{contactPage.lead}</p>
       <ContactForm
-        subject="HISANO お問い合わせ"
+        formLabels={formLabels}
+        subject={formSubjects.contact}
         submitLabel={contactPage.submit}
         withMessage
       />

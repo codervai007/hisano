@@ -1832,6 +1832,7 @@ export const productDetails: ProductDetail[] = [
   }
 ];
 
-export function findProduct(slug: string) {
-  return productDetails.find((p) => p.slug === slug);
+export async function findProduct(slug: string, lang: "ja" | "en") {
+  const list = lang === "en" ? (await import("./productDetails.en")).productDetailsEn : productDetails;
+  return list.find((p) => p.slug === slug);
 }

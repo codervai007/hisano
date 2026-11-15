@@ -3,12 +3,15 @@ import { Benefits } from "@/components/Benefits";
 import { CtaBand } from "@/components/CtaBand";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
-import { about } from "@/content/site";
-import { eyebrow } from "@/content/labels";
+import { getContent } from "@/content";
 
-export const metadata: Metadata = { title: "私たちについて | HISANO" };
+export async function generateMetadata(): Promise<Metadata> {
+  const { nav } = await getContent();
+  return { title: `${nav[1].label} | HISANO` };
+}
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const { about, eyebrow } = await getContent();
   return (
     <>
       <section className="ocean ocean-hero ocean-hero-short -mt-10">

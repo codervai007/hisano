@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { footer, intro, nav, rakuten, site } from "@/content/site";
-import { footerLabels } from "@/content/labels";
+import { getContent } from "@/content";
 import { Logo } from "./Logo";
 
-export function Footer() {
+export async function Footer() {
+  const { footer, footerLabels, intro, nav, rakuten, site } = await getContent();
   return (
     <footer className="site-footer mt-28">
       <div aria-hidden className="bg-seigaiha h-10 border-y border-gold/30" />

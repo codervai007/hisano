@@ -4,19 +4,14 @@ import { notFound } from "next/navigation";
 import { CtaBand } from "@/components/CtaBand";
 import { RakutenBand } from "@/components/RakutenBand";
 import { Reveal } from "@/components/Reveal";
-import { findProduct, productDetails, type Block } from "@/content/productDetails";
-import { backToProducts, priceLabel } from "@/content/site";
+import { getContent } from "@/content";
+import { findProduct, type Block } from "@/content/productDetails";
+import { getLang } from "@/lib/lang";
 
 type Props = { params: Promise<{ slug: string }> };
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return productDetails.map((p) => ({ slug: p.slug }));
-}
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const product = findProduct((await params).slug);
+  const product = await findProduct((await params).slug, await getLang());
   if (!product) return {};
   return { title: `${product.name} | HISANO`, description: product.summary.split("\n")[0] };
 }
@@ -53,7 +48,8 @@ function BlockView({ block, side }: { block: Block; side: "left" | "right" }) {
 }
 
 export default async function ProductDetailPage({ params }: Props) {
-  const product = findProduct((await params).slug);
+  const { backToProducts, lang, priceLabel } = await getContent();
+  const product = await findProduct((await params).slug, lang);
   if (!product) notFound();
 
   // Photos arrive from alternating sides as the page scrolls.
