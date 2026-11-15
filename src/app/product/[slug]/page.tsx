@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CtaBand } from "@/components/CtaBand";
 import { RakutenBand } from "@/components/RakutenBand";
+import { Reveal } from "@/components/Reveal";
 import { findProduct, productDetails, type Block } from "@/content/productDetails";
 import { backToProducts, priceLabel } from "@/content/site";
 
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: `${product.name} | HISANO`, description: product.summary.split("\n")[0] };
 }
 
-function BlockView({ block }: { block: Block }) {
+function BlockView({ block, side }: { block: Block; side: "left" | "right" }) {
   switch (block.k) {
     case "h2":
       return (
@@ -34,15 +35,17 @@ function BlockView({ block }: { block: Block }) {
       return <p className="type-body whitespace-pre-line">{block.v}</p>;
     case "img":
       return (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={block.src}
-          alt={block.alt}
-          width={block.w}
-          height={block.h}
-          loading="lazy"
-          className="photo-card my-2 h-auto w-full"
-        />
+        <Reveal from={side} className="photo-card my-2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={block.src}
+            alt={block.alt}
+            width={block.w}
+            height={block.h}
+            loading="lazy"
+            className="h-auto w-full"
+          />
+        </Reveal>
       );
     case "hr":
       return <div aria-hidden className="rule my-6" />;
@@ -53,6 +56,10 @@ export default async function ProductDetailPage({ params }: Props) {
   const product = findProduct((await params).slug);
   if (!product) notFound();
 
+  // Photos arrive from alternating sides as the page scrolls.
+  let photos = 0;
+  const sides = product.blocks.map((b) => (b.k === "img" && photos++ % 2 === 1 ? "right" : "left"));
+
   return (
     <>
       <section className="shell flex flex-wrap items-center justify-center gap-x-16 gap-y-10">
@@ -62,9 +69,9 @@ export default async function ProductDetailPage({ params }: Props) {
           alt={product.name}
           width={product.image.w}
           height={product.image.h}
-          className="h-auto max-h-[28rem] w-[min(72vw,22rem)] rounded-lg bg-white object-contain"
+          className="slide-left h-auto max-h-[28rem] w-[min(72vw,22rem)] rounded-lg bg-white object-contain"
         />
-        <div className="flex min-w-0 flex-[1_1_20rem] flex-col items-start gap-5 md:max-w-xl">
+        <div className="slide-right flex min-w-0 flex-[1_1_20rem] flex-col items-start gap-5 md:max-w-xl">
           <h1 className="type-heading text-[1.75rem] md:text-4xl">{product.name}</h1>
           <span aria-hidden className="ornament ornament-left" />
           <div>
@@ -78,7 +85,7 @@ export default async function ProductDetailPage({ params }: Props) {
       <section className="shell mt-20">
         <div className="mx-auto flex max-w-3xl flex-col gap-5">
           {product.blocks.map((block, i) => (
-            <BlockView key={i} block={block} />
+            <BlockView key={i} block={block} side={sides[i]} />
           ))}
           <Link href="/product" className="btn-pill mt-10 self-center">
             {backToProducts}

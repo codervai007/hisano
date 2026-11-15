@@ -61,16 +61,22 @@ export default function HomePage() {
           </div>
           <div className="mt-6 grid w-full max-w-5xl grid-cols-2 gap-3 md:grid-cols-[2fr_1fr] md:gap-4">
             {introImages.map((img, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
+              <Reveal
                 key={img.src}
-                src={img.src}
-                alt=""
-                width={img.width}
-                height={img.height}
-                loading="lazy"
-                className={`photo-card h-full w-full object-cover ${i === 0 ? "col-span-2 aspect-[3/2] md:col-span-1 md:row-span-2 md:aspect-auto" : "aspect-[3/2]"}`}
-              />
+                from={i === 0 ? "left" : "right"}
+                delay={i * 120}
+                className={`photo-card photo-zoom ${i === 0 ? "col-span-2 aspect-[3/2] md:col-span-1 md:row-span-2 md:aspect-auto" : "aspect-[3/2]"}`}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={img.src}
+                  alt=""
+                  width={img.width}
+                  height={img.height}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </Reveal>
             ))}
           </div>
         </section>
@@ -85,7 +91,7 @@ export default function HomePage() {
             <Reveal
               as="li"
               key={f.name}
-              delay={i * 110}
+              from={i % 2 === 0 ? "left" : "right"}
               className="lift flex min-w-0 flex-[1_1_26rem] flex-col items-center gap-4 rounded-lg border border-ink/10 border-t-2 border-t-gold bg-card p-8 text-center md:p-10"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}

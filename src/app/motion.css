@@ -120,18 +120,43 @@ html.menu-open {
   opacity: 0;
   transform: translateY(20px);
 }
+.reveal-init[data-from="left"] {
+  transform: translateX(-4.5rem) scale(0.96);
+}
+.reveal-init[data-from="right"] {
+  transform: translateX(4.5rem) scale(0.96);
+}
 .reveal-in {
   opacity: 1;
   transform: none;
   transition:
-    opacity 0.8s var(--ease-out-expo) var(--reveal-delay, 0ms),
-    transform 0.9s var(--ease-out-expo) var(--reveal-delay, 0ms);
+    opacity 0.9s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    transform 1.1s var(--ease-out-expo) var(--reveal-delay, 0ms);
+}
+
+/* Photos zoom gently inside their frame when pointed at. */
+.photo-zoom {
+  overflow: hidden;
+}
+.photo-zoom img {
+  transition: transform 1.2s var(--ease-out-expo);
+}
+@media (hover: hover) {
+  .photo-zoom:hover img {
+    transform: scale(1.05);
+  }
 }
 
 /* ---------- Hover: cards and buttons lift a little ---------- */
 .lift {
   transition:
     transform 0.5s var(--ease-out-expo),
+    box-shadow 0.5s var(--ease-out-expo);
+}
+.reveal-in.lift {
+  transition:
+    opacity 0.9s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    transform 0.9s var(--ease-out-expo),
     box-shadow 0.5s var(--ease-out-expo);
 }
 .btn-pill {
@@ -159,7 +184,34 @@ html.menu-open {
     animation: none;
   }
   .lift:hover,
-  .btn-pill:hover {
+  .btn-pill:hover,
+  .photo-zoom:hover img {
     transform: none;
+  }
+}
+
+/* ---------- Product page top: photo from the left, text from the right ---------- */
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+}
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+}
+.slide-left {
+  animation: slide-left 1s var(--ease-out-expo) 0.1s both;
+}
+.slide-right {
+  animation: slide-right 1s var(--ease-out-expo) 0.2s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .slide-left,
+  .slide-right {
+    animation: none;
   }
 }

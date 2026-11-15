@@ -7,14 +7,16 @@ type Props = {
   className?: string;
   delay?: number;
   as?: "div" | "li";
+  /** Direction the content arrives from. */
+  from?: "up" | "left" | "right";
 };
 
 /**
- * Fades its content up when it scrolls into view. Anything already on screen
+ * Fades its content in (up, or from the left or right) when it scrolls into view. Anything already on screen
  * at load stays visible, and nothing is hidden without JavaScript or for
  * visitors who ask for reduced motion.
  */
-export function Reveal({ children, className = "", delay = 0, as = "div" }: Props) {
+export function Reveal({ children, className = "", delay = 0, as = "div", from = "up" }: Props) {
   const ref = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
@@ -42,6 +44,7 @@ export function Reveal({ children, className = "", delay = 0, as = "div" }: Prop
     <Tag
       ref={ref}
       className={className}
+      data-from={from}
       style={delay ? ({ "--reveal-delay": `${delay}ms` } as React.CSSProperties) : undefined}
     >
       {children}

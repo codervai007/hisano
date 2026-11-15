@@ -1,39 +1,49 @@
 import Link from "next/link";
-import { footer, nav, site } from "@/content/site";
+import { footer, intro, nav, rakuten, site } from "@/content/site";
+import { footerLabels } from "@/content/labels";
 import { Logo } from "./Logo";
 
 export function Footer() {
   return (
-    <footer className="ocean ocean-calm ocean-footer mt-28">
-      <div className="shell flex flex-col gap-10 py-14">
-        <div className="flex flex-wrap items-start justify-between gap-x-12 gap-y-8">
-          <Link href="/" className="footer-logo">
-            <Logo className="h-11 w-auto" />
+    <footer className="site-footer mt-28">
+      <div aria-hidden className="bg-seigaiha h-10 border-y border-gold/30" />
+      <div className="shell grid gap-x-16 gap-y-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="flex flex-col items-start gap-5">
+          <Link href="/" className="text-[#003c9d] dark:text-white">
+            <Logo className="h-12 w-auto" />
           </Link>
-          <nav aria-label="フッター" className="flex flex-wrap gap-x-8 gap-y-1 text-[0.9375rem] tracking-[0.08em]">
-            {nav.map((item) => (
-              <Link key={item.href} href={item.href} className="flex min-h-11 items-center">
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          <p className="type-heading text-lg">{intro.title}</p>
+          <p className="max-w-sm text-[0.875rem] leading-[2] tracking-[0.05em] text-stone">
+            {site.description}
+          </p>
         </div>
-        <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-2 border-t border-white/15 pt-6 text-[0.8125rem] tracking-[0.06em]">
-          <span className="font-latin text-base tracking-[0.1em] text-white/70">{site.copyright}</span>
-          <span className="flex flex-wrap gap-x-6">
-            <Link href="/privacypolicy" className="flex min-h-11 items-center">
-              {footer.privacy}
+
+        <nav aria-label={footerLabels.menu} className="flex flex-col gap-1">
+          <p className="footer-heading">{footerLabels.menu}</p>
+          {nav.map((item) => (
+            <Link key={item.href} href={item.href} className="footer-link">
+              {item.label}
             </Link>
-            <a
-              href={site.operatorUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex min-h-11 items-center"
-            >
-              {footer.operator}
-            </a>
-          </span>
+          ))}
+        </nav>
+
+        <div className="flex flex-col gap-1">
+          <p className="footer-heading">{footerLabels.info}</p>
+          <Link href="/privacypolicy" className="footer-link">
+            {footer.privacy}
+          </Link>
+          <a href={site.operatorUrl} target="_blank" rel="noopener noreferrer" className="footer-link">
+            {footer.operator}
+          </a>
+          <a href={rakuten.href} target="_blank" rel="noopener noreferrer" className="footer-link">
+            {footerLabels.rakuten}
+          </a>
         </div>
+      </div>
+      <div className="border-t border-ink/10">
+        <p className="shell font-latin py-6 text-center text-base tracking-[0.12em] text-stone">
+          {site.copyright}
+        </p>
       </div>
     </footer>
   );

@@ -263,18 +263,35 @@
 }
 
 /* ---------- Footer ---------- */
-.ocean-footer {
-  border-top: 1px solid rgba(230, 203, 143, 0.55);
+.site-footer {
+  background: var(--color-page-3);
 }
-.ocean-footer a {
-  color: rgba(255, 255, 255, 0.86);
+.footer-heading {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-gold) 55%, transparent);
+  font-family: var(--font-mincho);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: var(--color-brand);
 }
-.ocean-footer a:hover {
-  color: var(--foil-flat);
+.footer-link {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  width: fit-content;
+  font-size: 0.9375rem;
+  letter-spacing: 0.06em;
+  color: var(--color-ink-mute);
+  background: linear-gradient(var(--color-brand), var(--color-brand)) left 85% / 0 1px no-repeat;
+  transition:
+    color 0.3s,
+    background-size 0.5s var(--ease-out-expo);
 }
-.ocean-footer a:focus-visible {
-  outline: 2px solid #ffffff;
-  outline-offset: 3px;
+.footer-link:hover {
+  color: var(--color-brand);
+  background-size: 100% 1px;
 }
 
 /* ---------- Header: soft cream with dark text, the same in both themes ---------- */
@@ -319,8 +336,4 @@
 .site-header button:focus-visible {
   outline: 2px solid #1f4f94;
   outline-offset: 3px;
-}
-.ocean-footer a.footer-logo,
-.ocean-footer a.footer-logo:hover {
-  color: #ffffff;
 }

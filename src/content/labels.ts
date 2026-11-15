@@ -18,3 +18,9 @@ export const menuLabels = {
   close: "メニューを閉じる",
   nav: "メニュー",
 };
+
+export const footerLabels = {
+  menu: "メニュー",
+  info: "ご案内",
+  rakuten: "楽天市場ショップ",
+};

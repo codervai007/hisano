@@ -21,16 +21,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Reveal>
+      <Reveal from="left">
         <section className="shell mt-24 text-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={about.heroImage.src}
-            alt=""
-            width={about.heroImage.width}
-            height={about.heroImage.height}
-            className="photo-card mx-auto mb-12 h-auto w-full max-w-3xl"
-          />
+          <div className="photo-card photo-zoom mx-auto mb-12 w-full max-w-3xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={about.heroImage.src}
+              alt=""
+              width={about.heroImage.width}
+              height={about.heroImage.height}
+              className="h-auto w-full"
+            />
+          </div>
           <p className="type-heading mx-auto max-w-3xl text-2xl md:text-3xl">{about.tagline}</p>
         </section>
       </Reveal>
@@ -40,15 +42,17 @@ export default function AboutPage() {
           <SectionHeading eyebrow={eyebrow.production} title={about.production.heading} center />
           <p className="type-heading text-xl md:text-2xl">{about.production.title}</p>
           <p className="type-body max-w-3xl">{about.production.text}</p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={about.factoryImage.src}
-            alt={about.factoryImage.alt}
-            width={about.factoryImage.width}
-            height={about.factoryImage.height}
-            loading="lazy"
-            className="photo-card h-auto w-full max-w-xl"
-          />
+          <Reveal from="right" className="photo-card photo-zoom w-full max-w-xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={about.factoryImage.src}
+              alt={about.factoryImage.alt}
+              width={about.factoryImage.width}
+              height={about.factoryImage.height}
+              loading="lazy"
+              className="h-auto w-full"
+            />
+          </Reveal>
           <p className="type-body max-w-3xl">{about.production.factory}</p>
         </section>
       </Reveal>
