@@ -68,6 +68,8 @@ export const en = {
     { ...ja.products[3], name: "HISANO Ginkgo SQ DHA Omega 3-6-9 Premium", price: "¥19,440 (tax incl.)" },
     { ...ja.products[4], name: "HISANO Bifidobacteria Premium+", price: "¥5,940 (tax incl.)" },
     { ...ja.products[5], name: "HISANO Anserine Premium+", price: "¥16,740 (tax incl.)" },
+    { ...ja.products[6], name: "Shark Cartilage Power Plus", price: "¥19,332 (tax incl.)" },
+    { ...ja.products[7], name: "Cordyceps Premium Class", price: "¥18,252 (tax incl.)" },
   ],
 
   rakuten: {

@@ -86,6 +86,8 @@ export const products = [
   { name: "Hisanoイチョウ SQ DHA オメガ3-6-9プレミアム", slug: "ginkgo-dha", image: `${CMS}/s-813x800_v-fs_webp_f46d4443-4ecb-4e43-90fa-784d7be90fcb.webp`, price: "¥19,440（税込）" },
   { name: "HISANO ビフィズス菌プレミアム+", slug: "bifidus", image: `${CMS}/s-813x800_v-fs_webp_8237735e-05e6-4778-b3ce-3d07f66c5d30.webp`, price: "¥5,940（税込）" },
   { name: "HISANO アンセリンプレミアム+", slug: "anserine", image: `${CMS}/s-813x800_v-fs_webp_1f7c6843-ce31-42e7-acc3-faa810ef9604.webp`, price: "¥16,740（税込）" },
+  { name: "サメ軟骨パワープラス", slug: "shark-cartilage", image: `${DESIGN}/s-813x800_v-fs_webp_2eccf9c2-9dc8-48a9-b520-1f4a2f3368d3.webp`, price: "¥19,332（税込）" },
+  { name: "冬虫夏草プレミアムクラス", slug: "cordyceps", image: `${DESIGN}/s-813x800_v-fs_webp_9178d1a6-1e78-44a6-856b-081377089f9f.webp`, price: "¥18,252（税込）" },
 ];
 
 export const rakuten = {
