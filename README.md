@@ -23,10 +23,20 @@ npm run build
 - Forms post from the browser to Web3Forms. Copy `.env.example` to `.env.local`
   and set `NEXT_PUBLIC_WEB3FORMS_KEY`. There are no API routes.
 
+## Product pages
+
+`src/content/productDetails.ts` holds the eight product detail pages, taken from
+the original site. Lines left out because the original had clearly copied them
+from another product (please supply the correct text):
+
+- HISANO ビフィズス菌プレミアム+: a 商品スペック ingredient list for an oyster/maca
+  product, its 内容量 (108g, 360粒), and a 原材料名 line listing shark liver oil.
+- HISANO アンセリンプレミアム+: a 原材料名 line listing shark liver oil.
+- HISANO PREMIUM NMN 36000: one block of text that appeared twice.
+
 ## Still to do
 
-- Add the client's photos (hero, products, factory). Product cards currently show
-  a "商品画像（準備中）" placeholder.
-- Product detail pages (`/product/<slug>`) are not built yet.
-- Paste the full privacy policy and the cut-off paragraphs marked `TODO`.
+- Photos (except the shark cartilage ones) load from the old site's storage.
+  Copy them into `public/images/` so they survive the old site closing.
+- Paste the full privacy policy and any remaining text marked `TODO`.
 - Confirm the operating-company URL in `site.operatorUrl`.

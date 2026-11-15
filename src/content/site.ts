@@ -55,6 +55,7 @@ export const featured = [
   {
     badge: "人気商品",
     name: "冬虫夏草プレミアムクラス",
+    href: "/product/cordyceps",
     image: `${DESIGN}/s-813x800_v-fs_webp_9178d1a6-1e78-44a6-856b-081377089f9f.webp`,
     // TODO: paste the rest of the original sentence if it continues.
     text: "「冬虫夏草プレミアムクラス」は、安心安全の国内製造、冬虫夏草を100%使用しています。冬虫夏草には、コルジセピンやβグルカン、その他ビタミン、ミネラル、18種類のアミノ酸などが豊富に含まれています。",
@@ -63,63 +64,24 @@ export const featured = [
 
 export const detailLabel = "詳しく見る";
 
-// サメ軟骨パワープラス: the product page is built from the client's own
-// banner images. Each alt repeats the wording printed on its image.
-export const shark = {
-  name: "サメ軟骨パワープラス",
-  lead: featured[0].text,
-  pack: {
-    src: "/images/shark-pack.jpg",
-    alt: "サメ軟骨パワープラス 300粒のパッケージ。サメ軟骨加工食品、日本製。",
-    width: 636,
-    height: 1200,
-  },
-  images: [
-    {
-      src: "/images/shark-hero.webp",
-      alt: "「歩く」健康を考えた、高濃度コンドロイチン配合サプリ。100%純サメ軟骨、大容量375mg×300粒、GMP認定の日本製。累計販売個数80,000個突破。",
-    },
-    {
-      src: "/images/shark-worry.webp",
-      alt: "階段キツくないですか？しゃがめない、立ち上がるのが大変、同じ姿勢でいると痛い。これらには年齢と共に減少する成分が関係しているかもしれません。",
-    },
-    {
-      src: "/images/shark-joint.webp",
-      alt: "それは関節にある軟骨成分（コンドロイチン）。コンドロイチンは保水力があり、関節にある軟骨を守る働きがある成分として注目されています。体内のコンドロイチンは年齢と共に減少するため、食品などで外から補うことが大切です。",
-    },
-    {
-      src: "/images/shark-chondroitin.webp",
-      alt: "コンドロイチンって？動物の軟骨や結合組織に存在するムコ多糖類の一種で、特にサメや牛の軟骨から抽出される自然由来の成分。軟骨の主成分として関節の健康維持をサポートします。",
-    },
-    {
-      src: "/images/shark-material.webp",
-      alt: "おすすめPOINT：高純度・高品質のサメ軟骨使用。国内および台湾で水揚げされた新鮮なサメの軟骨を100%使用し、品質と安全性を確保しています。",
-    },
-    {
-      src: "/images/shark-nutrients.webp",
-      alt: "おすすめPOINT：栄養成分の豊富さ。サメ軟骨には、関節の健康維持に重要なコンドロイチン硫酸と、組織の弾力性を保つ海洋性Ⅱ型コラーゲンが含まれています。",
-    },
-    {
-      src: "/images/shark-factory.webp",
-      alt: "おすすめPOINT：安心を届ける製造を。厳格な品質管理基準を満たしたGMP認定の日本国内工場で製造し、製品の安全性と品質を保証しています。",
-    },
-    {
-      src: "/images/shark-quality.webp",
-      alt: "品質管理と分析。HISANOの商品は、品質の管理された工場で生産し、分析等の確認も行っております。試験成績書の写し。",
-    },
-  ],
-};
-
 export const productsHeading = "商品一覧";
 
 export const products = [
-  { name: "HISANO PREMIUM NMN 36000", image: `${DESIGN}/s-620x700_v-fs_webp_e0106074-144f-46b6-abb7-b435fe952ff1.webp`, price: "¥49,680（税込）" },
-  { name: "沖縄フコイダンプレミアム", image: `${DESIGN}/s-800x800_v-fs_webp_2047faf5-a582-42dc-933e-3cb0e265b5ae_small.webp`, price: "¥22,680（税込）" },
-  { name: "フコイダンプレミアム", image: `${CMS}/s-800x800_v-fs_webp_c0ec29b5-237b-4ef0-976b-bf3c341eb975_small.webp`, price: "¥38,000（税込）" },
-  { name: "Hisanoイチョウ SQ DHA オメガ3-6-9プレミアム", image: `${CMS}/s-813x800_v-fs_webp_f46d4443-4ecb-4e43-90fa-784d7be90fcb.webp`, price: "¥19,440（税込）" },
-  { name: "HISANO ビフィズス菌プレミアム+", image: `${CMS}/s-813x800_v-fs_webp_8237735e-05e6-4778-b3ce-3d07f66c5d30.webp`, price: "¥5,940（税込）" },
-  { name: "HISANO アンセリンプレミアム+", image: `${CMS}/s-813x800_v-fs_webp_1f7c6843-ce31-42e7-acc3-faa810ef9604.webp`, price: "¥16,740（税込）" },
+  { name: "HISANO PREMIUM NMN 36000", slug: "nmn-36000", image: `${DESIGN}/s-620x700_v-fs_webp_e0106074-144f-46b6-abb7-b435fe952ff1.webp`, price: "¥49,680（税込）" },
+  { name: "沖縄フコイダンプレミアム", slug: "okinawa-fucoidan", image: `${DESIGN}/s-800x800_v-fs_webp_2047faf5-a582-42dc-933e-3cb0e265b5ae_small.webp`, price: "¥22,680（税込）" },
+  { name: "フコイダンプレミアム", slug: "fucoidan", image: `${CMS}/s-800x800_v-fs_webp_c0ec29b5-237b-4ef0-976b-bf3c341eb975_small.webp`, price: "¥38,000（税込）" },
+  { name: "Hisanoイチョウ SQ DHA オメガ3-6-9プレミアム", slug: "ginkgo-dha", image: `${CMS}/s-813x800_v-fs_webp_f46d4443-4ecb-4e43-90fa-784d7be90fcb.webp`, price: "¥19,440（税込）" },
+  { name: "HISANO ビフィズス菌プレミアム+", slug: "bifidus", image: `${CMS}/s-813x800_v-fs_webp_8237735e-05e6-4778-b3ce-3d07f66c5d30.webp`, price: "¥5,940（税込）" },
+  { name: "HISANO アンセリンプレミアム+", slug: "anserine", image: `${CMS}/s-813x800_v-fs_webp_1f7c6843-ce31-42e7-acc3-faa810ef9604.webp`, price: "¥16,740（税込）" },
 ];
+
+export const rakuten = {
+  text: "楽天市場でHISANO商品を買う",
+  button: "ショップを開く",
+  href: "https://www.rakuten.co.jp/nihonkenkostore/",
+};
+
+export const backToProducts = "商品一覧へ戻る";
 
 export const priceLabel = "メーカー希望販売価格";
 export const moreLabel = "もっと見る";
@@ -133,8 +95,7 @@ export const benefits = [
   {
     label: "安全なショッピング",
     title: "安心してお買い物",
-    // TODO: the original sentence was cut off after 「安心して」; confirm the ending.
-    text: "当店では、お客様に安心してお買い物いただけるよう、高度なセキュリティー対策を施し、安全なオンラインショッピング環境をご提供しております。個人情報の取り扱いには最大限の注意を払っておりますので、安心してご利用ください。",
+    text: "当店では、お客様に安心してお買い物いただけるよう、高度なセキュリティー対策を施し、安全なオンラインショッピング環境をご提供しております。個人情報の取り扱いには最大限の注意を払っておりますので、安心してお買い物いただけます。",
   },
   {
     label: "顧客満足",
@@ -212,6 +173,5 @@ export const footer = {
 
 export const privacy = {
   title: "プライバシーポリシー",
-  // TODO: paste the client's privacy policy text. This is a placeholder only.
-  body: "[プライバシーポリシーの本文をここに入れてください]",
+  body: "1.個人情報の定義\n\n「個人情報」とは、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるもの、及び他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものをいいます。\n\n2.個人情報の収集\n\n当ショップでは商品のご購入、お問合せをされた際にお客様の個人情報を収集することがございます。収集するにあたっては利用目的を明記の上、適法かつ公正な手段によります。\n\n当ショップで収集する個人情報は以下の通りです。\n\na)お名前、フリガナ\n\nb)ご住所\n\nc)お電話番号\n\nd)メールアドレス\n\ne)パスワード\n\nf)配送先情報\n\ng)当ショップとのお取引履歴及びその内容\n\nh)上記を組み合わせることで特定の個人が識別できる情報\n\n3.個人情報の利用\n\n当ショップではお客様からお預かりした個人情報の利用目的は以下の通りです。\n\na)ご注文の確認、照会\n\nb)商品発送の確認、照会\n\nc)お問合せの返信時\n\n当ショップでは、下記の場合を除いてはお客様の断りなく第三者に個人情報を開示・提供することはいたしません。\n\na)法令に基づく場合、及び国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合\n\nb)人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難である場合\n\nc)当ショップを運営する会社の関連会社で個人データを交換する場合\n\n4.個人情報の安全管理\n\nお客様よりお預かりした個人情報の安全管理はサービス提供会社によって合理的、組織的、物理的、人的、技術的施策を講じるとともに、当ショップでは関連法令に準じた適切な取扱いを行うことで個人データへの不正な侵入、個人情報の紛失、改ざん、漏えい等の危険防止に努めます。\n\n5.個人情報の訂正、削除\n\nお客様からお預かりした個人情報の訂正・削除は下記の問合せ先よりお知らせ下さい。また、ユーザー登録された場合、当サイトのメニュー「マイアカウント」より個人情報の訂正が出来ます。\n\n6.cookie(クッキー)の使用について\n\n当社は、お客様によりよいサービスを提供するため、cookie （クッキー）を使用することがありますが、これにより個人を特定できる情報の収集を行えるものではなく、お客様のプライバシーを侵害することはございません。\n\n※cookie （クッキー）とは、サーバーコンピュータからお客様のブラウザに送信され、お客様が使用しているコンピュータのハードディスクに蓄積される情報です。\n\n7.SSLの使用について\n\n個人情報の入力時には、セキュリティ確保のため、これらの情報が傍受、妨害または改ざんされることを防ぐ目的でSSL（Secure Sockets Layer）技術を使用しております。\n\n※ SSLは情報を暗号化することで、盗聴防止やデータの改ざん防止送受信する機能のことです。SSLを利用する事でより安全に情報を送信する事が可能となります。\n\n8.お問合せ先\n\n特定商取引法に基づく表記をご覧ください。\n\n9.プライバシーポリシーの変更\n\n当ショップでは、収集する個人情報の変更、利用目的の変更、またはその他プライバシーポリシーの変更を行う際は、当ページへの変更をもって公表とさせていただきます。",
 };

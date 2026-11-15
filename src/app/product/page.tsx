@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Benefits } from "@/components/Benefits";
 import { CtaBand } from "@/components/CtaBand";
+import { RakutenBand } from "@/components/RakutenBand";
 import { ProductGrid } from "@/components/ProductGrid";
 import { SectionHeading } from "@/components/SectionHeading";
 import { intro, productsHeading } from "@/content/site";
@@ -18,6 +19,7 @@ export default function ProductPage() {
       <section className="shell mt-14">
         <ProductGrid />
       </section>
+      <RakutenBand />
       <Benefits />
       <CtaBand />
     </>
