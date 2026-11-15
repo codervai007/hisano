@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getContent } from "@/content";
+import { Icon, navIcon } from "./Icon";
 import { Logo } from "./Logo";
 
 export async function Footer() {
@@ -21,7 +22,8 @@ export async function Footer() {
         <nav aria-label={footerLabels.menu} className="flex flex-col gap-1">
           <p className="footer-heading">{footerLabels.menu}</p>
           {nav.map((item) => (
-            <Link key={item.href} href={item.href} className="footer-link">
+            <Link key={item.href} href={item.href} className="footer-link gap-2">
+              {navIcon[item.href] && <Icon name={navIcon[item.href]} className="size-4 text-gold" />}
               {item.label}
             </Link>
           ))}

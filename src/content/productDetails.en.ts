@@ -1814,5 +1814,1191 @@ export const productDetailsEn: ProductDetail[] = [
         "v": "Country of production: Japan\nName: Processed cordyceps product\nIngredients: Cordyceps powder (manufactured in Japan), gelatin, brewer's yeast powder\nContents: 92.4g (310mg × 240 capsules)\nBest before: see package\nStorage: Avoid direct sunlight, high temperature and humidity; store in a cool place.\nNutrition facts (per 4 capsules, 1.54g):\n• Energy: 5.70kcal\n• Protein: 0.51g\n• Fat: 0.02g\n• Carbohydrate: 0.79g\n• Salt equivalent: 0.003g"
       }
     ]
+  },
+  {
+    "slug": "oyster-maca",
+    "name": "HISANO Oyster Maca Premium",
+    "price": "¥17,820 (tax incl.)",
+    "image": {
+      "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_abaf0199-fead-4cdc-a756-d1398196a8f0_small.webp",
+      "w": 813,
+      "h": 800
+    },
+    "summary": "HISANO Oyster Maca Premium is a supplement based on oyster and maca that supports men's vitality, stamina and immunity. Oysters are rich in zinc and taurine and are expected to help with energy production. Maca is a superfood that has been used for nourishment since the ancient Inca civilisation, and is expected to help keep the body balanced and full of vitality. These ingredients are blended in balance to support your everyday health.\n\nThis product is made at the GMP-certified AMS Life Science head-office factory, providing a high-quality, safe product. Under thorough quality control, we keep to the highest standards to deliver products our customers can trust.",
+    "blocks": [
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_dbe34b57-3655-476b-b037-e0228a4fe757_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_c0210c20-2fba-49c1-b904-d3572dacd8ee_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_c87599a4-d38f-4fbe-95f9-9c27a729b216_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_3e46b915-a1b8-4173-b53f-33682cee1942_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_a24938b6-83d8-465f-867f-18c5e1858d3f_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "What is HISANO Oyster Maca Premium?"
+      },
+      {
+        "k": "p",
+        "v": "HISANO Oyster Maca Premium is a supplement that supports your daily vitality and health. It contains carefully selected ingredients centred on oyster extract and maca. The zinc and taurine in oysters help maintain stamina, and maca supports a lift in vitality. Cordyceps, fermented black garlic, L-arginine, barley lactic-fermented GABA and a vitamin mix are added to support more balanced management of your condition."
+      },
+      {
+        "k": "p",
+        "v": "A supplement that gives you nutrients that are hard to get from meals alone, helping you stay healthy every day. As a guide, take 3 tablets a day with water or lukewarm water. Store away from high temperature, humidity and direct sunlight, in a cool place."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_ab7e4ab3-1e04-4ffa-bc4b-879c20650d24_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Hard to get from meals, easy with an oyster and maca supplement"
+      },
+      {
+        "k": "p",
+        "v": "HISANO Oyster Maca Premium is a supplement that supports your daily vitality and health. Centred on nutrients from oysters and on maca, it is a balanced blend of ingredients essential to staying full of energy, letting you efficiently get nutrients that are hard to get from meals alone."
+      },
+      {
+        "k": "p",
+        "v": "Oyster extract is rich in zinc and taurine and supports stamina and energy metabolism. Maca is a nourishing ingredient handed down from the ancient Inca civilisation and widely known as a source of vitality. L-arginine also supports energy production, and cordyceps helps you stay healthy."
+      },
+      {
+        "k": "p",
+        "v": "Fermented black garlic is rich in polyphenols and helps keep you in good condition day to day. The combination of barley lactic-fermented GABA and lactic acid bacteria also supports the gut environment and a healthy body."
+      },
+      {
+        "k": "p",
+        "v": "HISANO Oyster Maca Premium supports energetic days, firmly topping up nutrients that meals alone don't provide and supporting a healthy lifestyle."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_e660ee2b-aa8e-44c5-b4ac-acd03a1ebb48_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Loved by people like these"
+      },
+      {
+        "k": "p",
+        "v": "HISANO Oyster Maca Premium firmly supports your daily vitality and health. We recommend it for:"
+      },
+      {
+        "k": "p",
+        "v": "• People who want to keep up their daily vitality (supported by the zinc and taurine in oyster extract)"
+      },
+      {
+        "k": "p",
+        "v": "• People who want energetic days (maca supports a balanced condition)"
+      },
+      {
+        "k": "p",
+        "v": "• People whose diet tends to be unbalanced (L-arginine and cordyceps support energy metabolism)"
+      },
+      {
+        "k": "p",
+        "v": "• People who want to look after their condition (the polyphenols in fermented black garlic support good health)"
+      },
+      {
+        "k": "p",
+        "v": "• People who want to stay active every day (barley lactic-fermented GABA and lactic acid bacteria help with balance)"
+      },
+      {
+        "k": "p",
+        "v": "• People who want an easy way to top up nutrition on busy days (a supplement for efficient nourishment)"
+      },
+      {
+        "k": "p",
+        "v": "HISANO Oyster Maca Premium is a supplement that helps you maintain vitality and supports a healthy lifestyle. Made part of your daily routine, it supports energetic days. Before taking it, check for allergies and your physical condition, and consult a specialist if needed."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_521c2e17-1dfe-45a8-bf57-8e109442477a_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "A generous size"
+      },
+      {
+        "k": "p",
+        "v": "This product comes in a large box of 180 tablets, with a guideline of 3 tablets a day. One box lasts about 60 days, making it easy to continue for a long time. Each tablet contains 300mg, a format that fits easily into your daily health routine."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_b568f434-2998-4612-bb8f-83e52f9f9011_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_8e314c8b-6e07-49e0-b1c1-3718dc7b5802_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Oyster Maca Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Manufacturing you can rely on"
+      },
+      {
+        "k": "p",
+        "v": "HISANO Oyster Maca Premium is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products."
+      },
+      {
+        "k": "p",
+        "v": "This certification is a strict standard set to protect product safety and quality. Every step, from receiving raw materials to manufacturing and shipping, is tightly controlled."
+      },
+      {
+        "k": "p",
+        "v": "Being made in a GMP-certified factory gives you the following assurances:"
+      },
+      {
+        "k": "h3",
+        "v": "Mistake-proof processes"
+      },
+      {
+        "k": "p",
+        "v": "Work processes are standardised and staff are thoroughly trained, keeping manufacturing errors to a minimum."
+      },
+      {
+        "k": "h3",
+        "v": "A clean, safe environment"
+      },
+      {
+        "k": "p",
+        "v": "The factory is kept clean, with thorough hygiene control to prevent foreign matter and contamination."
+      },
+      {
+        "k": "h3",
+        "v": "Consistently high quality"
+      },
+      {
+        "k": "p",
+        "v": "Quality is checked closely from raw materials to the finished product, so we can deliver products you can trust. Because they are made in a GMP-certified factory, we can offer high-quality products you can use with confidence, and recommend them with pride to everyone who values quality and safety."
+      },
+      {
+        "k": "hr"
+      },
+      {
+        "k": "h2",
+        "v": "Product description"
+      },
+      {
+        "k": "p",
+        "v": "HISANO Oyster Maca Premium is a supplement with carefully selected ingredients, centred on oyster and maca, to support your daily vitality and health. Oysters are rich in components essential to energy production and immunity, such as zinc and taurine. Maca, handed down since the ancient Inca civilisation as a \"source of vitality\", is still widely known today as a nourishing ingredient and helps keep the body in balanced condition."
+      },
+      {
+        "k": "p",
+        "v": "It also contains cordyceps, fermented black garlic, L-arginine, barley lactic-fermented GABA and a vitamin mix, supporting an energetic daily life."
+      },
+      {
+        "k": "p",
+        "v": "These ingredients are blended in balance to support your daily energy, helping to top up vitality in a natural way without putting strain on the body."
+      },
+      {
+        "k": "h3",
+        "v": "Key ingredients"
+      },
+      {
+        "k": "p",
+        "v": "• Oyster extract: contains zinc and taurine and supports stamina.\n• Maca: a traditional nourishing ingredient since ancient times, expected to help restore vigour.\n• L-arginine: an amino acid that supports the body's energy metabolism.\n• Cordyceps: used since ancient times as a crude drug in Eastern medicine, expected to nourish and help restore strength.\n• Fermented black garlic: the polyphenols in garlic help maintain health.\n• Vitamin mix, lactic acid bacteria: support the gut environment and the body's balance."
+      },
+      {
+        "k": "p",
+        "v": "Together, these ingredients make an ideal supplement for keeping you well and healthy every day."
+      },
+      {
+        "k": "h3",
+        "v": "Ingredients"
+      },
+      {
+        "k": "p",
+        "v": "Oyster extract powder, maca powder, maca extract, barley lactic-fermented GABA, L-arginine, yeast (contains zinc), lactic acid bacteria (heat-killed), cordyceps powder, fermented black garlic powder, vitamin mix, soft-shelled turtle powder, black pepper extract, reduced maltose syrup, calcium stearate, fine silicon dioxide, cellulose"
+      },
+      {
+        "k": "h3",
+        "v": "Nutrients"
+      },
+      {
+        "k": "p",
+        "v": "(Nutritional analysis per 100g)"
+      },
+      {
+        "k": "p",
+        "v": "• Energy: 386kcal\n• Protein: 19.0g\n• Fat: 4.8g\n• Carbohydrate: 66.6g\n• Ash: 6.5g\n• Sodium: 430mg\n• Salt equivalent: 1.1g"
+      },
+      {
+        "k": "h3",
+        "v": "How to take"
+      },
+      {
+        "k": "p",
+        "v": "As a guide, take 3 tablets a day with water or lukewarm water."
+      },
+      {
+        "k": "h3",
+        "v": "Handling precautions"
+      },
+      {
+        "k": "p",
+        "v": "• Please check the ingredients, and do not take this product if you have an allergy.\n• Keep out of reach of small children.\n• If you are taking medicine, consult a doctor before taking.\n• After opening, consume as soon as possible."
+      },
+      {
+        "k": "h3",
+        "v": "Product specifications"
+      },
+      {
+        "k": "p",
+        "v": "Ingredients: Oyster extract powder, maca powder, maca extract, barley lactic-fermented GABA, L-arginine, yeast (contains zinc), lactic acid bacteria (heat-killed), cordyceps powder, fermented black garlic powder, vitamin mix, soft-shelled turtle powder, black pepper extract, reduced maltose syrup, calcium stearate, fine silicon dioxide, cellulose\nContents: 108g (300mg × 360 tablets)"
+      },
+      {
+        "k": "p",
+        "v": "Country of production: Japan\nMaker: HISANO\nManufacturer: AFC-HD AMS Life Science Co., Ltd.\nJAN: 4570005540086\nAdvertiser: VNT Co., Ltd. (0120-202-676)"
+      }
+    ]
+  },
+  {
+    "slug": "nattokinase",
+    "name": "HISANO NANO Nattokinase",
+    "price": "¥19,440 (tax incl.)",
+    "image": {
+      "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_2027423c-11a8-4378-b5fb-0e051f200189_small.webp",
+      "w": 813,
+      "h": 800
+    },
+    "summary": "HISANO NANO Nattokinase is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products.\n\nGMP sets strict rules for a thorough quality-control process that keeps products safe and of high quality. At the factory, every step from manufacturing to inspection follows these standards closely. We keep our promise on quality and deliver HISANO NANO Nattokinase as a high-quality, reliable product to our customers. We keep to the highest quality standards so that we can deliver products you can use with confidence.",
+    "blocks": [
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_84f9c563-8da5-49fe-9678-9b1a0585e4c3_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_ea2409ca-89db-4058-b4e9-1e1af85a23d6_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_51f60e94-34df-46c3-b304-57ae11693377_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_870fbfd3-b5c7-4812-a486-57711faae3cc_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_a20e56c1-e45a-454c-ae59-cd42186ec993_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "h2",
+        "v": "What is nattokinase?"
+      },
+      {
+        "k": "p",
+        "v": "Nattokinase is an enzyme made by natto bacteria that breaks down protein. Natto is made by fermenting soybeans with natto bacteria, and contains nutrients such as polyglutamic acid, protein and vitamins. In the 1980s, Professor Sumi of Kurashiki University of Science and the Arts discovered that a component of natto dissolves blood clots, and named it nattokinase."
+      },
+      {
+        "k": "p",
+        "v": "Nattokinase helps blood clots dissolve more easily and supports blood flow. When blood becomes thick, clots dissolve less easily and blood vessels clog more easily, so nattokinase is thought to help keep blood vessels healthy."
+      },
+      {
+        "k": "p",
+        "v": "Nattokinase is sensitive to heat, so it is recommended to eat natto without heating it. Natto also contains vitamin K2, which helps bone health, but because it promotes clotting, care is needed over when it is taken."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_f0f09d2e-cb5f-422b-b660-aec164e250f7_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "h2",
+        "v": "The power of nattokinase in natto's stickiness"
+      },
+      {
+        "k": "h3",
+        "v": "Supports prevention of thrombosis"
+      },
+      {
+        "k": "p",
+        "v": "Nattokinase dissolves blood clots and is said to help as an aid against thrombosis such as cerebral infarction and myocardial infarction. Thrombosis is caused when a clot in the blood blocks a blood vessel, and often has no symptoms before it occurs, so everyday prevention is important. As well as dissolving clots directly, nattokinase is expected to activate clot-dissolving enzymes."
+      },
+      {
+        "k": "h3",
+        "v": "Supports prevention of high blood pressure"
+      },
+      {
+        "k": "p",
+        "v": "By helping blood flow, nattokinase is said to be effective in preventing high blood pressure. Continued high blood pressure raises the risk of arteriosclerosis, cerebral haemorrhage and more. Nattokinase helps keep blood pressure normal and supports prevention of diseases related to high blood pressure."
+      },
+      {
+        "k": "h3",
+        "v": "Supports healthy cholesterol levels"
+      },
+      {
+        "k": "p",
+        "v": "Nattokinase is said to lower blood cholesterol and support improvement of dyslipidaemia. Increased cholesterol causes arteriosclerosis, cerebral infarction and myocardial infarction."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_d3eacc0a-049e-4ec4-a42b-95d75d8bbb28_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Loved by people like these"
+      },
+      {
+        "k": "p",
+        "v": "Nattokinase is recommended for people with health concerns such as:"
+      },
+      {
+        "k": "p",
+        "v": "• People with high blood pressure\n• People worried about blood clots\n• People at high risk of myocardial or cerebral infarction\n• People who want to prevent arteriosclerosis\n• People who feel their circulation is poor\n• People who want to boost their immunity\n• People concerned about their cholesterol"
+      },
+      {
+        "k": "p",
+        "v": "For people with these health concerns, adding natto or health foods containing nattokinase may help with managing their health. However, if you are taking medicine or are worried about your health, we recommend consulting a doctor."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_e3420621-08c6-4dff-8f94-7de347a83642_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "h2",
+        "v": "A generous size"
+      },
+      {
+        "k": "p",
+        "v": "This product is a large box packed with 240 capsules. To support your everyday health, the guideline is 3 capsules a day. One pack lasts about 80 days, making it a cost-effective product you can use for a long time."
+      },
+      {
+        "k": "p",
+        "v": "Despite its generous contents of 79.92g (333mg × 240 capsules), the compact pack is easy to store and to make part of your daily routine. Enjoy comfortable days with this large pack that firmly supports your everyday health."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_148f6043-b9f7-46e3-b3a7-f62c0856d07f_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Nattokinase: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Manufacturing you can rely on"
+      },
+      {
+        "k": "p",
+        "v": "NANO Nattokinase is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products."
+      },
+      {
+        "k": "p",
+        "v": "This certification is a strict standard set to protect product safety and quality. Every step, from receiving raw materials to manufacturing and shipping, is tightly controlled."
+      },
+      {
+        "k": "p",
+        "v": "Being made in a GMP-certified factory gives you the following assurances:\n• Mistake-proof processes\nWork processes are standardised and staff are thoroughly trained, keeping manufacturing errors to a minimum.\n• A clean, safe environment\nThe factory is kept clean, with thorough hygiene control to prevent foreign matter and contamination.\n• Consistently high quality\nQuality is checked closely from raw materials to the finished product, so we can deliver products you can trust. Because they are made in a GMP-certified factory, we can offer high-quality products you can use with confidence, and recommend them with pride to everyone who values quality and safety."
+      },
+      {
+        "k": "hr"
+      },
+      {
+        "k": "h2",
+        "v": "Product description"
+      },
+      {
+        "k": "h3",
+        "v": "Natto bacteria culture extract (nattokinase)"
+      },
+      {
+        "k": "p",
+        "v": "• Each bottle contains 480,000FU of nattokinase activity.\n• Nattokinase is an enzyme produced by natto bacteria during fermentation as soybeans become natto, and is rich in the sticky component. HISANO NANO Nattokinase protects nattokinase, which is weak against stomach acid, in acid-resistant hard capsules made from our own plant-derived material.\n• This product uses a standardised ingredient of 20,000FU/g containing products of natto bacteria."
+      },
+      {
+        "k": "h3",
+        "v": "HISANO NANO Nattokinase is recommended for"
+      },
+      {
+        "k": "p",
+        "v": "• People who don't like the texture or smell of natto\n• People with irregular lifestyles\n• People who sit for long periods\n• People worried about their health check results"
+      },
+      {
+        "k": "p",
+        "v": "Why people choose HISANO NANO Nattokinase\n• Point 01: Acid-resistant hard capsules that reach the gut\n• Point 02: Capsules make it easy to take, even if you dislike the smell of natto\n• Point 03: Made and quality-controlled in a GMP-certified factory in Japan with strict standards\n• Point 04: A high 480,000FU of nattokinase activity per bottle"
+      },
+      {
+        "k": "h3",
+        "v": "Product specifications"
+      },
+      {
+        "k": "p",
+        "v": "Ingredients: Indigestible dextrin (manufactured in Japan), natto bacteria culture extract powder (dextrin, natto bacteria culture extract), starch, lactic acid bacteria powder (dextrin, lactic acid bacteria (heat-killed)), black pepper extract / gelatin, calcium stearate, fine silicon dioxide, vitamin B1, vitamin B2, vitamin B6, vitamin B12 (contains soybean and gelatin)\nStorage: Avoid high temperature, humidity and direct sunlight; store in a cool, dark place.\nNutrition facts (per 3 capsules, 0.999g): Energy 3.84kcal, protein 0.018g, fat 0.021g, carbohydrate 0.9g, salt equivalent 0.003g\nNatto bacteria culture extract powder (containing nattokinase) 300mg\nContains 6,000FU of nattokinase\nContents: 79.92g (333mg × 240 capsules)"
+      },
+      {
+        "k": "h3",
+        "v": "How to take"
+      },
+      {
+        "k": "p",
+        "v": "• As a guide, take 3 capsules a day with water or lukewarm water, without chewing."
+      },
+      {
+        "k": "h3",
+        "v": "Handling precautions"
+      },
+      {
+        "k": "p",
+        "v": "• Please check the ingredients, and do not take this product if you have a food allergy.\n• After opening, consume as soon as possible.\n• Infants and children should not take this product.\n• If you are taking medicine or receiving medical treatment, consult a doctor before taking.\n• Because of the nature of the ingredients, the appearance and smell may vary slightly.\n• Base your diet on staple foods, main dishes and side dishes, and keep your meals balanced.\n● Maker: HISANO\n● Manufacturer: AFC-HD AMS Life Science Co., Ltd.\n● Country of origin: Japan\n● JAN: 4570005540048\n● Manufacturer's suggested price: ¥19,440 (tax incl.)\n● Advertiser: VNT Co., Ltd. (0120-202-676)"
+      }
+    ]
+  },
+  {
+    "slug": "kaicho-enzyme",
+    "name": "HISANO NANO Kaicho Enzyme",
+    "price": "¥13,800 (tax incl.)",
+    "image": {
+      "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_ba5d2b02-4bc8-406c-b4e2-b69355ba0b4a_small.webp",
+      "w": 813,
+      "h": 800
+    },
+    "summary": "HISANO NANO Kaicho Enzyme is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products.\n\nGMP sets strict rules for a thorough quality-control process that keeps products safe and of high quality. At the factory, every step from manufacturing to inspection follows these standards closely. We keep our promise on quality and deliver HISANO NANO Kaicho Enzyme as a high-quality, reliable product to our customers. We keep to the highest quality standards so that we can deliver products you can use with confidence.",
+    "blocks": [
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_95b320d6-a16e-409b-89de-c4fd2b520bd8_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_575ffaff-fbeb-4836-b1a7-11000ffbec22_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_e637cb57-565b-4019-81b1-d9588d61faf4_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_bc5390ba-44ae-4d42-bd95-8ecbb77110f9_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_601b7e38-5da5-4db0-8972-0e46da94791b_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "h2",
+        "v": "What is HISANO NANO Kaicho Enzyme?"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Kaicho Enzyme is a special health food generously blended with carefully selected natural ingredients to support everyday health. It contains a balanced range of nutrients, including fermented extracts of more than 100 plants, 9 grains, 3 types of koji mould, 20 billion lactic acid bacteria and candle bush powder. It aims to make up for the vitamins, minerals and dietary fibre that modern diets tend to lack, and to support the gut environment. The fermented plant extracts and lactic acid bacteria in particular help balance the gut flora and support smooth days. Black vinegar, bamboo charcoal, seaweed powder and more support overall health and help you feel good from the inside. Read the directions and take it with water or lukewarm water, as a complement to diet and exercise. Store away from high temperature, humidity and direct sunlight, in a cool place."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_0ee71615-f5e2-4708-99d9-88e460f884fc_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Eating vegetables every day is hard, but fermented plant extracts make it easy"
+      },
+      {
+        "k": "h3",
+        "v": "For people who want to balance their gut"
+      },
+      {
+        "k": "p",
+        "v": "Containing lactic acid bacteria and candle bush powder, it is recommended for anyone who wants to balance their diet. Keep taking it to support healthy days."
+      },
+      {
+        "k": "h3",
+        "v": "Supporting nutrition"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Kaicho Enzyme contains fermented plant extracts plus vitamins and minerals, helping to make up for nutrients that tend to run short on busy days."
+      },
+      {
+        "k": "h3",
+        "v": "For people who want to keep a daily rhythm"
+      },
+      {
+        "k": "p",
+        "v": "Drawing on the power of nature, HISANO NANO Kaicho Enzyme can help support health-conscious daily habits. Taken steadily every day, it supports a healthy rhythm."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_4987594d-42b6-4d6e-a64f-221705f5a17e_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Loved by people like these"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Kaicho Enzyme is recommended for people looking for support with their health and daily life, such as:"
+      },
+      {
+        "k": "p",
+        "v": "• People concerned about their daily nutritional balance"
+      },
+      {
+        "k": "p",
+        "v": "• People who want to balance their gut"
+      },
+      {
+        "k": "p",
+        "v": "• People with unbalanced diets who want to make up for missing nutrients"
+      },
+      {
+        "k": "p",
+        "v": "• People aiming for a healthy daily rhythm"
+      },
+      {
+        "k": "p",
+        "v": "• People who care about beauty and health"
+      },
+      {
+        "k": "p",
+        "v": "• People who want an easy way to support their health on busy days"
+      },
+      {
+        "k": "p",
+        "v": "For people with these interests, Kaicho Enzyme is a health food that is easy to make part of your daily routine. Taken regularly, it supports everyday health. Before taking it, check for allergies and any existing health conditions, and consult a doctor or specialist if needed."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_5f4f4308-0e8c-4eff-83ae-e6c9b92c0f25_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "h2",
+        "v": "A generous size"
+      },
+      {
+        "k": "p",
+        "v": "This product comes in a large box of 360 tablets, with a guideline of 6 tablets a day. One box lasts about 60 days, making it easy to continue for a long time. Each tablet contains 300mg, a format that fits easily into your daily health routine."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_aaec9dec-6237-4980-ba90-c35e6c3a8899_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Kaicho Enzyme: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Manufacturing you can rely on"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Kaicho Enzyme is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products."
+      },
+      {
+        "k": "p",
+        "v": "This certification is a strict standard set to protect product safety and quality. Every step, from receiving raw materials to manufacturing and shipping, is tightly controlled."
+      },
+      {
+        "k": "p",
+        "v": "Being made in a GMP-certified factory gives you the following assurances:"
+      },
+      {
+        "k": "h3",
+        "v": "Mistake-proof processes"
+      },
+      {
+        "k": "p",
+        "v": "Work processes are standardised and staff are thoroughly trained, keeping manufacturing errors to a minimum."
+      },
+      {
+        "k": "h3",
+        "v": "A clean, safe environment"
+      },
+      {
+        "k": "p",
+        "v": "The factory is kept clean, with thorough hygiene control to prevent foreign matter and contamination."
+      },
+      {
+        "k": "h3",
+        "v": "Consistently high quality"
+      },
+      {
+        "k": "p",
+        "v": "Quality is checked closely from raw materials to the finished product, so we can deliver products you can trust. Because they are made in a GMP-certified factory, we can offer high-quality products you can use with confidence, and recommend them with pride to everyone who values quality and safety."
+      },
+      {
+        "k": "hr"
+      },
+      {
+        "k": "h2",
+        "v": "Product description"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Kaicho Enzyme is a special blend, generously made with ingredients carefully chosen from rich nature, to support healthy days. It contains a range of nutrients, including fermented extracts of more than 100 plants, 9 grains and 3 types of koji mould, seaweed powder, yeast, black vinegar, bamboo charcoal, 20 billion lactic acid bacteria and candle bush powder, which help you stay healthy. Specifically, the following can be expected:\n• A balanced intake of nutrients such as vitamins, minerals and dietary fibre.\n• A balanced gut environment and better absorption of nutrients.\n• A top-up of nutrients such as calcium, iron and vitamin B12.\n• Overall health support from yeast, black vinegar and bamboo charcoal.\n• Lactic acid bacteria that balance the gut flora and support immune function.\n• Dietary fibre and polyphenols from candle bush powder that balance the gut environment and help prevent and relieve constipation."
+      },
+      {
+        "k": "p",
+        "v": "Ingredients: Candle bush powder (manufactured in Japan), seaweed powder, brewer's yeast, reduced maltose syrup, dextrin, lactic acid bacteria powder (heat-killed), grain koji, black vinegar powder, fermented plant extract powder, collagen peptide, indigestible dextrin, L-carnitine fumarate, mozuku extract, plant lactic acid bacteria powder (heat-killed) / cellulose, vitamin C, magnesium oxide, fine silicon dioxide, calcium stearate, vegetable carbon colour, chitosan, vitamin B2, calcium pantothenate, vitamin B, shellac (contains milk, crab, gelatin, banana, soybean, sesame, cashew nut and almond)"
+      },
+      {
+        "k": "p",
+        "v": "Storage: Avoid high temperature, humidity and direct sunlight; store in a cool, dark place."
+      },
+      {
+        "k": "p",
+        "v": "Nutrition facts (per 6 tablets, 1.8g): Energy 6.03kcal, protein 0.19g, fat 0.06g, carbohydrate 1.17g, salt equivalent 0.0013g"
+      },
+      {
+        "k": "p",
+        "v": "Contents: 108g (300mg × 360 tablets). How to take: as a guide, take 6 tablets a day with water or lukewarm water, without chewing."
+      },
+      {
+        "k": "h3",
+        "v": "Handling precautions"
+      },
+      {
+        "k": "p",
+        "v": "• Please check the ingredients, and do not take this product if you have a food allergy.\n• After opening, consume as soon as possible.\n• Infants and children should not take this product.\n• If you are taking medicine or receiving medical treatment, consult a doctor before taking.\n• Because of the nature of the ingredients, the appearance and smell may vary slightly.\n• Base your diet on staple foods, main dishes and side dishes, and keep your meals balanced.\nMaker: HISANO\nManufacturer: AFC-HD AMS Life Science Co., Ltd.\nCountry of origin: Japan\nJAN: 4570005540055\nManufacturer's suggested price: ¥13,800 (tax incl.)\nAdvertiser: VNT Co., Ltd. (0120-202-676)"
+      }
+    ]
+  },
+  {
+    "slug": "liver-extract",
+    "name": "HISANO Liver Extract Sei NANO Premium",
+    "price": "¥19,440 (tax incl.)",
+    "image": {
+      "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_b6f7e5a6-20b8-426e-b2b0-67e28a80ce84_small.webp",
+      "w": 813,
+      "h": 800
+    },
+    "summary": "HISANO Liver Extract Sei NANO Premium is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products.\n\nGMP sets strict rules for a thorough quality-control process that keeps products safe and of high quality. At the factory, every step from manufacturing to inspection follows these standards closely. We keep our promise on quality and deliver HISANO Liver Extract Sei NANO Premium as a high-quality, reliable product to our customers. We keep to the highest quality standards so that we can deliver products you can use with confidence.",
+    "blocks": [
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_93e69d80-f3b3-4195-ae5c-be5d69f1b832_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_fb81d9c0-2a7d-43d3-b047-836cc9cb359b_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_986fbb2f-8011-4a7f-b452-aa5daa5175ec_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_eaedb856-9578-4383-9dd5-b264647f6229_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_8d62199a-235b-451c-a4c1-6ecd515dea8d_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "What is liver extract?"
+      },
+      {
+        "k": "p",
+        "v": "Liver extract is an ingredient extracted from animal liver and is rich in nutrients such as protein, amino acids, vitamins and minerals. It is especially rich in B vitamins and iron, and is widely used as a nutritional supplement. Because it is an efficient way to take in animal-derived nutrients, liver extract is attracting attention among health-conscious people. It also contains peptides obtained by breaking down protein, so it is thought to be well absorbed by the body. The B vitamins in liver extract support energy metabolism and help the body efficiently produce the energy needed for daily activities. Because it is rich in iron, it is also considered suitable for people who need more iron. Liver extract is often made into health foods and supplements, and is used to help make up for nutrients that modern diets tend to lack. However, it is important to keep to each product's suggested intake and to eat a balanced diet."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_3a3b538d-7114-4141-be31-bc01203fae49_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_8cf251ce-6c08-420d-9c3a-27633005a8d9_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Loved by people like these"
+      },
+      {
+        "k": "p",
+        "v": "Liver extract is recommended for people interested in their health, such as:"
+      },
+      {
+        "k": "p",
+        "v": "• People who want to support their liver function"
+      },
+      {
+        "k": "p",
+        "v": "• People who feel they tire easily"
+      },
+      {
+        "k": "p",
+        "v": "• People concerned about an unbalanced diet"
+      },
+      {
+        "k": "p",
+        "v": "• People worried about a lack of iron"
+      },
+      {
+        "k": "p",
+        "v": "• People who care about beauty and health"
+      },
+      {
+        "k": "p",
+        "v": "• People who feel short of energy day to day"
+      },
+      {
+        "k": "p",
+        "v": "• People who want to support a healthy diet"
+      },
+      {
+        "k": "p",
+        "v": "For people with these concerns or interests, adding health foods containing liver extract may help with everyday health. However, if you are already taking medicine or are worried about a particular health condition, we recommend consulting a doctor or specialist before taking it."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_4bd26d56-ed2b-4f5e-8f30-d0c2ef0d7447_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "A generous size"
+      },
+      {
+        "k": "p",
+        "v": "This product comes in a large box of 360 tablets, with a guideline of 6 tablets a day. One pack lasts about 60 days, a cost-effective design you can use for a long time. Each tablet contains a solid 300mg, firmly supporting your health."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_964e17b7-5cef-4384-ac37-ba0e8e83262e_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO Liver Extract Sei NANO Premium: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Manufacturing you can rely on"
+      },
+      {
+        "k": "p",
+        "v": "HISANO Liver Extract Sei NANO Premium is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products."
+      },
+      {
+        "k": "p",
+        "v": "This certification is a strict standard set to protect product safety and quality. Every step, from receiving raw materials to manufacturing and shipping, is tightly controlled."
+      },
+      {
+        "k": "p",
+        "v": "Being made in a GMP-certified factory gives you the following assurances:"
+      },
+      {
+        "k": "h3",
+        "v": "Mistake-proof processes"
+      },
+      {
+        "k": "p",
+        "v": "Work processes are standardised and staff are thoroughly trained, keeping manufacturing errors to a minimum."
+      },
+      {
+        "k": "h3",
+        "v": "A clean, safe environment"
+      },
+      {
+        "k": "p",
+        "v": "The factory is kept clean, with thorough hygiene control to prevent foreign matter and contamination."
+      },
+      {
+        "k": "h3",
+        "v": "Consistently high quality"
+      },
+      {
+        "k": "p",
+        "v": "Quality is checked closely from raw materials to the finished product, so we can deliver products you can trust. Because they are made in a GMP-certified factory, we can offer high-quality products you can use with confidence, and recommend them with pride to everyone who values quality and safety."
+      },
+      {
+        "k": "hr"
+      },
+      {
+        "k": "h2",
+        "v": "Product description"
+      },
+      {
+        "k": "p",
+        "v": "Contains 600mg of liver extract. The liver extract is enzyme-treated to lower its molecular weight (broken down into amino acids and peptides). It also contains 540mg of three types of turmeric (spring turmeric, autumn turmeric and purple turmeric). Spring turmeric contains the yellow pigment curcumin, autumn turmeric is rich in minerals, and purple turmeric is valued for its rarity and functionality."
+      },
+      {
+        "k": "p",
+        "v": "Pork liver hydrolysate (liver extract) is an ingredient extracted from pork liver, and generally contains the nutrients and active components found in pork liver. The liver stores many nutrients and vitamins and plays an important role in metabolism, so it is considered highly nutritious. The liver contains nutrients such as vitamin A, iron, folic acid, vitamin B12, taurine and coenzyme Q10, and liver extracts may contain these components."
+      },
+      {
+        "k": "p",
+        "v": "Turmeric extract: turmeric is said to have antioxidant effects and supports building strength."
+      },
+      {
+        "k": "p",
+        "v": "Turmeric powder: rich in curcumin; recommended for people who drink alcohol and for staying healthy."
+      },
+      {
+        "k": "p",
+        "v": "Spring turmeric: blooms with red flowers from spring to early summer. Its crude-drug name is kyoou, and it grows wild on Iriomote Island in Okinawa. It contains a little curcumin and is rich in essential oils and minerals."
+      },
+      {
+        "k": "h3",
+        "v": "Curcumin"
+      },
+      {
+        "k": "p",
+        "v": "Curcumin is found in turmeric.\nIn the mid-Edo period, turmeric was used as a medicine for the liver and digestive system and as a heart tonic.\nThe liver is the largest organ in the human body. It produces as many as 3,000 kinds of substances that act in the body, such as enzymes, and also has the important functions of metabolism and detoxification.\nIn ancient times the liver was thought to be the most important organ in the body, and in East Asia the character for liver, 肝, has been used to mean \"important\", as in kanjin and kanyou."
+      },
+      {
+        "k": "h3",
+        "v": "Main ingredients"
+      },
+      {
+        "k": "p",
+        "v": "Liver extract 600mg, three types of turmeric powder 540mg, 90mg as curcuminoids\nIngredients: Pork liver hydrolysate (manufactured in Denmark), turmeric powder, turmeric extract, maltitol, spring turmeric powder, zedoary powder / microcrystalline cellulose, HPC, calcium silicate, calcium stearate (contains pork)\nStorage: Avoid high temperature, humidity and direct sunlight; store in a cool, dark place.\nNutrition facts (per 6 tablets, 1.8g)\nEnergy 6.5kcal\nProtein 0.47g\nFat 0.06g\nCarbohydrate 1.02g\nSalt equivalent 0.0684g\nContents: 108g (300mg per tablet × 360 tablets)\nHow to take\n• As a guide, take 6 tablets a day with water or lukewarm water, without chewing."
+      },
+      {
+        "k": "h3",
+        "v": "Handling precautions"
+      },
+      {
+        "k": "p",
+        "v": "• Please check the ingredients, and do not take this product if you have a food allergy.\n• After opening, consume as soon as possible.\n• Infants and children should not take this product.\n• If you are taking medicine or receiving medical treatment, consult a doctor before taking.\n• Because of the nature of the ingredients, the appearance and smell may vary slightly.\n• Base your diet on staple foods, main dishes and side dishes, and keep your meals balanced."
+      },
+      {
+        "k": "p",
+        "v": "Maker: HISANO"
+      },
+      {
+        "k": "p",
+        "v": "Manufacturer: AFC-HD AMS Life Science Co., Ltd."
+      },
+      {
+        "k": "p",
+        "v": "Country of origin: Japan"
+      },
+      {
+        "k": "p",
+        "v": "JAN: 4570005540031"
+      },
+      {
+        "k": "p",
+        "v": "Manufacturer's suggested retail price: ¥19,440 (tax incl.)"
+      },
+      {
+        "k": "p",
+        "v": "Advertiser: VNT Co., Ltd. (0120-202-676)"
+      }
+    ]
+  },
+  {
+    "slug": "senobi",
+    "name": "HISANO NANO Senobi Kakumei",
+    "price": "¥16,990 (tax incl.)",
+    "image": {
+      "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_e58f29f4-8d8e-43a0-a5dc-95aa11117f25_small.webp",
+      "w": 813,
+      "h": 800
+    },
+    "summary": "HISANO NANO Senobi Kakumei is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products.\n\nGMP sets strict rules for a thorough quality-control process that keeps products safe and of high quality. At the factory, every step from manufacturing to inspection follows these standards closely. We keep our promise on quality and deliver HISANO NANO Senobi Kakumei as a high-quality, reliable product to our customers. We keep to the highest quality standards so that we can deliver products you can use with confidence.",
+    "blocks": [
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_274b3995-b269-48c7-a802-7201e11ed6b4_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_8c395496-e58e-44e4-82a1-1de06a2a6684_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_7864016b-1005-4269-a376-b44aa7d0e892_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_bb2c5e2e-b101-4c71-8c11-309918bbc87c_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_de8c884f-7e96-4bbc-a333-0a740746685b_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "h2",
+        "v": "What is HISANO NANO Senobi Kakumei?"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Senobi Kakumei is a supplement that supports the health of growing children. It contains alpha-GPC and arginine to promote growth hormone secretion. It also contains bone peptide, protetite and coral calcium to support bone formation and higher bone density. A growth-support supplement that gives children nutrients that are hard to get from meals alone. Read the directions and take it with water or lukewarm water, as a complement to diet and exercise. Store away from high temperature, humidity and direct sunlight, in a cool place."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_9839dab9-7885-4cfc-8a5b-fe2ce56ba514_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Hard to get from meals, easy with Senobi Kakumei"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Senobi Kakumei is a supplement that supports healthy development in growing children. It is a balanced blend of ingredients that promote growth hormone secretion and nutrients that help form bones, supporting growth in every way."
+      },
+      {
+        "k": "p",
+        "v": "Alpha-GPC is also found in breast milk; it promotes growth hormone secretion and helps with learning ability and health. Arginine is an important material for growth hormone and one of the amino acids essential for development."
+      },
+      {
+        "k": "p",
+        "v": "To support bone health, it contains bone peptide, which activates osteoblasts and promotes bone formation. Protetite strengthens the bond between type I collagen and minerals, supporting bone growth more efficiently. Coral calcium is well absorbed, and combined with CPP (casein phosphopeptide) and vitamin D it helps raise bone density more effectively."
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Senobi Kakumei efficiently provides the nutrients needed for growth, giving children ingredients that meals alone can't fully provide and firmly supporting their health while they grow."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_94b2fb11-b536-475f-bb3f-ed086fe8f4d8_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Loved by people like these"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Senobi Kakumei firmly supports health while children grow. We recommend it for:"
+      },
+      {
+        "k": "p",
+        "v": "• Children whose growth you want to support (contains alpha-GPC and arginine, which promote growth hormone)"
+      },
+      {
+        "k": "p",
+        "v": "• People concerned about bone growth (bone peptide and protetite give firm support)"
+      },
+      {
+        "k": "p",
+        "v": "• Children whose diet tends to be unbalanced (an efficient source of coral calcium and vitamin D)"
+      },
+      {
+        "k": "p",
+        "v": "• Children who work hard at sport (a balanced blend of ingredients that help strengthen bones)"
+      },
+      {
+        "k": "p",
+        "v": "• People who want to support healthy growth (contains a balance of essential amino acids)"
+      },
+      {
+        "k": "p",
+        "v": "• People who want an easy way to top up nutrition on busy days (a supplement for efficiently getting the ingredients needed for growth)"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Senobi Kakumei is a supplement that makes it easy to top up the nutrition needed for growth. Made part of the daily routine, it supports healthy growth. Before taking it, check for allergies and physical condition, and consult a specialist if needed."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_544c7631-2383-4398-82bf-8903ce327574_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "h2",
+        "v": "A generous size"
+      },
+      {
+        "k": "p",
+        "v": "This product comes in a large box of 360 tablets, with a guideline of 6 tablets a day. One box lasts about 60 days, making it easy to continue for a long time. Each tablet contains 300mg, a format that fits easily into your daily health routine."
+      },
+      {
+        "k": "img",
+        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_9c6f752f-06f9-46aa-a73f-a7e1b2ed5c5b_small.webp",
+        "w": 800,
+        "h": 600,
+        "alt": "HISANO NANO Senobi Kakumei: product image"
+      },
+      {
+        "k": "h2",
+        "v": "Manufacturing you can rely on"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Senobi Kakumei is proudly made at the AMS Life Science head-office factory. The factory is one of HISANO's main production sites and holds GMP (Good Manufacturing Practices) certification, the standard required for making high-quality products."
+      },
+      {
+        "k": "p",
+        "v": "This certification is a strict standard set to protect product safety and quality. Every step, from receiving raw materials to manufacturing and shipping, is tightly controlled."
+      },
+      {
+        "k": "p",
+        "v": "Being made in a GMP-certified factory gives you the following assurances:"
+      },
+      {
+        "k": "h3",
+        "v": "Mistake-proof processes"
+      },
+      {
+        "k": "p",
+        "v": "Work processes are standardised and staff are thoroughly trained, keeping manufacturing errors to a minimum."
+      },
+      {
+        "k": "h3",
+        "v": "A clean, safe environment"
+      },
+      {
+        "k": "p",
+        "v": "The factory is kept clean, with thorough hygiene control to prevent foreign matter and contamination."
+      },
+      {
+        "k": "h3",
+        "v": "Consistently high quality"
+      },
+      {
+        "k": "p",
+        "v": "Quality is checked closely from raw materials to the finished product, so we can deliver products you can trust. Because they are made in a GMP-certified factory, we can offer high-quality products you can use with confidence, and recommend them with pride to everyone who values quality and safety."
+      },
+      {
+        "k": "hr"
+      },
+      {
+        "k": "h2",
+        "v": "Product description"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Senobi Kakumei is a supplement containing ingredients that support children's health.\nAlpha-GPC\nAn ingredient found in breast milk that is important for the body's growth and vital activities. Alpha-GPC is present in the body's cells and is attracting attention because it is expected to promote growth hormone secretion, improve dementia, improve learning ability, promote health and help with beauty.\nEssential amino acids\nGrowth hormone, which is essential for growing taller, is made up of many linked amino acids, and the leading one is arginine. Arginine is not only a material that makes up growth hormone, but is also known to be closely involved in its secretion.\nBone peptide is a peptide protein discovered in egg yolk that helps growth. A peptide is protein broken down into small pieces; broken down further, it becomes amino acids. It is a groundbreaking bone-growth ingredient that acts on both bone building and bone breakdown, activating the osteoblasts that build bone and suppressing the osteoclasts that break down old bone. Taken together with calcium, a component of bone, it increases bone growth and density to build strong, solid bones.\nBones are often thought to be made of calcium, but about 30% is protein such as collagen and 70% is minerals such as calcium, phosphorus and magnesium.\nProtetite\nProtetite is a collagen-containing mineral complex in which minerals such as calcium, phosphorus and magnesium (like the bark of a tree) are bound to type I collagen, the base of bone (like the trunk of a tree).\nCoral is naturally rich in calcium, and its main component is calcium carbonate, known for being well absorbed by the body. To aid absorption further, it contains CPP (casein phosphopeptide), a protein-derived ingredient, and vitamin D, supporting the health of Japanese people, who are said to be chronically short of calcium."
+      },
+      {
+        "k": "h3",
+        "v": "Product specifications"
+      },
+      {
+        "k": "p",
+        "v": "Ingredients: Reduced maltose syrup (manufactured in Japan), collagen peptide, brewer's yeast, yeast (contains zinc), plant lactic acid bacteria powder (heat-killed), collagen-containing mineral complex, egg yolk protein hydrolysate, alpha-GPC (glycerophosphocholine) processed powder / cellulose, coral calcium, calcium stearate, fine silicon dioxide, L-arginine, L-leucine, L-valine, L-isoleucine, L-lysine salt\nContents: 108g (300mg × 360 tablets)"
+      },
+      {
+        "k": "h3",
+        "v": "Handling precautions"
+      },
+      {
+        "k": "p",
+        "v": "• Please check the ingredients, and do not take this product if you have a food allergy.\n• After opening, consume as soon as possible.\n• Infants and children should not take this product.\n• If you are taking medicine or receiving medical treatment, consult a doctor before taking.\n• Because of the nature of the ingredients, the appearance and smell may vary slightly.\n• Base your diet on staple foods, main dishes and side dishes, and keep your meals balanced.\n● Maker: HISANO\n● Manufacturer: AFC-HD AMS Life Science Co., Ltd.\n● Country of origin: Japan\n● JAN: 4570005540062\n● Manufacturer's suggested price: ¥16,990 (tax incl.)\n● Advertiser: VNT Co., Ltd. (0120-202-676)"
+      }
+    ]
   }
 ];

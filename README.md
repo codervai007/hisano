@@ -43,6 +43,15 @@ from another product (please supply the correct text):
   product, its 内容量 (108g, 360粒), and a 原材料名 line listing shark liver oil.
 - HISANO アンセリンプレミアム+: a 原材料名 line listing shark liver oil.
 - HISANO PREMIUM NMN 36000: one block of text that appeared twice.
+- 牡蠣マカ プレミアム: a 原材料名 line listing shark liver oil. Note its pack size
+  disagrees on the original (180 tablets in the text, 360 in the spec).
+- 肝臓エキス精 NANO プレミアム: a section about plant fermentation extract
+  (from the enzyme product).
+- NANO セノビ革命: a line about turmeric, and a duplicated summary paragraph.
+
+The ナットウキナーゼ page (and to a lesser degree セノビ革命) carries disease
+prevention claims (thrombosis, blood pressure, cholesterol; growth hormone) as
+written on the original site; have them checked before publishing.
 
 ## Still to do
 

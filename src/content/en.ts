@@ -70,6 +70,11 @@ export const en = {
     { ...ja.products[5], name: "HISANO Anserine Premium+", price: "¥16,740 (tax incl.)" },
     { ...ja.products[6], name: "Shark Cartilage Power Plus", price: "¥19,332 (tax incl.)" },
     { ...ja.products[7], name: "Cordyceps Premium Class", price: "¥18,252 (tax incl.)" },
+    { ...ja.products[8], name: "HISANO Oyster Maca Premium", price: "¥17,820 (tax incl.)" },
+    { ...ja.products[9], name: "HISANO NANO Nattokinase", price: "¥19,440 (tax incl.)" },
+    { ...ja.products[10], name: "HISANO NANO Kaicho Enzyme", price: "¥13,800 (tax incl.)" },
+    { ...ja.products[11], name: "HISANO Liver Extract Sei NANO Premium", price: "¥19,440 (tax incl.)" },
+    { ...ja.products[12], name: "HISANO NANO Senobi Kakumei", price: "¥16,990 (tax incl.)" },
   ],
 
   rakuten: {
