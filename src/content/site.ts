@@ -79,6 +79,8 @@ export const rakuten = {
   text: "楽天市場でHISANO商品を買う",
   button: "ショップを開く",
   href: "https://www.rakuten.co.jp/nihonkenkostore/",
+  // The Rakuten logo image the original site uses.
+  logo: `${DESIGN}/s-360x240_webp_8c8bbff2-91c2-4326-bb1b-70b09812c502.png`,
 };
 
 export const backToProducts = "商品一覧へ戻る";
