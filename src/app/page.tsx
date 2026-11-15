@@ -12,6 +12,7 @@ import {
   featuredHeading,
   hero,
   intro,
+  introImages,
   moreLabel,
   nav,
   productsHeading,
@@ -58,6 +59,20 @@ export default function HomePage() {
             <PrimaryLink href="/download">{cta.download}</PrimaryLink>
             <SecondaryLink href="/contact">{cta.contact}</SecondaryLink>
           </div>
+          <div className="mt-6 grid w-full max-w-5xl grid-cols-2 gap-3 md:grid-cols-[2fr_1fr] md:gap-4">
+            {introImages.map((img, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={img.src}
+                src={img.src}
+                alt=""
+                width={img.width}
+                height={img.height}
+                loading="lazy"
+                className={`photo-card h-full w-full object-cover ${i === 0 ? "col-span-2 aspect-[3/2] md:col-span-1 md:row-span-2 md:aspect-auto" : "aspect-[3/2]"}`}
+              />
+            ))}
+          </div>
         </section>
       </Reveal>
 
@@ -73,6 +88,15 @@ export default function HomePage() {
               delay={i * 110}
               className="lift flex min-w-0 flex-[1_1_26rem] flex-col items-center gap-4 rounded-lg border border-ink/10 border-t-2 border-t-gold bg-card p-8 text-center md:p-10"
             >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={f.image}
+                alt={f.name}
+                width={813}
+                height={800}
+                loading="lazy"
+                className="aspect-square w-full max-w-64 rounded-md bg-white object-contain"
+              />
               <span className="type-eyebrow !text-[0.8125rem]">{f.badge}</span>
               <p className="type-heading text-2xl">{f.name}</p>
               <p className="text-[0.9375rem] leading-[2.05] tracking-[0.05em] text-ink-mute">{f.text}</p>

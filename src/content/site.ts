@@ -12,6 +12,12 @@ export const site = {
   operatorUrl: "https://vntgroup.co.jp",
 };
 
+// Photos are loaded from the old site's file storage for now.
+// TODO: copy them into public/images and point these at the local files,
+// so they keep working if the old site is closed.
+const DESIGN = "https://storage.googleapis.com/studio-design-asset-files/projects/RQqJl8e3Wg";
+const CMS = "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg";
+
 export const nav = [
   { label: "商品について", href: "/product" },
   { label: "私たちについて", href: "/about" },
@@ -29,6 +35,13 @@ export const intro = {
   text: site.description,
 };
 
+// Decorative lifestyle photos beside the intro text.
+export const introImages = [
+  { src: `${DESIGN}/s-1920x1280_v-frms_webp_77dd3c1f-dad2-4103-8015-2bba5c557e03_middle.webp`, width: 1200, height: 800 },
+  { src: `${DESIGN}/s-640x427_v-fs_webp_e7bcc742-d122-460d-b48d-860ac674fa41.webp`, width: 640, height: 427 },
+  { src: `${DESIGN}/s-640x427_v-fs_webp_506a1c61-e267-4c5d-9c50-799a5e843fd4.webp`, width: 640, height: 427 },
+];
+
 export const featuredHeading = "健康的な生活を考えて作られた商品をお届けしています";
 
 export const featured = [
@@ -36,11 +49,13 @@ export const featured = [
     badge: "人気商品",
     name: "サメ軟骨パワープラス",
     href: "/product/shark-cartilage",
+    image: `${DESIGN}/s-813x800_v-fs_webp_2eccf9c2-9dc8-48a9-b520-1f4a2f3368d3.webp`,
     text: "サメの軟骨末だけを使用した、純正サメ軟骨。コンドロイチンを含む食品は鳥の骨などがありますが、なかでもサメは骨全体が軟骨なのできわめて効率良くコンドロイチンを摂取することができます。",
   },
   {
     badge: "人気商品",
     name: "冬虫夏草プレミアムクラス",
+    image: `${DESIGN}/s-813x800_v-fs_webp_9178d1a6-1e78-44a6-856b-081377089f9f.webp`,
     // TODO: paste the rest of the original sentence if it continues.
     text: "「冬虫夏草プレミアムクラス」は、安心安全の国内製造、冬虫夏草を100%使用しています。冬虫夏草には、コルジセピンやβグルカン、その他ビタミン、ミネラル、18種類のアミノ酸などが豊富に含まれています。",
   },
@@ -98,12 +113,12 @@ export const shark = {
 export const productsHeading = "商品一覧";
 
 export const products = [
-  { name: "HISANO PREMIUM NMN 36000", price: "¥49,680（税込）" },
-  { name: "沖縄フコイダンプレミアム", price: "¥22,680（税込）" },
-  { name: "フコイダンプレミアム", price: "¥38,000（税込）" },
-  { name: "Hisanoイチョウ SQ DHA オメガ3-6-9プレミアム", price: "¥19,440（税込）" },
-  { name: "HISANO ビフィズス菌プレミアム+", price: "¥5,940（税込）" },
-  { name: "HISANO アンセリンプレミアム+", price: "¥16,740（税込）" },
+  { name: "HISANO PREMIUM NMN 36000", image: `${DESIGN}/s-620x700_v-fs_webp_e0106074-144f-46b6-abb7-b435fe952ff1.webp`, price: "¥49,680（税込）" },
+  { name: "沖縄フコイダンプレミアム", image: `${DESIGN}/s-800x800_v-fs_webp_2047faf5-a582-42dc-933e-3cb0e265b5ae_small.webp`, price: "¥22,680（税込）" },
+  { name: "フコイダンプレミアム", image: `${CMS}/s-800x800_v-fs_webp_c0ec29b5-237b-4ef0-976b-bf3c341eb975_small.webp`, price: "¥38,000（税込）" },
+  { name: "Hisanoイチョウ SQ DHA オメガ3-6-9プレミアム", image: `${CMS}/s-813x800_v-fs_webp_f46d4443-4ecb-4e43-90fa-784d7be90fcb.webp`, price: "¥19,440（税込）" },
+  { name: "HISANO ビフィズス菌プレミアム+", image: `${CMS}/s-813x800_v-fs_webp_8237735e-05e6-4778-b3ce-3d07f66c5d30.webp`, price: "¥5,940（税込）" },
+  { name: "HISANO アンセリンプレミアム+", image: `${CMS}/s-813x800_v-fs_webp_1f7c6843-ce31-42e7-acc3-faa810ef9604.webp`, price: "¥16,740（税込）" },
 ];
 
 export const priceLabel = "メーカー希望販売価格";
@@ -141,17 +156,22 @@ export const cta = {
 
 export const about = {
   heroTitle: "私たちは皆様の毎日の健康をサポートしています。",
-  // TODO: the original paragraph was cut off after 「提供」; paste the full text.
   heroText:
-    "私たちにとって、健康は日々の生活を充実させ、未来をより豊かにするための不可欠なものです。HISANOでは、そんな健康を支えるために、一人ひとりのニーズに応じた商品を、安心して長く続けられる形で提供しています。",
+    "私たちにとって、健康は日々の生活を充実させ、未来をより豊かにするための不可欠なものです。HISANOでは、そんな健康を支えるために、一人ひとりのニーズに応じた商品を、安心して長く続けられる形で提供することに力を注いでいます。",
   tagline: "数多くの健康食品が国内外で愛される、HISANO商品だからこその安心と高品質。",
+  heroImage: { src: `${DESIGN}/s-1070x833_v-fs_webp_f99c7d60-8ddb-4201-9d72-ca42b1cbe259.webp`, width: 1070, height: 833 },
+  factoryImage: {
+    src: `${DESIGN}/s-537x376_webp_828cedbd-a0d2-42b8-a045-da2d4377377c.webp`,
+    width: 537,
+    height: 376,
+    alt: "アムスライフサイエンス本社工場",
+  },
   production: {
     heading: "生産体制に関して",
     title: "安心してご利用いただける製品を",
     text: "私たちはお客様に安心してお選びいただける商品を、これからも変わらずお届けし続けてまいります。健康に寄り添い、信頼される品質を守りながら、皆さまの毎日に貢献できる商品作りに努めています。",
-    // TODO: paste the full factory paragraph (it mentions GMP) from the original page.
     factory:
-      "HISANOの健康食品は、アムスライフサイエンス本社工場で誇りを持って製造されています。当工場はHISANOの主要な製造拠点の一つです。",
+      "HISANOの健康食品は、アムスライフサイエンス本社工場で誇りを持って製造されています。当工場はHISANOの主要な製造拠点の一つであり、高品質な製品製造において求められる基準であるGMP（Good Manufacturing Practices）認定を獲得しています。GMP認定は、製品の品質と安全性を確保するために徹底的な品質管理プロセスを実施するための厳格な基準を示します。当工場では、製品の製造から検査までの全工程がこれらの品質基準に厳密に準拠して行われています。安心して利用いただける製品をお届けするために、私たちは最高の品質基準を維持し続けています。",
   },
   sales: {
     heading: "販売",
