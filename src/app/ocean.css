@@ -317,3 +317,8 @@
 .site-header .glass-panel .text-ink {
   color: #ffffff;
 }
+/* Theme switch thumb: translucent, so the white icons stay readable on it. */
+.site-header .glass-panel > span.absolute {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}
