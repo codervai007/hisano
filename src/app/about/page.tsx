@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Benefits } from "@/components/Benefits";
 import { CtaBand } from "@/components/CtaBand";
+import { HeroBanners } from "@/components/HeroBanners";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { getContent } from "@/content";
@@ -14,13 +15,13 @@ export default async function AboutPage() {
   const { about, eyebrow } = await getContent();
   return (
     <>
-      <section className="ocean ocean-hero ocean-hero-short -mt-10">
-        <div className="shell">
-          <div className="ocean-stack">
-            <h1 className="ocean-title foil rise rise-1">{about.heroTitle}</h1>
-            <span aria-hidden className="ocean-rule rise rise-2" />
-            <p className="rise rise-3">{about.heroText}</p>
-          </div>
+      <section className="-mt-10">
+        <HeroBanners />
+        <div className="shell mt-16 flex flex-col items-center gap-6 text-center">
+          <p className="type-eyebrow rise rise-1">{eyebrow.about}</p>
+          <h1 className="type-display rise rise-2 max-w-3xl text-[1.625rem] md:text-4xl">{about.heroTitle}</h1>
+          <span aria-hidden className="ornament rise rise-3" />
+          <p className="type-body rise rise-4 max-w-3xl">{about.heroText}</p>
         </div>
       </section>
 

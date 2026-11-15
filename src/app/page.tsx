@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Benefits } from "@/components/Benefits";
 import { PrimaryLink, SecondaryLink } from "@/components/Buttons";
 import { CtaBand } from "@/components/CtaBand";
+import { HeroBanners } from "@/components/HeroBanners";
 import { ProductGrid } from "@/components/ProductGrid";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -14,7 +15,6 @@ export default async function HomePage() {
     eyebrow,
     featured,
     featuredHeading,
-    heroBanners,
     heroTitle,
     intro,
     introImages,
@@ -26,21 +26,7 @@ export default async function HomePage() {
     <>
       <section className="-mt-10">
         <h1 className="sr-only">{heroTitle}</h1>
-        <div className="hero-banners">
-          {heroBanners.map((banner, i) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              key={banner.src}
-              src={banner.src}
-              alt={banner.alt}
-              width={1280}
-              height={512}
-              fetchPriority={i === 0 ? "high" : "low"}
-              aria-hidden={i > 0}
-              className="hero-banner"
-            />
-          ))}
-        </div>
+        <HeroBanners />
         <div className="hero-actions shell">
           <Link href={nav[0].href} className="btn-pill btn-pill-brand">
             {nav[0].label}
