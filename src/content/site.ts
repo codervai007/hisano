@@ -41,7 +41,7 @@ export const heroBanners = [
     alt: "自然の恵みで、健やかで美しい毎日を。内側から整える、未来の健康と美しさ。HISANO。健やかな毎日をサポート、内側から美しさを育む、いつまでも元気に、いきいきと。",
   },
 ];
-export const heroTitle = "自然の恵みで、健やかで美しい毎日を。";
+export const heroTitle: string = "自然の恵みで、健やかで美しい毎日を。";
 
 export const intro = {
   title: "安全で便利な健康食品を",
@@ -55,7 +55,7 @@ export const introImages = [
   { src: `${DESIGN}/s-640x427_v-fs_webp_506a1c61-e267-4c5d-9c50-799a5e843fd4.webp`, width: 640, height: 427 },
 ];
 
-export const featuredHeading = "健康的な生活を考えて作られた商品をお届けしています";
+export const featuredHeading: string = "健康的な生活を考えて作られた商品をお届けしています";
 
 export const featured = [
   {
@@ -75,9 +75,9 @@ export const featured = [
   },
 ];
 
-export const detailLabel = "詳しく見る";
+export const detailLabel: string = "詳しく見る";
 
-export const productsHeading = "商品一覧";
+export const productsHeading: string = "商品一覧";
 
 export const products = [
   { name: "HISANO PREMIUM NMN 36000", slug: "nmn-36000", image: `${DESIGN}/s-620x700_v-fs_webp_e0106074-144f-46b6-abb7-b435fe952ff1.webp`, price: "¥49,680（税込）" },
@@ -96,10 +96,10 @@ export const rakuten = {
   logo: `${DESIGN}/s-360x240_webp_8c8bbff2-91c2-4326-bb1b-70b09812c502.png`,
 };
 
-export const backToProducts = "商品一覧へ戻る";
+export const backToProducts: string = "商品一覧へ戻る";
 
-export const priceLabel = "メーカー希望販売価格";
-export const moreLabel = "もっと見る";
+export const priceLabel: string = "メーカー希望販売価格";
+export const moreLabel: string = "もっと見る";
 
 export const benefits = [
   {
