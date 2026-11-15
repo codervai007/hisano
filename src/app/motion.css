@@ -269,3 +269,8 @@ html.menu-open {
     animation: none;
   }
 }
+
+/* Product list: items past the first six wait for 「もっと見る」. */
+.product-grid[data-collapsed="true"] .product-extra {
+  display: none;
+}

@@ -86,6 +86,7 @@ export const en = {
   backToProducts: "Back to all products",
   priceLabel: "Manufacturer's suggested retail price",
   moreLabel: "See all products",
+  showMore: "Show more",
 
   benefits: [
     {

@@ -107,6 +107,7 @@ export const backToProducts: string = "商品一覧へ戻る";
 
 export const priceLabel: string = "メーカー希望販売価格";
 export const moreLabel: string = "もっと見る";
+export const showMore: string = "もっと見る";
 
 export const benefits = [
   {

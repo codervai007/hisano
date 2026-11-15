@@ -19,8 +19,8 @@ export default async function ProductPage() {
         <SectionHeading as="h1" eyebrow={eyebrow.products} title={productsHeading} center />
         <p className="type-body max-w-3xl">{intro.text}</p>
       </section>
-      <section className="shell mt-14">
-        <ProductGrid />
+      <section className="shell mt-14 flex flex-col gap-10">
+        <ProductGrid initial={6} />
       </section>
       <RakutenBand />
       <Benefits />
