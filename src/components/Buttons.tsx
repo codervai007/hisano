@@ -10,7 +10,7 @@ export function PrimaryLink({ href, children }: { href: string; children: React.
 
 export function SecondaryLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <Link href={href} className="btn-pill">
+    <Link href={href} className="btn-pill btn-pill-brand">
       {children}
     </Link>
   );
