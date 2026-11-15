@@ -32,26 +32,26 @@ export function Header() {
   return (
     <>
       <header className="site-header sticky top-0 z-50 mb-10">
-        <div className="shell flex items-center justify-between gap-x-8 py-2">
+        <div className="shell flex items-center justify-between gap-x-8 py-2 md:grid md:grid-cols-[1fr_auto_1fr]">
           <Link
             href="/"
             onClick={close}
-            className="font-latin flex min-h-11 items-center text-3xl font-medium tracking-[0.18em] site-wordmark"
+            className="font-latin flex min-h-11 items-center justify-self-start text-3xl font-medium tracking-[0.18em] site-wordmark"
           >
             {site.name}
           </Link>
-          <div className="flex items-center gap-x-7">
-            <nav aria-label="メイン" className="hidden gap-x-7 md:flex">
-              {nav.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="flex min-h-11 items-center text-[0.8125rem] tracking-[0.08em] text-ink hover:text-brand"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
+          <nav aria-label="メイン" className="hidden justify-center gap-x-8 md:flex">
+            {nav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex min-h-11 items-center whitespace-nowrap text-sm font-bold tracking-[0.08em]"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+          <div className="flex items-center justify-end gap-x-7">
             <ThemeToggle />
             <button
               type="button"
@@ -90,7 +90,7 @@ export function Header() {
                 <Link
                   href={item.href}
                   onClick={close}
-                  className="type-heading flex min-h-16 items-center justify-between text-2xl text-ink hover:text-brand"
+                  className="type-heading flex min-h-16 items-center justify-between text-2xl font-bold text-ink hover:text-brand"
                 >
                   {item.label}
                   <svg
