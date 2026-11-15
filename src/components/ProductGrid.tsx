@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { priceLabel, products } from "@/content/site";
+import { detailLabel, priceLabel, products } from "@/content/site";
 import { Reveal } from "./Reveal";
 
 export function ProductGrid({ limit }: { limit?: number }) {
@@ -26,6 +26,7 @@ export function ProductGrid({ limit }: { limit?: number }) {
             <p className="type-heading text-lg">{p.name}</p>
             <p className="text-xs tracking-[0.08em] text-stone">{priceLabel}</p>
             <p className="font-latin text-2xl font-medium tracking-[0.04em] text-brand">{p.price}</p>
+            <span className="btn-pill btn-pill-brand mt-auto w-full">{detailLabel}</span>
           </Link>
         </Reveal>
       ))}
