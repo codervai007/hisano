@@ -277,48 +277,45 @@
   outline-offset: 3px;
 }
 
-/* ---------- Header: the same deep blue as the hero, in both themes ---------- */
+/* ---------- Header: soft cream with dark text, the same in both themes ---------- */
 .site-header {
-  background: #0d2d63;
-  border-bottom: 1px solid rgba(230, 203, 143, 0.4);
-  color: #ffffff;
+  background: #f7f2e8;
+  border-bottom: 1px solid rgba(176, 141, 87, 0.35);
+  color: #1f1d1b;
 }
 @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   .site-header {
-    background: rgba(13, 45, 99, 0.86);
+    background: rgba(247, 242, 232, 0.9);
     -webkit-backdrop-filter: blur(20px) saturate(160%);
     backdrop-filter: blur(20px) saturate(160%);
   }
 }
-[data-theme="dark"] .site-header {
-  background: rgba(8, 28, 62, 0.9);
-}
 .site-header a {
-  color: rgba(255, 255, 255, 0.92);
+  color: #1f1d1b;
   transition: color 0.25s;
 }
 .site-header a:hover {
-  color: #e6cb8f;
+  color: #1f4f94;
 }
 .site-header .site-wordmark {
-  color: #e6cb8f;
+  color: #1f4f94;
 }
 .site-header .glass-panel {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(31, 29, 27, 0.16);
   box-shadow: none;
-  color: #ffffff;
+  color: #1f1d1b;
+}
+.site-header .glass-panel .text-ink {
+  color: #1f1d1b;
+}
+/* Theme switch thumb: a soft gold disc, readable under the dark icons. */
+.site-header .glass-panel > span.absolute {
+  background: #e6cb8f;
+  box-shadow: none;
 }
 .site-header a:focus-visible,
 .site-header button:focus-visible {
-  outline: 2px solid #ffffff;
+  outline: 2px solid #1f4f94;
   outline-offset: 3px;
-}
-.site-header .glass-panel .text-ink {
-  color: #ffffff;
-}
-/* Theme switch thumb: translucent, so the white icons stay readable on it. */
-.site-header .glass-panel > span.absolute {
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: none;
 }
