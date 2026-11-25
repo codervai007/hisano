@@ -39,8 +39,12 @@ export async function ProductGrid({ limit, initial }: Props) {
                 className="mx-auto mb-1 aspect-square w-full max-w-72 rounded-md bg-white object-contain"
               />
               <p className="type-heading text-lg">{p.name}</p>
-              <p className="text-xs tracking-[0.08em] text-stone">{priceLabel}</p>
-              <p className="font-latin text-2xl font-medium tracking-[0.04em] text-brand">{p.price}</p>
+              {p.price && (
+                <>
+                  <p className="text-xs tracking-[0.08em] text-stone">{priceLabel}</p>
+                  <p className="font-latin text-2xl font-medium tracking-[0.04em] text-brand">{p.price}</p>
+                </>
+              )}
               <span className="btn-pill btn-pill-brand mt-auto w-full">{detailLabel}</span>
             </Link>
           </Reveal>

@@ -79,7 +79,10 @@ export const detailLabel: string = "詳しく見る";
 
 export const productsHeading: string = "商品一覧";
 
+// Newest first. An empty price hides the price line (used until the client
+// gives one).
 export const products = [
+  { name: "HISANO NANOナットウキナーゼ Premium", slug: "nattokinase-premium", image: "/images/nattokinase-premium/box.jpg", price: "" },
   { name: "HISANO PREMIUM NMN 36000", slug: "nmn-36000", image: `${DESIGN}/s-620x700_v-fs_webp_e0106074-144f-46b6-abb7-b435fe952ff1.webp`, price: "¥49,680（税込）" },
   { name: "沖縄フコイダンプレミアム", slug: "okinawa-fucoidan", image: `${DESIGN}/s-800x800_v-fs_webp_2047faf5-a582-42dc-933e-3cb0e265b5ae_small.webp`, price: "¥22,680（税込）" },
   { name: "フコイダンプレミアム", slug: "fucoidan", image: `${CMS}/s-800x800_v-fs_webp_c0ec29b5-237b-4ef0-976b-bf3c341eb975_small.webp`, price: "¥38,000（税込）" },

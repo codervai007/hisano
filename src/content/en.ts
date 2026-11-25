@@ -10,6 +10,24 @@ const site = {
     "HISANO offers safe, convenient health foods through a range of online shops. We deliver free of charge anywhere in Japan, so you can get our products without any extra cost.",
 };
 
+// English names and prices, by product slug.
+const enProducts: Record<string, { name: string; price: string }> = {
+  "nmn-36000": { name: "HISANO PREMIUM NMN 36000", price: "¥49,680 (tax incl.)" },
+  "okinawa-fucoidan": { name: "Okinawa Fucoidan Premium", price: "¥22,680 (tax incl.)" },
+  "fucoidan": { name: "Fucoidan Premium", price: "¥38,000 (tax incl.)" },
+  "ginkgo-dha": { name: "HISANO Ginkgo SQ DHA Omega 3-6-9 Premium", price: "¥19,440 (tax incl.)" },
+  "bifidus": { name: "HISANO Bifidobacteria Premium+", price: "¥5,940 (tax incl.)" },
+  "anserine": { name: "HISANO Anserine Premium+", price: "¥16,740 (tax incl.)" },
+  "shark-cartilage": { name: "Shark Cartilage Power Plus", price: "¥19,332 (tax incl.)" },
+  "cordyceps": { name: "Cordyceps Premium Class", price: "¥18,252 (tax incl.)" },
+  "oyster-maca": { name: "HISANO Oyster Maca Premium", price: "¥17,820 (tax incl.)" },
+  "nattokinase": { name: "HISANO NANO Nattokinase", price: "¥19,440 (tax incl.)" },
+  "kaicho-enzyme": { name: "HISANO NANO Kaicho Enzyme", price: "¥13,800 (tax incl.)" },
+  "liver-extract": { name: "HISANO Liver Extract Sei NANO Premium", price: "¥19,440 (tax incl.)" },
+  "senobi": { name: "HISANO NANO Senobi Kakumei", price: "¥16,990 (tax incl.)" },
+  "nattokinase-premium": { name: "HISANO NANO Nattokinase Premium", price: "" },
+};
+
 export const en = {
   site,
 
@@ -61,21 +79,7 @@ export const en = {
   detailLabel: "View details",
 
   productsHeading: "Our products",
-  products: [
-    { ...ja.products[0], name: "HISANO PREMIUM NMN 36000", price: "¥49,680 (tax incl.)" },
-    { ...ja.products[1], name: "Okinawa Fucoidan Premium", price: "¥22,680 (tax incl.)" },
-    { ...ja.products[2], name: "Fucoidan Premium", price: "¥38,000 (tax incl.)" },
-    { ...ja.products[3], name: "HISANO Ginkgo SQ DHA Omega 3-6-9 Premium", price: "¥19,440 (tax incl.)" },
-    { ...ja.products[4], name: "HISANO Bifidobacteria Premium+", price: "¥5,940 (tax incl.)" },
-    { ...ja.products[5], name: "HISANO Anserine Premium+", price: "¥16,740 (tax incl.)" },
-    { ...ja.products[6], name: "Shark Cartilage Power Plus", price: "¥19,332 (tax incl.)" },
-    { ...ja.products[7], name: "Cordyceps Premium Class", price: "¥18,252 (tax incl.)" },
-    { ...ja.products[8], name: "HISANO Oyster Maca Premium", price: "¥17,820 (tax incl.)" },
-    { ...ja.products[9], name: "HISANO NANO Nattokinase", price: "¥19,440 (tax incl.)" },
-    { ...ja.products[10], name: "HISANO NANO Kaicho Enzyme", price: "¥13,800 (tax incl.)" },
-    { ...ja.products[11], name: "HISANO Liver Extract Sei NANO Premium", price: "¥19,440 (tax incl.)" },
-    { ...ja.products[12], name: "HISANO NANO Senobi Kakumei", price: "¥16,990 (tax incl.)" },
-  ],
+  products: ja.products.map((p) => ({ ...p, ...enProducts[p.slug] })),
 
   rakuten: {
     ...ja.rakuten,

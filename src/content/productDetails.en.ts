@@ -5,6 +5,61 @@ import type { ProductDetail } from "./productDetails";
 
 export const productDetailsEn: ProductDetail[] = [
   {
+    "slug": "nattokinase-premium",
+    "name": "HISANO NANO Nattokinase Premium",
+    "price": "",
+    "image": {
+      "src": "/images/nattokinase-premium/box.jpg",
+      "w": 861,
+      "h": 680
+    },
+    "summary": "",
+    "blocks": [
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/1-daily.jpg",
+        "w": 927,
+        "h": 688,
+        "alt": "NANO Nattokinase, easily every day, delivered all the way to the gut. HISANO NANO Nattokinase is made from our own plant-derived material and protects nattokinase, which is weak against stomach acid, in acid-resistant hard capsules."
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/2-about.jpg",
+        "w": 927,
+        "h": 696,
+        "alt": "What is nattokinase? Nattokinase is an enzyme found in the natto bacteria that give natto its stickiness. Helps prevent blood clots, helps lower blood pressure, helps improve circulation."
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/3-point.jpg",
+        "w": 925,
+        "h": 692,
+        "alt": "NANO Nattokinase recommended point: nattokinase that reaches the gut, beyond natto. Acid-resistant hard capsules carry it all the way to the gut. Nattokinase activity 480,000FU; 1.2 trillion lactic acid bacteria."
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/4-easy.jpg",
+        "w": 928,
+        "h": 699,
+        "alt": "NANO Nattokinase Premium recommended point: easy every day! Capsules efficiently deliver to the gut the nutrition that is hard to get from everyday meals. Tops up nutrition hard to get from meals; easy-to-swallow capsules; reaches the gut efficiently."
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/5-recommend.jpg",
+        "w": 928,
+        "h": 691,
+        "alt": "Supporting your daily health habit. NANO Nattokinase Premium key points: nattokinase activity 480,000FU (per bottle), 3 trillion lactic acid bacteria (per bottle), about 80 days at 3 capsules a day. Made in Japan."
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/6-factory.jpg",
+        "w": 780,
+        "h": 584,
+        "alt": "Reliable quality, made in Japan. HISANO NANO Nattokinase Premium is made in a GMP-certified factory in Japan and delivered as a safe, reliable product under strict quality control. Made in a GMP-certified factory; strict quality control; safe, reliable products."
+      }
+    ]
+  },
+  {
     "slug": "nmn-36000",
     "name": "HISANO PREMIUM NMN 36000",
     "price": "¥49,680 (tax incl.)",

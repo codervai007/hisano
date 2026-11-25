@@ -13,7 +13,7 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = await findProduct((await params).slug, await getLang());
   if (!product) return {};
-  return { title: `${product.name} | HISANO`, description: product.summary.split("\n")[0] };
+  return { title: `${product.name} | HISANO`, description: product.summary.split("\n")[0] || undefined };
 }
 
 function BlockView({ block, side }: { block: Block; side: "left" | "right" }) {
@@ -70,11 +70,13 @@ export default async function ProductDetailPage({ params }: Props) {
         <div className="slide-right flex min-w-0 flex-[1_1_20rem] flex-col items-start gap-5 md:max-w-xl">
           <h1 className="type-heading text-[1.75rem] md:text-4xl">{product.name}</h1>
           <span aria-hidden className="ornament ornament-left" />
-          <div>
-            <p className="text-xs tracking-[0.08em] text-stone">{priceLabel}</p>
-            <p className="font-latin text-3xl font-medium tracking-[0.04em] text-brand">{product.price}</p>
-          </div>
-          <p className="type-body whitespace-pre-line">{product.summary}</p>
+          {product.price && (
+            <div>
+              <p className="text-xs tracking-[0.08em] text-stone">{priceLabel}</p>
+              <p className="font-latin text-3xl font-medium tracking-[0.04em] text-brand">{product.price}</p>
+            </div>
+          )}
+          {product.summary && <p className="type-body whitespace-pre-line">{product.summary}</p>}
         </div>
       </section>
 

@@ -20,6 +20,61 @@ export type ProductDetail = {
 
 export const productDetails: ProductDetail[] = [
   {
+    "slug": "nattokinase-premium",
+    "name": "HISANO NANOナットウキナーゼ Premium",
+    "price": "",
+    "image": {
+      "src": "/images/nattokinase-premium/box.jpg",
+      "w": 861,
+      "h": 680
+    },
+    "summary": "",
+    "blocks": [
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/1-daily.jpg",
+        "w": 927,
+        "h": 688,
+        "alt": "NANOナットウキナーゼを毎日簡単に、しっかり腸まで届ける。HISANO NANOナットウキナーゼは、胃酸に対して弱い「ナットウキナーゼ」を、独自の植物由来で製造し、耐酸性のハードカプセルでしっかりと保護しています。"
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/2-about.jpg",
+        "w": 927,
+        "h": 696,
+        "alt": "ナットウキナーゼって？ナットウキナーゼとは、納豆のネバネバのもととなる納豆菌に含まれる酵素です。血栓の予防を補助、血圧の低下を補助、血液循環の改善を補助。"
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/3-point.jpg",
+        "w": 925,
+        "h": 692,
+        "alt": "NANOナットウキナーゼ おすすめPOINT。納豆を超えて腸まで届けるナットウキナーゼ。耐酸性ハードカプセルでしっかり腸まで。ナットウキナーゼ活性480,000FU、乳酸菌1兆2,000億個。"
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/4-easy.jpg",
+        "w": 928,
+        "h": 699,
+        "alt": "NANOナットウキナーゼPremium おすすめPOINT。毎日お手軽に！日常の食事では摂りにくい栄養を、カプセルタイプで効率的に腸まで届ける！食事では摂りにくい栄養を補う、飲みやすいカプセルタイプ、効率的に腸まで届ける。"
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/5-recommend.jpg",
+        "w": 928,
+        "h": 691,
+        "alt": "毎日の健康習慣をサポート。NANOナットウキナーゼPremium おすすめポイント：納豆キナーゼ活性480,000FU（1瓶中）、乳酸菌3兆個（1瓶中）、1日3粒の目安で約80日分。日本製。"
+      },
+      {
+        "k": "img",
+        "src": "/images/nattokinase-premium/6-factory.jpg",
+        "w": 780,
+        "h": 584,
+        "alt": "日本国内製造の安心品質。HISANOのNANOナットウキナーゼPremiumは、日本国内のGMP認定工場で製造し、厳格な品質管理のもと、安心・安全な製品をお届けしています。GMP認定工場で製造、厳格な品質管理、安心・安全な製品をお届け。"
+      }
+    ]
+  },
+  {
     "slug": "nmn-36000",
     "name": "HISANO PREMIUM NMN 36000",
     "price": "¥49,680（税込）",
