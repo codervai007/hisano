@@ -50,7 +50,7 @@ export const intro = {
 
 // Decorative lifestyle photos beside the intro text.
 export const introImages = [
-  { src: `${DESIGN}/s-1920x1280_v-frms_webp_77dd3c1f-dad2-4103-8015-2bba5c557e03_middle.webp`, width: 1200, height: 800 },
+  { src: "/images/intro-water.jpg", width: 1044, height: 698 },
   { src: `${DESIGN}/s-640x427_v-fs_webp_e7bcc742-d122-460d-b48d-860ac674fa41.webp`, width: 640, height: 427 },
   { src: `${DESIGN}/s-640x427_v-fs_webp_506a1c61-e267-4c5d-9c50-799a5e843fd4.webp`, width: 640, height: 427 },
 ];
