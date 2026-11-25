@@ -13,7 +13,7 @@ export const productDetailsEn: ProductDetail[] = [
       "w": 861,
       "h": 680
     },
-    "summary": "",
+    "summary": "HISANO NANO Nattokinase Premium is a Japanese-made dietary supplement containing nattokinase and lactic acid bacteria, in acid-resistant hard capsules that are easy to take every day.",
     "blocks": [
       {
         "k": "img",
@@ -56,6 +56,58 @@ export const productDetailsEn: ProductDetail[] = [
         "w": 780,
         "h": 584,
         "alt": "Reliable quality, made in Japan. HISANO NANO Nattokinase Premium is made in a GMP-certified factory in Japan and delivered as a safe, reliable product under strict quality control. Made in a GMP-certified factory; strict quality control; safe, reliable products."
+      },
+      {
+        "k": "h2",
+        "v": "Product description"
+      },
+      {
+        "k": "p",
+        "v": "HISANO NANO Nattokinase Premium is a dietary supplement containing nattokinase, an enzyme found in the natto bacteria that give natto its stickiness, together with lactic acid bacteria. Nattokinase is weak against stomach acid, so it is protected in acid-resistant hard capsules made from our own plant-derived material, carrying it all the way to the gut. Even if you dislike the texture or smell of natto, the capsules make it easy to take every day."
+      },
+      {
+        "k": "h3",
+        "v": "Key points"
+      },
+      {
+        "k": "p",
+        "v": "• Nattokinase activity: 480,000FU (per bottle)\n• Lactic acid bacteria: 3 trillion (per bottle)\n• Acid-resistant hard capsules that reach the gut\n• About 80 days at 3 capsules a day (240 capsules)\n• Made in a GMP-certified factory in Japan"
+      },
+      {
+        "k": "h3",
+        "v": "Recommended for"
+      },
+      {
+        "k": "p",
+        "v": "• People who value a daily health habit\n• People who dislike the texture or smell of natto\n• People whose diet tends to be unbalanced\n• People looking for a supplement that is easy to keep up"
+      },
+      {
+        "k": "h3",
+        "v": "How to take"
+      },
+      {
+        "k": "p",
+        "v": "As a guide, take 3 capsules a day with water or lukewarm water, without chewing."
+      },
+      {
+        "k": "h3",
+        "v": "Handling precautions"
+      },
+      {
+        "k": "p",
+        "v": "• Please check the ingredients, and do not take this product if you have a food allergy.\n• After opening, consume as soon as possible.\n• Keep out of reach of infants and children.\n• If you are pregnant or breastfeeding, receiving medical treatment or taking medicine (especially blood-thinning medicine), consult a doctor before taking.\n• This product is a food and is not intended to diagnose, treat or prevent any disease.\n• Base your diet on staple foods, main dishes and side dishes, and keep your meals balanced."
+      },
+      {
+        "k": "h3",
+        "v": "Product information"
+      },
+      {
+        "k": "p",
+        "v": "Product name: HISANO NANO Nattokinase Premium\nContents: 240 capsules (about 80 days)\nCountry of production: Japan\nManufacturing: GMP-certified factory in Japan\nSeller: VNT Co., Ltd."
+      },
+      {
+        "k": "p",
+        "v": "* Nattokinase activity and lactic acid bacteria counts are values at the time of manufacture."
       }
     ]
   },
