@@ -41,13 +41,13 @@ export function Header({ lang, nav, labels, themeLabels }: Props) {
   return (
     <>
       <header className="site-header sticky top-0 z-50 mb-10">
-        <div className="shell flex items-center justify-between gap-x-8 py-2 lg:grid lg:grid-cols-[1fr_auto_1fr]">
+        <div className="shell flex items-center justify-between gap-x-3 py-2 sm:gap-x-8 lg:grid lg:grid-cols-[1fr_auto_1fr]">
           <Link
             href="/"
             onClick={close}
             className="site-wordmark flex min-h-11 items-center justify-self-start"
           >
-            <Logo className="h-8 w-auto" />
+            <Logo className="h-6 w-auto sm:h-8" />
           </Link>
           <nav aria-label={labels.main} className="hidden justify-center gap-x-6 lg:flex">
             {nav.map((item) => (
@@ -61,7 +61,7 @@ export function Header({ lang, nav, labels, themeLabels }: Props) {
               </Link>
             ))}
           </nav>
-          <div className="flex items-center justify-end gap-x-2.5 md:gap-x-4">
+          <div className="flex shrink-0 items-center justify-end gap-x-2 md:gap-x-4">
             <LangToggle lang={lang} label={labels.lang} />
             <ThemeToggle labels={themeLabels} />
             <button
