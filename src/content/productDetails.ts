@@ -25,8 +25,8 @@ export const productDetails: ProductDetail[] = [
     "price": "",
     "image": {
       "src": "/images/nattokinase-premium/box.jpg",
-      "w": 861,
-      "h": 680
+      "w": 697,
+      "h": 788
     },
     "summary": "HISANO NANOナットウキナーゼ Premiumは、ナットウキナーゼと乳酸菌を配合した日本製の栄養補助食品です。耐酸性のハードカプセルで、毎日手軽にお召し上がりいただけます。",
     "blocks": [

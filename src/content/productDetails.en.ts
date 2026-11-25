@@ -10,8 +10,8 @@ export const productDetailsEn: ProductDetail[] = [
     "price": "",
     "image": {
       "src": "/images/nattokinase-premium/box.jpg",
-      "w": 861,
-      "h": 680
+      "w": 697,
+      "h": 788
     },
     "summary": "HISANO NANO Nattokinase Premium is a Japanese-made dietary supplement containing nattokinase and lactic acid bacteria, in acid-resistant hard capsules that are easy to take every day.",
     "blocks": [
