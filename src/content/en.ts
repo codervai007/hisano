@@ -25,7 +25,6 @@ const enProducts: Record<string, { name: string; price: string }> = {
   "kaicho-enzyme": { name: "HISANO NANO Kaicho Enzyme", price: "¥13,800 (tax incl.)" },
   "liver-extract": { name: "HISANO Liver Extract Sei NANO Premium", price: "¥19,440 (tax incl.)" },
   "senobi": { name: "HISANO NANO Senobi Kakumei", price: "¥16,990 (tax incl.)" },
-  "nattokinase-premium": { name: "HISANO NANO Nattokinase Premium", price: "" },
 };
 
 export const en = {

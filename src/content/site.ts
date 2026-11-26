@@ -82,7 +82,6 @@ export const productsHeading: string = "商品一覧";
 // Newest first. An empty price hides the price line (used until the client
 // gives one).
 export const products = [
-  { name: "HISANO NANOナットウキナーゼ Premium", slug: "nattokinase-premium", image: "/images/nattokinase-premium/box.jpg", price: "" },
   { name: "HISANO PREMIUM NMN 36000", slug: "nmn-36000", image: `${DESIGN}/s-620x700_v-fs_webp_e0106074-144f-46b6-abb7-b435fe952ff1.webp`, price: "¥49,680（税込）" },
   { name: "沖縄フコイダンプレミアム", slug: "okinawa-fucoidan", image: `${DESIGN}/s-800x800_v-fs_webp_2047faf5-a582-42dc-933e-3cb0e265b5ae_small.webp`, price: "¥22,680（税込）" },
   { name: "フコイダンプレミアム", slug: "fucoidan", image: `${CMS}/s-800x800_v-fs_webp_c0ec29b5-237b-4ef0-976b-bf3c341eb975_small.webp`, price: "¥38,000（税込）" },
@@ -92,7 +91,7 @@ export const products = [
   { name: "サメ軟骨パワープラス", slug: "shark-cartilage", image: `${DESIGN}/s-813x800_v-fs_webp_2eccf9c2-9dc8-48a9-b520-1f4a2f3368d3.webp`, price: "¥19,332（税込）" },
   { name: "冬虫夏草プレミアムクラス", slug: "cordyceps", image: `${DESIGN}/s-813x800_v-fs_webp_9178d1a6-1e78-44a6-856b-081377089f9f.webp`, price: "¥18,252（税込）" },
   { name: "Hisano 牡蠣マカ プレミアム", slug: "oyster-maca", image: "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_abaf0199-fead-4cdc-a756-d1398196a8f0_small.webp", price: "¥17,820（税込）" },
-  { name: "HISANO NANOナットウキナーゼ", slug: "nattokinase", image: "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_2027423c-11a8-4378-b5fb-0e051f200189_small.webp", price: "¥19,440（税込）" },
+  { name: "HISANO NANOナットウキナーゼ", slug: "nattokinase", image: "/images/nattokinase/box.jpg", price: "¥19,440（税込）" },
   { name: "HISANO NANO快朝酵素", slug: "kaicho-enzyme", image: "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_ba5d2b02-4bc8-406c-b4e2-b69355ba0b4a_small.webp", price: "¥13,800（税込）" },
   { name: "HISANO肝臓エキス精 NANO プレミアム", slug: "liver-extract", image: "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_b6f7e5a6-20b8-426e-b2b0-67e28a80ce84_small.webp", price: "¥19,440（税込）" },
   { name: "HISANO NANO セノビ革命", slug: "senobi", image: "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_e58f29f4-8d8e-43a0-a5dc-95aa11117f25_small.webp", price: "¥16,990（税込）" },

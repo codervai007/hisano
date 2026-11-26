@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { CtaBand } from "@/components/CtaBand";
 import { RakutenBand } from "@/components/RakutenBand";
 import { Reveal } from "@/components/Reveal";
@@ -48,8 +48,11 @@ function BlockView({ block, side }: { block: Block; side: "left" | "right" }) {
 }
 
 export default async function ProductDetailPage({ params }: Props) {
+  const { slug } = await params;
+  // Briefly published as a separate product; it is the existing one.
+  if (slug === "nattokinase-premium") redirect("/product/nattokinase");
   const { backToProducts, lang, priceLabel } = await getContent();
-  const product = await findProduct((await params).slug, lang);
+  const product = await findProduct(slug, lang);
   if (!product) notFound();
 
   // Photos arrive from alternating sides as the page scrolls.

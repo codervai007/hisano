@@ -20,113 +20,6 @@ export type ProductDetail = {
 
 export const productDetails: ProductDetail[] = [
   {
-    "slug": "nattokinase-premium",
-    "name": "HISANO NANOナットウキナーゼ Premium",
-    "price": "",
-    "image": {
-      "src": "/images/nattokinase-premium/box.jpg",
-      "w": 697,
-      "h": 788
-    },
-    "summary": "HISANO NANOナットウキナーゼ Premiumは、ナットウキナーゼと乳酸菌を配合した日本製の栄養補助食品です。耐酸性のハードカプセルで、毎日手軽にお召し上がりいただけます。",
-    "blocks": [
-      {
-        "k": "img",
-        "src": "/images/nattokinase-premium/1-daily.jpg",
-        "w": 927,
-        "h": 688,
-        "alt": "NANOナットウキナーゼを毎日簡単に、しっかり腸まで届ける。HISANO NANOナットウキナーゼは、胃酸に対して弱い「ナットウキナーゼ」を、独自の植物由来で製造し、耐酸性のハードカプセルでしっかりと保護しています。"
-      },
-      {
-        "k": "img",
-        "src": "/images/nattokinase-premium/2-about.jpg",
-        "w": 927,
-        "h": 696,
-        "alt": "ナットウキナーゼって？ナットウキナーゼとは、納豆のネバネバのもととなる納豆菌に含まれる酵素です。血栓の予防を補助、血圧の低下を補助、血液循環の改善を補助。"
-      },
-      {
-        "k": "img",
-        "src": "/images/nattokinase-premium/3-point.jpg",
-        "w": 925,
-        "h": 692,
-        "alt": "NANOナットウキナーゼ おすすめPOINT。納豆を超えて腸まで届けるナットウキナーゼ。耐酸性ハードカプセルでしっかり腸まで。ナットウキナーゼ活性480,000FU、乳酸菌1兆2,000億個。"
-      },
-      {
-        "k": "img",
-        "src": "/images/nattokinase-premium/4-easy.jpg",
-        "w": 928,
-        "h": 699,
-        "alt": "NANOナットウキナーゼPremium おすすめPOINT。毎日お手軽に！日常の食事では摂りにくい栄養を、カプセルタイプで効率的に腸まで届ける！食事では摂りにくい栄養を補う、飲みやすいカプセルタイプ、効率的に腸まで届ける。"
-      },
-      {
-        "k": "img",
-        "src": "/images/nattokinase-premium/5-recommend.jpg",
-        "w": 928,
-        "h": 691,
-        "alt": "毎日の健康習慣をサポート。NANOナットウキナーゼPremium おすすめポイント：納豆キナーゼ活性480,000FU（1瓶中）、乳酸菌3兆個（1瓶中）、1日3粒の目安で約80日分。日本製。"
-      },
-      {
-        "k": "img",
-        "src": "/images/nattokinase-premium/6-factory.jpg",
-        "w": 780,
-        "h": 584,
-        "alt": "日本国内製造の安心品質。HISANOのNANOナットウキナーゼPremiumは、日本国内のGMP認定工場で製造し、厳格な品質管理のもと、安心・安全な製品をお届けしています。GMP認定工場で製造、厳格な品質管理、安心・安全な製品をお届け。"
-      },
-      {
-        "k": "h2",
-        "v": "商品説明"
-      },
-      {
-        "k": "p",
-        "v": "HISANO NANOナットウキナーゼ Premiumは、納豆のネバネバのもととなる納豆菌に含まれる酵素「ナットウキナーゼ」と、乳酸菌を配合した栄養補助食品です。胃酸に弱いナットウキナーゼを、独自の植物由来で製造した耐酸性のハードカプセルで保護し、しっかりと腸まで届けます。納豆の食感や匂いが苦手な方でも、カプセルタイプなので毎日手軽にお召し上がりいただけます。"
-      },
-      {
-        "k": "h3",
-        "v": "おすすめポイント"
-      },
-      {
-        "k": "p",
-        "v": "・納豆キナーゼ活性 480,000FU（1瓶中）\n・乳酸菌 3兆個（1瓶中）\n・耐酸性ハードカプセルでしっかり腸まで届ける\n・1日3粒の目安で約80日分（240粒入）\n・日本国内のGMP認定工場で製造"
-      },
-      {
-        "k": "h3",
-        "v": "こんな方におすすめ"
-      },
-      {
-        "k": "p",
-        "v": "・毎日の健康習慣を大切にしたい方\n・納豆の食感や匂いが苦手な方\n・食生活が偏りがちな方\n・手軽に続けられるサプリメントをお探しの方"
-      },
-      {
-        "k": "h3",
-        "v": "お召し上がり方"
-      },
-      {
-        "k": "p",
-        "v": "1日3粒を目安に、水またはぬるま湯でかまずにお召し上がりください。"
-      },
-      {
-        "k": "h3",
-        "v": "お取り扱い上の注意"
-      },
-      {
-        "k": "p",
-        "v": "・原材料をご確認いただき、食物アレルギーのある方はお召し上がりにならないでください。\n・開封後は、お早めにお召し上がりください。\n・乳幼児・小児の手の届かない所に保管してください。\n・妊娠中・授乳中の方、通院中の方、医薬品（特に血液をサラサラにする薬）を服用中の方は、お召し上がりになる前に医師にご相談ください。\n・本品は食品であり、疾病の診断、治療、予防を目的としたものではありません。\n・食生活は、主食、主菜、副菜を基本に、食事のバランスを。"
-      },
-      {
-        "k": "h3",
-        "v": "商品情報"
-      },
-      {
-        "k": "p",
-        "v": "商品名：HISANO NANOナットウキナーゼ Premium\n内容量：240粒（約80日分）\n生産国：日本\n製造：日本国内のGMP認定工場\n販売者：VNT株式会社"
-      },
-      {
-        "k": "p",
-        "v": "※納豆キナーゼ活性、乳酸菌数は製造時のものです。"
-      }
-    ]
-  },
-  {
     "slug": "nmn-36000",
     "name": "HISANO PREMIUM NMN 36000",
     "price": "¥49,680（税込）",
@@ -2248,46 +2141,25 @@ export const productDetails: ProductDetail[] = [
     "name": "HISANO NANOナットウキナーゼ",
     "price": "¥19,440（税込）",
     "image": {
-      "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-813x800_v-fs_webp_2027423c-11a8-4378-b5fb-0e051f200189_small.webp",
-      "w": 813,
-      "h": 800
+      "src": "/images/nattokinase/box.jpg",
+      "w": 697,
+      "h": 788
     },
     "summary": "HISANO NANOナットウキナーゼは、アムスライフサイエンス本社工場で誇り を持って製造されています。当工場はHISANOの主要な製造拠点の一つであり、高 品質な製品製造において求められる基準であるGMP（Good Manufacturing Practices）認定を獲得しています。\n\nGMP認定は、製品の品質と安全性を確保するために徹底的な品質管理プロセスを実 施するための厳格な基準を示します。当工場では、製品の製造から検査までの全 工程がこれらの品質基準に厳密に準拠して行われています。私たちは品質に対す る約束を守り、お客様に高品質で信頼性のあるHISANO NANOナットウキナーゼ を提供しています。安心してご利用いただける製品をお届けするために、私た ちは最高の品質基準を維持し続けています。",
     "blocks": [
       {
         "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_84f9c563-8da5-49fe-9678-9b1a0585e4c3_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
+        "src": "/images/nattokinase/1-daily.jpg",
+        "w": 927,
+        "h": 688,
+        "alt": "NANOナットウキナーゼを毎日簡単に、しっかり腸まで届ける。HISANO NANOナットウキナーゼは、胃酸に対して弱い「ナットウキナーゼ」を、独自の植物由来で製造し、耐酸性のハードカプセルでしっかりと保護しています。"
       },
       {
         "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_ea2409ca-89db-4058-b4e9-1e1af85a23d6_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
-      },
-      {
-        "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_51f60e94-34df-46c3-b304-57ae11693377_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
-      },
-      {
-        "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_870fbfd3-b5c7-4812-a486-57711faae3cc_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
-      },
-      {
-        "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_a20e56c1-e45a-454c-ae59-cd42186ec993_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
+        "src": "/images/nattokinase/4-easy.jpg",
+        "w": 928,
+        "h": 699,
+        "alt": "NANOナットウキナーゼPremium おすすめPOINT。毎日お手軽に！日常の食事では摂りにくい栄養を、カプセルタイプで効率的に腸まで届ける！食事では摂りにくい栄養を補う、飲みやすいカプセルタイプ、効率的に腸まで届ける。"
       },
       {
         "k": "h2",
@@ -2307,10 +2179,10 @@ export const productDetails: ProductDetail[] = [
       },
       {
         "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_f0f09d2e-cb5f-422b-b660-aec164e250f7_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
+        "src": "/images/nattokinase/2-about.jpg",
+        "w": 927,
+        "h": 696,
+        "alt": "ナットウキナーゼって？ナットウキナーゼとは、納豆のネバネバのもととなる納豆菌に含まれる酵素です。血栓の予防を補助、血圧の低下を補助、血液循環の改善を補助。"
       },
       {
         "k": "h2",
@@ -2342,10 +2214,10 @@ export const productDetails: ProductDetail[] = [
       },
       {
         "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_d3eacc0a-049e-4ec4-a42b-95d75d8bbb28_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
+        "src": "/images/nattokinase/3-point.jpg",
+        "w": 925,
+        "h": 692,
+        "alt": "NANOナットウキナーゼ おすすめPOINT。納豆を超えて腸まで届けるナットウキナーゼ。耐酸性ハードカプセルでしっかり腸まで。ナットウキナーゼ活性480,000FU、乳酸菌1兆2,000億個。"
       },
       {
         "k": "h2",
@@ -2365,10 +2237,10 @@ export const productDetails: ProductDetail[] = [
       },
       {
         "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_e3420621-08c6-4dff-8f94-7de347a83642_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
+        "src": "/images/nattokinase/5-recommend.jpg",
+        "w": 928,
+        "h": 691,
+        "alt": "毎日の健康習慣をサポート。NANOナットウキナーゼPremium おすすめポイント：納豆キナーゼ活性480,000FU（1瓶中）、乳酸菌3兆個（1瓶中）、1日3粒の目安で約80日分。日本製。"
       },
       {
         "k": "h2",
@@ -2384,10 +2256,10 @@ export const productDetails: ProductDetail[] = [
       },
       {
         "k": "img",
-        "src": "https://storage.googleapis.com/studio-cms-assets/projects/RQqJl8e3Wg/s-800x600_v-fs_webp_148f6043-b9f7-46e3-b3a7-f62c0856d07f_small.webp",
-        "w": 800,
-        "h": 600,
-        "alt": "HISANO NANOナットウキナーゼの紹介画像"
+        "src": "/images/nattokinase/6-factory.jpg",
+        "w": 780,
+        "h": 584,
+        "alt": "日本国内製造の安心品質。HISANOのNANOナットウキナーゼPremiumは、日本国内のGMP認定工場で製造し、厳格な品質管理のもと、安心・安全な製品をお届けしています。GMP認定工場で製造、厳格な品質管理、安心・安全な製品をお届け。"
       },
       {
         "k": "h2",
